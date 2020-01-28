@@ -7,23 +7,41 @@
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
+div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
 table.sourceCode { width: 100%; line-height: 100%; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; }
-code > span.dt { color: #902000; }
-code > span.dv { color: #40a070; }
-code > span.bn { color: #40a070; }
-code > span.fl { color: #40a070; }
-code > span.ch { color: #4070a0; }
-code > span.st { color: #4070a0; }
-code > span.co { color: #60a0b0; font-style: italic; }
-code > span.ot { color: #007020; }
-code > span.al { color: #ff0000; font-weight: bold; }
-code > span.fu { color: #06287e; }
-code > span.er { color: #ff0000; font-weight: bold; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
   <style type="text/css">
   
@@ -377,7 +395,7 @@ document.querySelector(output).innerHTML += toc;
     </div>
     <div id="contents" class="content">
                                 <p align="center">
-<img src="BANNIERE.JPG"  width="100%" align="middle">
+<img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/master/templates/BANNIERE.JPG"  width="100%" align="middle">
 </p>
 
 
@@ -408,7 +426,7 @@ document.querySelector(output).innerHTML += toc;
 <li><p><a href="#Fiche_n°10_:_Veiller_à_la_qualité_de_votre_code_et_sa_documentation">Veiller à la qualité de votre code et sa documentation</a></p></li>
 <li><p><a href="#Fiche_n°11_:_Tester_vos_applications">Tester vos applications</a></p></li>
 <li><p><a href="#Fiche_n°12_:_Informer_les_personnes">Informer les utilisateurs</a></p></li>
-<li><p>[Préparer l'exercice des droits des personnes](#Fiche_n°13_:<em>Préparer</em>l'exercice_des_droits_des_personnes)</p></li>
+<li><p><a href="#Fiche_n°13_:_Préparer_l&#39;exercice_des_droits_des_personnes">Préparer l'exercice des droits des personnes</a></p></li>
 <li><p><a href="#Fiche_n°14_:_Gérer_la_durée_de_conservation_des_données">Gérer la durée de conservation des données</a></p></li>
 <li><p><a href="#Fiche_n°15_:_Prendre_en_compte_les_bases_légales_dans_l’implémentation_technique">Prendre en compte les bases légales dans l’implémentation technique</a></p></li>
 <li><p><a href="#Fiche_n°16:_Mesurer_la_fréquentation_de_vos_sites_web_et_de_vos_applications">Mesurer la fréquentation de vos sites web et de vos applications</a></p></li>
@@ -416,8 +434,8 @@ document.querySelector(output).innerHTML += toc;
 <h2 id="comment-contribuer-à-ce-guide">Comment contribuer à ce guide ?</h2>
 <p><strong>Ce guide est disponible en deux versions</strong> :</p>
 <ul>
-<li>Une <a href="https://cnil.fr/developpeur">version web sur le site de la CNIL</a> et dans l'onglet &quot;Releases&quot; de ce repository ;</li>
-<li>Cette version GitHub, qui offre la possibilité à tous d’y contribuer.</li>
+<li>Une <a href="https://cnil.fr/developpeur">version web sur le site de la CNIL</a> et dans l'onglet <a href="https://github.com/LINCnil/Guide-RGPD-du-developpeur/releases">l'onglet &quot;Releases&quot;</a> de ce repository ;</li>
+<li>Cette <a href="https://github.com/LINCnil/Guide-RGPD-du-developpeur">version GitHub</a>, qui offre la possibilité à tous d’y contribuer.</li>
 </ul>
 <p><strong>La contribution se fait en quelques étapes</strong> :</p>
 <ul>
@@ -445,7 +463,7 @@ document.querySelector(output).innerHTML += toc;
 <ol style="list-style-type: decimal">
 <li><p><strong>Sensibilisez-vous aux grands principes du RGPD</strong>. Si vous travaillez en équipe, nous vous recommandons d'identifier une personne chargée du pilotage de sa conformité. Si votre entreprise dispose d'un <a href="https://www.cnil.fr/fr/designer-un-pilote">délégué à la protection des données (DPO)</a>, celui-ci constitue alors un atout majeur pour <a href="https://www.cnil.fr/fr/designation-dpo">comprendre et respecter les obligations du RGPD</a>. Sa désignation peut par ailleurs être obligatoire dans certains cas, notamment si vos programmes ou vos applications traitent des données dites « sensibles » (cf. <a href="#Fiche_n°1_:_Identifier_les_données_à_caractère_personnel">les exemples</a>) à grande échelle ou réalisent un suivi régulier et systématique à grande échelle.</p></li>
 <li><p><strong>Cartographiez et catégorisez les données et les traitements de votre système</strong>. Recenser de façon précise les traitements réalisés par votre programme ou votre application vous aidera à vous assurer qu'ils respectent bien les obligations légales en la matière. La tenue d'un <a href="https://www.cnil.fr/fr/RGDP-le-registre-des-activites-de-traitement">registre des activités de traitement</a> (dont vous trouvez un exemple sur le <a href="https://www.cnil.fr/sites/default/files/atoms/files/registre-traitement-simplifie.ods">site de la CNIL</a>), vous permet d'avoir une vision globale sur ces données, d’identifier et de hiérarchiser les risques associés. En effet, des données personnelles peuvent être présentes dans des endroits inattendus comme que dans les journaux de serveurs, les fichiers de cache, les fichiers Excel, etc. Sa tenue est obligatoire dans la plupart des cas.</p></li>
-<li><p><strong>Priorisez les actions à mener</strong>. Sur la base du registre des activités de traitement, identifiez en amont du développement les actions à mener pour vous conformer aux obligations du RGPD et priorisez les points d'attention au regard des risques pour les personnes concernées par la collecte de données. Ces points d'attention concernent notamment <a href="#Fiche_n°7_:_Minimiser_les_données_collectées">la nécessité et les types de données collectées et traitées</a> par votre programme, <a href="#Fiche_n°7_:_Minimiser_les_données_collectées">la base légale</a> sur laquelle se fonde vos traitements de données, <a href="#Fiche_n°12_:_Informer_les_personnes">les mentions d’information</a> de votre programme ou de votre application, <a href="#Fiche_n°5_:_Faire_un_choix_éclairé_de_son_architecture">les clauses contractuelles</a> vous liant à vos sous-traitants, les modalités d'[exercice des droits](#Fiche_n°13_:<em>Préparer</em>l'exercice_des_droits_des_personnes), les mesures mises en place pour <a href="#Fiche_n°6_:_Sécuriser_vos_sites_web,_vos_applications_et_vos_serveurs">sécuriser vos traitements</a>.</p></li>
+<li><p><strong>Priorisez les actions à mener</strong>. Sur la base du registre des activités de traitement, identifiez en amont du développement les actions à mener pour vous conformer aux obligations du RGPD et priorisez les points d'attention au regard des risques pour les personnes concernées par la collecte de données. Ces points d'attention concernent notamment <a href="#Fiche_n°7_:_Minimiser_les_données_collectées">la nécessité et les types de données collectées et traitées</a> par votre programme, <a href="#Fiche_n°7_:_Minimiser_les_données_collectées">la base légale</a> sur laquelle se fonde vos traitements de données, <a href="#Fiche_n°12_:_Informer_les_personnes">les mentions d’information</a> de votre programme ou de votre application, <a href="#Fiche_n°5_:_Faire_un_choix_éclairé_de_son_architecture">les clauses contractuelles</a> vous liant à vos sous-traitants, les modalités d'<a href="#Fiche_n°13_:_Préparer_l&#39;exercice_des_droits_des_personnes">exercice des droits</a>, les mesures mises en place pour <a href="#Fiche_n°6_:_Sécuriser_vos_sites_web,_vos_applications_et_vos_serveurs">sécuriser vos traitements</a>.</p></li>
 <li><p><strong>Gérez les risques</strong>. Lorsque vous identifiez que des traitements de données personnelles sont susceptibles d'engendrer des risques élevés pour les personnes concernées, assurez-vous que vous gérez ces risques de façon appropriée au regard du contexte. Une <a href="https://www.cnil.fr/fr/RGPD-analyse-impact-protection-des-donnees-aipd">analyse d'impact relative à la protection des données (AIPD)</a> peut vous accompagner dans la maîtrise de ces risques. La CNIL a élaboré une <a href="https://www.cnil.fr/sites/default/files/atoms/files/cnil-pia-1-fr-methode.pdf">méthode</a>, des <a href="https://www.cnil.fr/sites/default/files/atoms/files/cnil-pia-2-fr-modeles.pdf">modèles de documents</a> et un <a href="https://www.cnil.fr/fr/outil-pia-telechargez-et-installez-le-logiciel-de-la-cnil">outil</a> qui vous aideront à identifier ces risques ainsi qu'un <a href="https://www.cnil.fr/sites/default/files/atoms/files/cnil-pia-3-fr-basesdeconnaissances.pdf">catalogue de bonnes pratiques</a> qui vous accompagnera dans la mise en place de mesures permettant de traiter les risques identifiés. Par ailleurs, la réalisation d'une analyse d'impact relative à la protection des données est obligatoire pour tous les traitements susceptibles d'engendrer des risques élevés pour les droits et libertés des personnes concernées. La CNIL propose, sur son <a href="https://www.cnil.fr/sites/default/files/atoms/files/liste-traitements-aipd-requise.pdf">site web</a>, une liste des types d’opérations de traitement pour lesquelles une AIPD est requise ou, au contraire, non requise.</p></li>
 <li><p><strong>Organisez des processus internes</strong> pour vous assurer d'être en conformité durant toutes les étapes du développement, veillez à ce que des procédures internes garantissent la prise en compte de la protection des données sur tous les aspects de votre projet et prenant en compte l’ensemble des événements qui peuvent survenir (ex : faille de sécurité, gestion des demandes de rectification ou d’accès, modification des données collectées, changement de prestataire, violation de données, etc.). Les exigences du <a href="https://www.cnil.fr/sites/default/files/atoms/files/formulaire_de_demande_labels-gouvernance-re.docx">label gouvernance</a> (même si celui-ci plus octroyé par la CNIL depuis l’entrée en application du RGPD) peuvent constituer une base d'inspiration utile pour vous aider à mettre en place l'organisation nécessaire.</p></li>
 <li><p><strong>Documentez la conformité de vos développements</strong> pour prouver votre conformité au RGPD à tout moment: <a href="https://www.cnil.fr/fr/documenter-la-conformite">les actions réalisées et les documents produits à chaque étape du développement doivent être maîtrisés</a>. Cela implique notamment un réexamen et une actualisation réguliers de la documentation de vos développements afin qu'elle soit en permanence en cohérence avec les fonctionnalités déployées sur votre programme.</p></li>
@@ -612,7 +630,7 @@ document.querySelector(output).innerHTML += toc;
 </ul>
 <h2 id="sécuriser-les-authentifications">Sécuriser les authentifications</h2>
 <ul>
-<li><p><strong>Suivre <a href="https://www.cnil.fr/fr/mots-de-passe-des-recommandations-de-securite-minimales-pour-les-entreprises-et-les-particuliers">la recommandation de la CNIL sur les mots de passe</a></strong>. Pensez notamment à limiter le nombre de tentatives d'accès.</p></li>
+<li><p><strong>Suivre <a href="https://www.cnil.fr/fr/mots-de-passe-des-recommandations-de-securite-minimales-pour-les-entreprises-et-les-particuliers">la recommandation de la CNIL sur les mots de passe</a></strong>. Pensez notamment à limiter le nombre de tentatives d'accès.</p></li>
 <li><p><strong>Ne stockez jamais les mots de passe en clair</strong>. Stockez-les sous forme de hash au moyen d'une librairie éprouvée, comme <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>.</p></li>
 <li><p><strong>Dans le cas où des cookies sont utilisés pour permettre l'authentification</strong>, il est recommandé :</p>
 <ul>
@@ -894,6 +912,15 @@ document.querySelector(output).innerHTML += toc;
 <li>Le tableau suivant récapitule les exercices des droits à prévoir suivant les bases légales choisies :</li>
 </ul>
 <table>
+<colgroup>
+<col width="13%" />
+<col width="8%" />
+<col width="13%" />
+<col width="12%" />
+<col width="20%" />
+<col width="13%" />
+<col width="16%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="center"></th>
