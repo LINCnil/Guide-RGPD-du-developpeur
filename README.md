@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/master/templates/BANNIERE.JPG"  width="100%" align="middle"></p>
+<p align="center"><img src="BANNIERE.JPG"  width="100%" align="middle"></p>
 
 
 # Guide RGPD du développeur
@@ -6,7 +6,7 @@
 
 Afin de vous accompagner dans la mise en conformité de  vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.
 
-Ce guide est publié sous **licence LGPL3**, vous pouvez donc librement contribuer à son enrichissement.
+Ce guide est publié sous [licence GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) et sous [licence ouverte 2.0](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf) (explicitement compatible avec [CC-BY 4.0 FR](https://creativecommons.org/licenses/by/4.0/deed.fr)). Vous pouvez donc librement contribuer à son enrichissement.
 
 #### Ce guide s’adresse-t-il uniquement aux développeurs ?
 
@@ -26,7 +26,7 @@ Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ense
 
 ## Tables des matières
 
-   0. [Les bonnes pratiques pour un développement en conformité avec le RGPD](#Fiche_n°0_:_Les_bonnes_pratiques_pour_un_développement_en_conformité_avec_le_RGPD)
+   0. [Développer en conformité avec le RGPD](#Fiche_n°0_:_Développer en conformité avec le RGPD.md)
 
 1. [Identifier les données à caractère personnel](#Fiche_n°1_:_Identifier_les_données_à_caractère_personnel)
 
@@ -66,8 +66,8 @@ Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ense
 
 **Ce guide est disponible en deux versions** :
 
-* Une [version web sur le site de la CNIL](https://cnil.fr/developpeur) et dans [l'onglet "Releases"](https://github.com/LINCnil/Guide-RGPD-du-developpeur/releases) de ce repository ;
-* Cette [version GitHub](https://github.com/LINCnil/Guide-RGPD-du-developpeur), qui offre la possibilité à tous d’y contribuer.
+* Une [version web sur le site de la CNIL](https://cnil.fr/developpeur) et dans l'onglet "Releases" de ce repository ;
+* Cette version GitHub, qui offre la possibilité à tous d’y contribuer.
 
 **La contribution se fait en quelques étapes** :
 
@@ -82,13 +82,13 @@ Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ense
 ## Usage
 
 
-Pour faire vous-même une « release » de ce repository, vous pouvez utiliser l’outil **Pandoc**. Cet outil vous permettra de convertir les fiches en un fichier Microsoft Word ou bien un document HTML.
+Pour faire vous-même une « release » de ce repository, vous pouvez utiliser l’outil **Pandoc**. Cet outil vous permettra de convertir les fiches en un fichier docx ou bien un document HTML.
 
 Vous pouvez retrouver les instructions pour installer cet outil [ici]( https://pandoc.org/installing.html)
 
 * **Pour générer un fichier .docx** :
 ```bash
-pandoc -s --toc --toc-depth=1 -o guide_dev_release.docx [0-9][0-9]*.md
+pandoc -s --toc --toc-depth=1 -o Guide_RGPD_developpeur.docx [0-9][0-9]*.md
 ```
 
 * **Pour générer un fichier .html** :
