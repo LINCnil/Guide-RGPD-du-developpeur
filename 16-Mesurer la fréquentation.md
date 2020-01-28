@@ -38,7 +38,7 @@
 
     * De limiter la durée de vie des traceurs à 13 mois.
 
-* Dans la mesure où les conditions sont respectées, **on donc passe d'un régime d'opt-in à un régime d'opt-out**.
+* Dans la mesure où les conditions sont respectées, **on passe donc d'un régime d'opt-in à un régime d'opt-out**.
 
 * Il est par ailleurs possible pour un même tiers (sous-traitant) de fournir un service de mesure d'audience comparatif à de multiples éditeurs, sous réserve que **les données soient collectées, traitées et stockées de manière indépendante pour chaque éditeur et que les traceurs soient indépendants les uns des autres**.
 
@@ -46,4 +46,4 @@
 
 * **La plupart des grandes offres de mesures d'audience ne rentrent pas dans le périmètre de l'exemption et ce quelle que soit leur configuration**.
 
-* Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que Piwik que vous pouvez configurer vous-même.
+* Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que Matomo que vous pouvez configurer vous-même.
