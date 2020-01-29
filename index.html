@@ -498,7 +498,7 @@
 
             level = parseInt(openLevel);
 
-            var anchor = titleText.replace(/ /g, "_");
+            var anchor = titleText.trim().replace(/ /g, "_");
             if (level == 2) {
               toc +=
                 '<li class="level' +
