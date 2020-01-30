@@ -24,7 +24,7 @@
     2. Prévoyez aussi une notification automatique des sous-traitants afin qu’ils effacent eux aussi les données relatives à cette personne.
     3. Prévoyez un effacement des données également dans les sauvegardes, ou une autre solution permettant de ne pas restaurer les données effacées relatives à cette personne.
 
-* **Droit d’opposition** : les personnes ont le droit de de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.  
+* **Droit d’opposition** : les personnes ont le droit de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.  
 **_Possible implémentation_** : prévoyez une fonctionnalité permettant à la personne concernée de s’opposer au traitement. Lorsque la personne exerce son droit d’opposition par ce biais, le responsable de traitement doit supprimer les données déjà collectées, et ne doit par la suite plus collecter de données associées à cette personne.
 
 * **Droit à la portabilité** : les personnes ont le droit de récupérer leurs données dans un format lisible par machine, pour leur propre usage ou pour les fournir à un autre organisme.  
