@@ -1,12 +1,12 @@
-# Fiche n°14 : Gérer la durée de conservation des données
+# Fiche n°14 : Gérer la durée de conservation des données
 
-#### Les données personnelles ne peuvent pas être conservées pour une durée indéfinie : celle-ci doit être définie en fonction des objectifs poursuivis par le traitement. Une fois cet objectif atteint, ces données devraient être archivées, supprimées ou anonymisées (par exemple afin de produire des statistiques).
+#### Les données personnelles ne peuvent pas être conservées pour une durée indéfinie : celle-ci doit être définie en fonction des objectifs poursuivis par le traitement. Une fois cet objectif atteint, ces données devraient être archivées, supprimées ou anonymisées (par exemple afin de produire des statistiques).
 
 ## Les cycles de conservation des données
 
-* Le cycle de conservation des données à caractère personnel peut être divisé en **trois phases successives distinctes** :
-    * La base active ;
-    * L’archivage intermédiaire ;
+* Le cycle de conservation des données à caractère personnel peut être divisé en **trois phases successives distinctes** :
+    * La base active ;
+    * L’archivage intermédiaire ;
     * L’archivage définitif ou la suppression.
 
 
@@ -16,7 +16,7 @@
 
 * Veillez également à prévoir des **modalités d’accès spécifiques** aux données archivées du fait que l’utilisation d’une archive doit intervenir de manière ponctuelle et exceptionnelle.
 
-* Si possible, utilisez la même implémentation lors de la **mise en œuvre de la purge ou l'anonymisation des données** que celle gérant le **droit à l'effacement** (cf. [fiche sur l'exercice des droits](#Fiche_n°13_:_Préparer_l'exercice_des_droits_des_personnes)), afin de garantir un fonctionnement homogène de votre système.
+* Si possible, utilisez la même implémentation lors de la **mise en œuvre de la purge ou l’anonymisation des données** que celle gérant le **droit à l’effacement** (cf. [fiche sur l’exercice des droits](#Fiche_n°13_:_Préparer_l’exercice_des_droits_des_personnes)), afin de garantir un fonctionnement homogène de votre système.
 
 ## Quelques exemples de durée de conservation
 
