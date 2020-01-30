@@ -16,7 +16,7 @@
     * adresse IP, identifiant de connexion informatique ou identifiant de cookie ;
     * empreinte digitale, réseau veineux ou palmaire de la main, empreinte rétinienne ;
     * numéro de plaque d’immatriculation, numéro de sécurité sociale, numéro d’une pièce d’identité ;
-    * données d’usage d’une application, des commentaires, etc…
+    * données d’usage d’une application, des commentaires, etc.
 
 * **L’identification des personnes physiques peut se réaliser** :
     * à partir d’une seule donnée (exemples : nom et prénom) ;
