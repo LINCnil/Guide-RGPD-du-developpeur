@@ -1,25 +1,25 @@
 # Fiche n°1 : Identifier les données à caractère personnel
 
-#### Comprendre les notions de « données personnelles », de « finalité » et de « traitement » est indispensable pour le développement d’une application respectueuse de la loi et des données des utilisateurs. Attention, notamment, à ne pas confondre "anonymisation" et "pseudonymisation" qui ont des définitions très précises dans le RGPD.
+#### Comprendre les notions de « données personnelles », de « finalité » et de « traitement » est indispensable pour le développement d’une application respectueuse de la loi et des données des utilisateurs. Attention, notamment, à ne pas confondre « anonymisation » et « pseudonymisation » qui ont des définitions très précises dans le RGPD.
 
 ## Définition
-* La notion de **données à caractère personnel** (couramment désignées comme "données personnelles") est définie dans le [règlement général sur la protection des données](https://www.cnil.fr/fr/comprendre-le-rgpd) (RGPD) comme "[toute information se rapportant à une personne physique identifiée ou identifiable (dénommée «personne concernée»)](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre1#Article4)". Elle couvre un large périmètre qui comprend à la fois des données directement identifiantes (nom et prénom par exemple) et indirectement identifiantes (numéro de téléphone, plaque d’immatriculation, identifiant de terminal, etc.).
+* La notion de **données à caractère personnel** (couramment désignées comme “données personnelles”) est définie dans le [règlement général sur la protection des données](https://www.cnil.fr/fr/comprendre-le-rgpd) (RGPD) comme « [toute information se rapportant à une personne physique identifiée ou identifiable (dénommée “personne concernée”)](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre1#Article4) ». Elle couvre un large périmètre qui comprend à la fois des données directement identifiantes (nom et prénom par exemple) et indirectement identifiantes (numéro de téléphone, plaque d’immatriculation, identifiant de terminal, etc.).
 
-* Toute opération sur ce type de données (collecte, enregistrement, transmission, modification, diffusion, etc.) constitue **un traitement au sens du RGPD** et doit donc répondre aux exigences fixées par ce règlement. Ces traitements doivent être licites et avoir un objectif (une "finalité") déterminée. Les données personnelles collectées et traitées doivent être pertinentes et limitées à ce qui est strictement nécessaire pour atteindre la finalité.
+* Toute opération sur ce type de données (collecte, enregistrement, transmission, modification, diffusion, etc.) constitue **un traitement au sens du RGPD** et doit donc répondre aux exigences fixées par ce règlement. Ces traitements doivent être licites et avoir un objectif (une « finalité ») déterminée. Les données personnelles collectées et traitées doivent être pertinentes et limitées à ce qui est strictement nécessaire pour atteindre la finalité.
 
 ## Exemples de données à caractère personnel
 
 * Lorsqu’elles sont relatives à des personnes physiques, **les données suivantes sont des données à caractère personnel** :
-    * Nom, prénom, pseudonyme, date de naissance;
-    * photos, enregistrements sonores de voix;
-    * numéro de téléphone fixe ou portable, adresse postale, adresse email;
-    * adresse IP, identifiant de connexion informatique ou identifiant de cookie;
-    * empreinte digitale, réseau veineux ou palmaire de la main, empreinte rétinienne;
-    * numéro de plaque d’immatriculation, numéro de sécurité sociale, numéro d’une pièce d’identité;
-    * données d’usage d’une application, des commentaires, etc...
+    * Nom, prénom, pseudonyme, date de naissance ;
+    * photos, enregistrements sonores de voix ;
+    * numéro de téléphone fixe ou portable, adresse postale, adresse e-mail ;
+    * adresse IP, identifiant de connexion informatique ou identifiant de cookie ;
+    * empreinte digitale, réseau veineux ou palmaire de la main, empreinte rétinienne ;
+    * numéro de plaque d’immatriculation, numéro de sécurité sociale, numéro d’une pièce d’identité ;
+    * données d’usage d’une application, des commentaires, etc…
 
 * **L’identification des personnes physiques peut se réaliser** :
-    * à partir d’une seule donnée (exemples : nom et prénom) ;
+    * à partir d’une seule donnée (exemples : nom et prénom) ;
     * à partir du croisement d’un ensemble de données (exemple : une femme vivant à telle adresse, née tel jour et membre de telle association).
 
 * Certaines données sont considérées comme **particulièrement sensibles**. Le RGPD interdit de recueillir ou d’utiliser ces données, sauf, notamment, si la personne concernée a donné son consentement exprès (démarche active, explicite et de préférence écrite, qui doit être libre, spécifique, et informée).
@@ -27,9 +27,9 @@
 * Ces exigences concernent les données suivantes :
 
     * les données relatives à la **santé des individus** ;
-    * les données concernant la **vie sexuelle** ou l’**orientation sexuelle** ;
-    * les données qui révèlent une prétendue **origine raciale** ou **ethnique** ;
-    * les **opinions politiques**, les **convictions religieuses**, **philosophiques** ou l’**appartenance syndicale** ;
+    * les données concernant la **vie sexuelle** ou l’**orientation sexuelle** ;
+    * les données qui révèlent une prétendue **origine raciale** ou **ethnique** ;
+    * les **opinions politiques**, les **convictions religieuses**, **philosophiques** ou l’**appartenance syndicale** ;
     * les **données génétiques** et **biométriques utilisées aux fins d’identifier une personne de manière unique**.
 
 ## L’anonymisation des données à caractère personnel
