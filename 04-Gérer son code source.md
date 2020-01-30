@@ -1,37 +1,38 @@
-# Fiche n°4 : Gérer son code source
+# Fiche n°2 : Préparer son développement
 
-#### Quelle que soit l'ampleur de votre projet, il est très fortement recommandé d’utiliser un outil de gestion de code source pour suivre dans le temps ses différentes versions.
+#### Les principes de la protection des données à caractère personnel doivent être intégrés aux développements informatiques dès les phases de conception afin de protéger la vie privée des personnes dont vous allez traiter les données, et de leur offrir une meilleure maîtrise de leurs données et de limiter les erreurs, pertes, modifications non autorisées, ou mauvais usages de celles-ci dans les applications.
 
-## Paramétrez efficacement votre gestionnaire de code source, en pensant à sa sécurité
+## Choix méthodologiques
 
-* Un gestionnaire de code source est un logiciel permettant de stocker **l'ensemble de votre code source et des fichiers associés**, tout en conservant la **chronologie de toutes les modifications** qui ont été apportées. Un simple serveur FTP ne constitue pas un gestionnaire de code source.
+* **Mettez la protection de la vie privée au cœur de vos développements** en adoptant une méthodologie de [Privacy By Design](https://edpb.europa.eu/our-work-tools/public-consultations-art-704/2019/guidelines-42019-article-25-data-protection-design_en).
 
-* Paramétrez correctement votre environnement en utilisant les fonctionnalités proposées par votre gestionnaire de code source. Il est recommandé de mettre en place une **authentification forte** et/ou une **authentification par clés SSH** dès le début de votre projet.
+* Si vous utilisez des méthodes agiles pour vos développements, pensez à **intégrer la sécurité au cœur de votre processus**. L’ANSSI a rendu disponible un guide [« sécurité & agilité numériques »](https://www.ssi.gouv.fr/uploads/2018/11/guide-securite-numerique-agile-anssi-pa-v1.pdf) qui indique comment conduire vos développements dans le cadre d’une méthode agile tout en prenant en compte les aspects sécurité. N’hésitez pas à vous en inspirer.
 
-* Par ailleurs, attribuez aux utilisateurs de votre gestionnaire de code source des *niveaux d'accès* à votre projet et définissez pour chacun des niveaux les **permissions** correspondantes  (par exemple, un niveau "invité" avec des droits limités en lecture, un niveau "développeur" avec des droits en écriture, etc.).
+* Pour tout développement à destination du grand public, **menez une réflexion sur les paramètres relatifs à la vie privée**, et notamment sur le paramétrage par défaut, comme par exemple les caractéristiques et les contenus des utilisateurs visibles par défaut.
 
-* Faites des **sauvegardes** régulières de votre système de gestion de code source. En particulier, pensez à sauvegarder votre serveur principal où toutes les modifications sont enregistrées.
-
-* Mettez en place des procédures de développement pour travailler efficacement même si **plusieurs personnes développent en même temps**. Par exemple, vous pouvez décider de ne pas travailler sur la même branche (_master_), mais de mettre en place des branches par fonctionnalité, qui seront fusionnées dans la branche principale au fur et à mesure du développement. De telles stratégies de développement sont déjà bien documentées, par exemple dans [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/). Par ailleurs, certains gestionnaires de code source proposent de configurer des **branches protégées** qui empêchent des modifications non autorisées sur les fichiers contenus dans ces branches.
+* **Réalisez une [analyse d’impact sur la protection des données (AIPD)](https://www.cnil.fr/fr/RGPD-analyse-impact-protection-des-donnees-aipd)**. Pour [certaines opérations de traitement](https://www.cnil.fr/sites/default/files/atoms/files/liste-traitements-avec-aipd-requise-v2.pdf), elle  est obligatoire. Dans les autres cas c’est une bonne pratique qui vous permettra d’identifier et de traiter tous les risques en amont de vos développements. La CNIL dispose d’une section spéciale sur son site et elle met à disposition un [logiciel gratuit](https://www.cnil.fr/fr/outil-pia-telechargez-et-installez-le-logiciel-de-la-cnil) consacré à ce type d’analyse.
 
 
-## Soyez vigilant sur le contenu de votre code source
+## Choix technologiques
 
-* Mettez en œuvre des **outils de métriques de qualité de code** qui scanneront votre code dès son _commit_ pour vérifier sa bonne qualité. Vous pouvez également ajouter des scripts de contrôle de ces métriques dans la [configuration du gestionnaire de code source](https://git-scm.com/book/uz/v2/Customizing-Git-Git-Hooks) : le _commit_ sera alors annulé si le code source n'est pas d'une qualité suffisante.
+#### Architecture et fonctionnalités
 
-* Conservez vos secrets et mots de passe en dehors de votre dépôt de code source :
-    * dans des **fichiers à part, qui n'ont pas fait l'objet d'un _commit_**. Pensez à utiliser les fichiers spéciaux de votre gestionnaire de code source (tels que _.gitignore_ pour _Git_) afin de ne pas _commiter_ les fichiers sensibles par erreur.
-    * dans des **variables d'environnement**, en prenant soin de vérifier que les variables d'environnement ne sont pas accidentellement écrites dans des *logs* ou affichées lors d'une erreur de l'application.
-    * en utilisant des [**logiciels spécifiques de gestion de secrets ou de gestion de configuration**](https://www.digitalocean.com/community/tutorials/an-introduction-to-managing-secrets-safely-with-version-control-systems#using-configuration-management-systems-for-secret-management).  
+* **Intégrez la protection de la vie privée, y compris les exigences de sécurité des données, dès la conception de l’application ou du service**. Ces exigences doivent influer sur les [choix d’architecture](#Fiche_n°5_:_Faire_un_choix_éclairé_de_son_architecture) (par exemple décentralisée vs. centralisée) ou de fonctionnalités (par exemple anonymisation à bref délai, minimisation des données). Le paramétrage par défaut de l’application doit respecter les exigences minimales de sécurité et être en conformité avec la loi. Par exemple, la complexité par défaut des mots de passe doit respecter à minima la [recommandation de la CNIL relative aux mots de passe](https://www.legifrance.gouv.fr/affichCnil.do?oldAction=rechExpCnil&id=CNILTEXT000033929210&fastReqId=1726469546&fastPos=3).
 
-  Enfin, si vous devez inclure de telles données dans votre dépôt, pensez à **chiffrer/déchiffrer automatiquement** les fichiers en utilisant un *greffon* de votre gestionnaire de code source (par exemple [_git-crypt_](https://github.com/AGWA/git-crypt)).
+* **Gardez la maîtrise de votre système**. Il est important de garder la maîtrise de votre système, autant afin d’en assurer le bon fonctionnement que de garantir un haut niveau de sécurité. Garder un système simple permet d’en comprendre précisément les rouages et d’identifier ses points de fragilité. Dans le cas où une certaine complexité est nécessaire, il est conseillé de démarrer d’un système simple, correctement conçu et sécurisé. Ensuite, il est possible d’en augmenter la complexité petit à petit, tout en continuant de sécuriser les nouveautés qui s’ajoutent.
 
-* Après un _commit_ qui contient des données personnelles ou d’autres données critiques, n'oubliez pas de [purger](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) [complètement](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository#purging-a-file-from-your-repositorys-history) le dépôt de code source : même après modification, les données peuvent rester disponibles dans l'historique de votre dépôt.
+* **Ne vous reposez pas sur une seule ligne de défense**. Malgré toutes les dispositions prises pour concevoir un système sécurisé, il peut arriver que certains composants rajoutés ultérieurement ne soient pas suffisamment sécurisés. Pour minimiser les risques sur les utilisateurs finaux, il est conseillé de défendre le système en profondeur. Exemple : contrôler les données entrées dans un formulaire en ligne fait partie des défenses de périphérie. Dans le cas où cette défense est détournée, une protection des requêtes en base de données pourra prendre le relais.
 
-* Faites preuve de prudence avant de **publier en ligne** votre code source. Passez en revue **l'intégralité de son contenu** afin de vous assurer qu'aucune donnée personnelle, mot de passe ou autre secret n'est présent, y compris dans tout l'historique des modifications.
+#### Outils et pratiques
 
-## Exemples d'outils
+* **Utilisez des normes de programmation prenant en compte la sécurité**. Souvent, des listes de normes, bonnes pratiques ou guides de codage améliorant la sécurité de vos développements sont déjà disponibles. Des outils annexes peuvent également être intégrés dans vos environnements de développement intégrés (« **IDE** » en anglais) afin de vérifier automatiquement que votre code respecte les différentes règles faisant partie de ces normes ou bonnes pratiques. Vous trouverez facilement sur internet des listes de bonnes pratiques pour votre langage de programmation favori. Par exemple [ici](https://wiki.sei.cmu.edu/confluence/display/seccode/SEI+CERT+Coding+Standards) pour C, C++ ou Java. Pour le développement d’application web, des guides de bonnes pratiques spécifiques existent, tels que ceux publiés par [l’OWASP.](https://www.owasp.org/index.php/Main_Page)
 
-* À l'inverse d'outils tels que [Subversion](https://subversion.apache.org/), qui ont besoin d'un serveur central pour fonctionner, les principaux gestionnaires de code source ([Git](https://git-scm.com/), [Mercurial](https://www.mercurial-scm.org/) par exemple) sont **décentralisés**.
+* **Le choix des technologies utilisées est crucial**. Un certain nombre de points sont à prendre en compte :
 
-* Pour la plupart de ces outils, une **interface web et des outils annexes** (gestion des bugs, wiki pour votre documentation, etc.) sont proposés. Ces solutions peuvent soit être accessibles par internet ([GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), etc.), soit être installées en interne sur vos serveurs ([GitLab](https://about.gitlab.com/)).
+    * En fonction du domaine d’application ou de la fonctionnalité développée, un langage ou une technologie peut être plus approprié qu’une autre.
+
+    * Les langages et technologies éprouvés sont plus sûrs. Ils ont fait, en général, l’objet d’audits afin de corriger les vulnérabilités les plus connues. Il faut cependant faire attention à utiliser les dernières versions de chacune des briques technologiques que vous utiliserez.
+
+    * Il faut à tout prix éviter de coder sa solution définitive dans un langage tout juste appris et pas encore maîtrisé. Dans le cas contraire, vous vous exposez à un risque accru de faille de sécurité du fait du manque d’expérience.
+
+* **Mettez en place un environnement de développement sécurisé et permettant le versionnage du code**, en suivant la [fiche dédiée](#Fiche_n°3_:_Sécuriser_son_environnement_de_développement) de ce guide.
