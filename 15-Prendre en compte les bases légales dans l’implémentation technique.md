@@ -57,4 +57,6 @@
 
 * Une exception existe néanmoins lorsque les cookies ont pour finalité exclusive de permettre ou faciliter la communication par voie électronique, ou sont strictement nécessaires à la fourniture d’un service demandé par l’utilisateur.
 
+* [Sous certaines conditions](#Fiche_n°16_:_Mesurer_la_fréquentation_de_vos_sites_web_et_de_vos_applications), les cookies relatifs à la mesure d'audience peuvent également être exemptés de consentement. 
+
 * Par ailleurs, le fait d’utiliser un seul traceur pour de multiples finalités n’exonère pas de recueillir le consentement pour les finalités qui le nécessitent. Par exemple, si un cookie d’authentification est également utilisé à des fins de ciblage publicitaire, le consentement de l’internaute devra être recueilli pour cette dernière finalité, de la même manière que pour un site non « loggué ».
