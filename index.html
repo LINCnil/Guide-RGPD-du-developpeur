@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <title></title>
@@ -397,8 +398,6 @@ document.querySelector(output).innerHTML += toc;
                                 <p align="center">
 <img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/master/templates/BANNIERE.JPG"  width="100%" align="middle">
 </p>
-
-
 <h1 id="guide-rgpd-du-développeur">Guide RGPD du développeur</h1>
 <h4 id="la-cnil-publie-un-guide-rgpd-pour-les-développeurs">La CNIL publie un guide RGPD pour les développeurs</h4>
 <p>Afin de vous accompagner dans la mise en conformité de vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.</p>
@@ -413,7 +412,7 @@ document.querySelector(output).innerHTML += toc;
 <p>Les bonnes pratiques de ce guide <strong>n’ont donc pas vocation à couvrir l’ensemble des exigences des règlementations ni à être à prescriptives</strong>, elles apportent un premier niveau de mesures permettant de prendre en compte les problématiques de protection de la vie privée dans les développements informatiques qui ont vocation à être appliquées à tous les projets traitant des données. En fonction de la nature des traitements opérés dans certains cas des mesures complémentaires devront être mises en œuvre afin de respecter pleinement la réglementation.</p>
 <h2 id="tables-des-matières">Tables des matières</h2>
 <ol start="0" style="list-style-type: decimal">
-<li><p><a href="#Fiche_n°0_:_Développer%20en%20conformité%20avec%20le%20RGPD.md">Développer en conformité avec le RGPD</a></p></li>
+<li><p><a href="#Fiche_n°0_:_Développer_en_conformité_avec_le_RGPD.md">Développer en conformité avec le RGPD</a></p></li>
 <li><p><a href="#Fiche_n°1_:_Identifier_les_données_à_caractère_personnel">Identifier les données à caractère personnel</a></p></li>
 <li><p><a href="#Fiche_n%C2%B02_:_Pr%C3%A9parer_son_d%C3%A9veloppement">Préparer son développement</a></p></li>
 <li><p><a href="#Fiche_n°3_:_Sécuriser_son_environnement_de_développement">Sécuriser son environnement de développement</a></p></li>
@@ -453,9 +452,9 @@ document.querySelector(output).innerHTML += toc;
 <p>Vous pouvez retrouver les instructions pour installer cet outil <a href="https://pandoc.org/installing.html">ici</a></p>
 <ul>
 <li><p><strong>Pour générer un fichier .docx</strong> :</p>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> -s --toc --toc-depth=1 -o Guide_RGPD_developpeur.docx [0-9][0-9]*.md</code></pre></li>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">pandoc</span> -s --toc --toc-depth=1 -o Guide_RGPD_developpeur.docx [0-9][0-9]*.md</code></pre></div></li>
 <li><p><strong>Pour générer un fichier .html</strong> :</p>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> -s --template=<span class="st">&quot;templates/mytemplate.html&quot;</span> -H templates/pandoc.css  -o index.html README.md [0-9][0-9]*.md</code></pre></li>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">pandoc</span> -s --template=<span class="st">&quot;templates/mytemplate.html&quot;</span> -H templates/pandoc.css  -o index.html README.md [0-9][0-9]*.md</code></pre></div></li>
 </ul>
 <h1 id="fiche-n0-développer-en-conformité-avec-le-rgpd">Fiche n°0 : Développer en conformité avec le RGPD</h1>
 <h4 id="que-vous-travailliez-seule-ou-en-équipe-au-développement-dun-projet-que-vous-soyez-amenée-à-gérer-une-équipe-de-développement-ou-que-vous-soyez-un-prestataire-réalisant-des-développements-pour-des-tiers-il-est-indispensable-de-sassurer-durant-toute-la-vie-du-projet-que-les-données-de-vos-utilisateurs-ainsi-que-toutes-les-opérations-effectuées-sur-celles-ci-soit-protégées-en-permanence.">Que vous travailliez seul(e) ou en équipe au développement d'un projet, que vous soyez amené(e) à gérer une équipe de développement, ou que vous soyez un prestataire réalisant des développements pour des tiers, il est indispensable de s'assurer durant toute la vie du projet que les données de vos utilisateurs ainsi que toutes les opérations effectuées sur celles-ci soit protégées en permanence.</h4>
@@ -630,7 +629,7 @@ document.querySelector(output).innerHTML += toc;
 </ul>
 <h2 id="sécuriser-les-authentifications">Sécuriser les authentifications</h2>
 <ul>
-<li><p><strong>Suivre <a href="https://www.cnil.fr/fr/mots-de-passe-des-recommandations-de-securite-minimales-pour-les-entreprises-et-les-particuliers">la recommandation de la CNIL sur les mots de passe</a></strong>. Pensez notamment à limiter le nombre de tentatives d'accès.</p></li>
+<li><p><strong>Suivre <a href="https://www.cnil.fr/fr/mots-de-passe-des-recommandations-de-securite-minimales-pour-les-entreprises-et-les-particuliers">la recommandation de la CNIL sur les mots de passe</a></strong>. Pensez notamment à limiter le nombre de tentatives d'accès.</p></li>
 <li><p><strong>Ne stockez jamais les mots de passe en clair</strong>. Stockez-les sous forme de hash au moyen d'une librairie éprouvée, comme <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>.</p></li>
 <li><p><strong>Dans le cas où des cookies sont utilisés pour permettre l'authentification</strong>, il est recommandé :</p>
 <ul>
@@ -841,17 +840,23 @@ document.querySelector(output).innerHTML += toc;
 </ul>
 <h2 id="voici-quelques-exemples-de-droits-et-leur-possible-implémentation">Voici quelques exemples de droits et leur possible implémentation</h2>
 <ul>
-<li><p><strong>Droit d’accès</strong> : les personnes ont le droit d'obtenir une copie de toutes les informations que vous avez à leur sujet. Cela permet, entre autres, à une personne de savoir si des données la concernant sont traitées et d’en obtenir une copie lisible dans un format compréhensible. Il permet notamment de contrôler l’exactitude des données.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant d'afficher toutes les données relatives à une personne. S’il y a beaucoup de données, vous pouvez scinder ses données en plusieurs affichages. Si les données sont trop volumineuses, proposez à la personne de télécharger une archive contenant toutes ses données.</p></li>
-<li><strong>Droit à l'effacement</strong> : les personnes ont le droit de demander l’effacement de l'intégralité des données que vous détenez sur elles.<br /><strong><em>Possibles implémentations</em></strong> :
+<li><p><strong>Droit d’accès</strong> : les personnes ont le droit d'obtenir une copie de toutes les informations que vous avez à leur sujet. Cela permet, entre autres, à une personne de savoir si des données la concernant sont traitées et d’en obtenir une copie lisible dans un format compréhensible. Il permet notamment de contrôler l’exactitude des données.<br />
+<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant d'afficher toutes les données relatives à une personne. S’il y a beaucoup de données, vous pouvez scinder ses données en plusieurs affichages. Si les données sont trop volumineuses, proposez à la personne de télécharger une archive contenant toutes ses données.</p></li>
+<li><strong>Droit à l'effacement</strong> : les personnes ont le droit de demander l’effacement de l'intégralité des données que vous détenez sur elles.<br />
+<strong><em>Possibles implémentations</em></strong> :
 <ol style="list-style-type: decimal">
 <li>Prévoyez une fonctionnalité permettant d’effacer toutes les données relatives à une personne.</li>
 <li>Prévoyez aussi une notification automatique des sous-traitants afin qu’ils effacent eux aussi les données relatives à cette personne.</li>
 <li>Prévoyez un effacement des données également dans les sauvegardes, ou une autre solution permettant de ne pas restaurer les données effacées relatives à cette personne.</li>
 </ol></li>
-<li><p><strong>Droit d'opposition</strong> : les personnes ont le droit de de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de s’opposer au traitement. Lorsque la personne exerce son droit d’opposition par ce biais, le responsable de traitement doit supprimer les données déjà collectées, et ne doit par la suite plus collecter de données associées à cette personne.</p></li>
-<li><p><strong>Droit à la portabilité</strong> : les personnes ont le droit de récupérer leurs données dans un format lisible par machine, pour leur propre usage ou pour les fournir à un autre organisme.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de télécharger ses données dans un format standard lisible par un ordinateur (CSV, XML, JSON, etc.)</p></li>
-<li><p><strong>Droit à la rectification</strong> : Les personnes ont le droit de demander la modification de leurs données lorsque celles-ci sont incorrectes afin de limiter l’utilisation ou la diffusion d’informations erronées.<br /><strong><em>Possible implémentation</em></strong> : permettez de pouvoir modifier directement les données dans le compte utilisateur.</p></li>
-<li><p><strong>Droit à la limitation du traitement</strong> : les personnes ont le droit de demander à ce que le traitement de leurs données soit bloqué pendant un certain temps, par exemple le temps d’examiner une contestation de sa part sur l’utilisation de ses données ou une demande d’exercice de droits.<br /><strong><em>Possible implémentation</em></strong> : permettez à des administrateurs de mettre des données relatives à une personne en « quarantaine » : ces données ne pourront alors plus être lues ou modifiées.</p></li>
+<li><p><strong>Droit d'opposition</strong> : les personnes ont le droit de de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.<br />
+<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de s’opposer au traitement. Lorsque la personne exerce son droit d’opposition par ce biais, le responsable de traitement doit supprimer les données déjà collectées, et ne doit par la suite plus collecter de données associées à cette personne.</p></li>
+<li><p><strong>Droit à la portabilité</strong> : les personnes ont le droit de récupérer leurs données dans un format lisible par machine, pour leur propre usage ou pour les fournir à un autre organisme.<br />
+<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de télécharger ses données dans un format standard lisible par un ordinateur (CSV, XML, JSON, etc.)</p></li>
+<li><p><strong>Droit à la rectification</strong> : Les personnes ont le droit de demander la modification de leurs données lorsque celles-ci sont incorrectes afin de limiter l’utilisation ou la diffusion d’informations erronées.<br />
+<strong><em>Possible implémentation</em></strong> : permettez de pouvoir modifier directement les données dans le compte utilisateur.</p></li>
+<li><p><strong>Droit à la limitation du traitement</strong> : les personnes ont le droit de demander à ce que le traitement de leurs données soit bloqué pendant un certain temps, par exemple le temps d’examiner une contestation de sa part sur l’utilisation de ses données ou une demande d’exercice de droits.<br />
+<strong><em>Possible implémentation</em></strong> : permettez à des administrateurs de mettre des données relatives à une personne en « quarantaine » : ces données ne pourront alors plus être lues ou modifiées.</p></li>
 </ul>
 <h2 id="en-conclusion">En conclusion</h2>
 <ul>
@@ -871,7 +876,7 @@ document.querySelector(output).innerHTML += toc;
 <li><p>Les mécanismes de suppression de données personnelles des bases actives permettent de garantir que les données sont conservées et accessibles par les services opérationnels uniquement <strong>le temps nécessaire à l’accomplissement de l’objectif poursuivi par le traitement</strong>.</p></li>
 <li><p>Veillez à <strong>ne pas conserver les données en base active</strong> en les notant simplement <strong>comme étant archivées</strong>. Les données archivées (archive intermédiaire) ne doivent être accessibles qu’à un service spécifique chargé d’y accéder et de les sortir des archives le cas échéant.</p></li>
 <li><p>Veillez également à prévoir des <strong>modalités d’accès spécifiques</strong> aux données archivées du fait que l’utilisation d’une archive doit intervenir de manière ponctuelle et exceptionnelle.</p></li>
-<li><p>Si possible, utilisez la même implémentation lors de la <strong>mise en œuvre de la purge ou l'anonymisation des données</strong> que celle gérant le <strong>droit à l'effacement</strong> (cf. [fiche sur l'exercice des droits](#Fiche_n°13_:<em>Préparer</em>l'exercice_des_droits_des_personnes)), afin de garantir un fonctionnement homogène de votre système.</p></li>
+<li><p>Si possible, utilisez la même implémentation lors de la <strong>mise en œuvre de la purge ou l'anonymisation des données</strong> que celle gérant le <strong>droit à l'effacement</strong> (cf. <a href="#Fiche_n°13_:_Préparer_l&#39;exercice_des_droits_des_personnes">fiche sur l'exercice des droits</a>), afin de garantir un fonctionnement homogène de votre système.</p></li>
 </ul>
 <h2 id="quelques-exemples-de-durée-de-conservation">Quelques exemples de durée de conservation</h2>
 <ul>
@@ -881,7 +886,7 @@ document.querySelector(output).innerHTML += toc;
 <li><p>Les <strong>données de journalisation</strong> peuvent être conservées 6 mois.</p></li>
 </ul>
 <h1 id="fiche-n15-prendre-en-compte-les-bases-légales-dans-limplémentation-technique">Fiche n°15 : Prendre en compte les bases légales dans l’implémentation technique</h1>
-<h4 id="pour-pouvoir-être-mis-en-œuvre-les-traitements-de-données-personnelles-doivent-se-fonder-sur-lune-des-bases-légales-mentionnées-à-larticle-6-du-rgpd.-la-base-légale-dun-traitement-est-en-quelque-sorte-la-justification-de-lexistence-même-du-traitement.-le-choix-dune-base-légale-va-directement-impacter-les-conditions-de-mise-en-œuvre-du-traitement-et-les-droits-des-personnesfiche_n13_préparerlexercice_des_droits_des_personnes.-ainsi-prévoir-en-amont-dun-développement-les-bases-légales-des-traitements-prévus-dans-le-projet-vous-permettra-dintégrer-au-mieux-les-fonctions-nécessaires-à-la-conformité-à-la-loi-de-ces-traitements-et-au-respect-des-droits-des-personnes.">Pour pouvoir être mis en œuvre, les traitements de données personnelles doivent se fonder sur l’une des « bases légales » mentionnées à l’<a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2#Article6">article 6 du RGPD</a>. La base légale d’un traitement est en quelque sorte la justification de l'existence même du traitement. Le choix d'une base légale va directement impacter les conditions de mise en œuvre du traitement et [les droits des personnes](#Fiche_n°13_:<em>Préparer</em>l'exercice_des_droits_des_personnes). Ainsi, prévoir en amont d'un développement les bases légales des traitements prévus dans le projet vous permettra d'intégrer au mieux les fonctions nécessaires à la conformité à la loi de ces traitements et au respect des droits des personnes.</h4>
+<h4 id="pour-pouvoir-être-mis-en-œuvre-les-traitements-de-données-personnelles-doivent-se-fonder-sur-lune-des-bases-légales-mentionnées-à-larticle-6-du-rgpd.-la-base-légale-dun-traitement-est-en-quelque-sorte-la-justification-de-lexistence-même-du-traitement.-le-choix-dune-base-légale-va-directement-impacter-les-conditions-de-mise-en-œuvre-du-traitement-et-les-droits-des-personnes.-ainsi-prévoir-en-amont-dun-développement-les-bases-légales-des-traitements-prévus-dans-le-projet-vous-permettra-dintégrer-au-mieux-les-fonctions-nécessaires-à-la-conformité-à-la-loi-de-ces-traitements-et-au-respect-des-droits-des-personnes.">Pour pouvoir être mis en œuvre, les traitements de données personnelles doivent se fonder sur l’une des « bases légales » mentionnées à l’<a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2#Article6">article 6 du RGPD</a>. La base légale d’un traitement est en quelque sorte la justification de l'existence même du traitement. Le choix d'une base légale va directement impacter les conditions de mise en œuvre du traitement et <a href="#Fiche_n°13_:_Préparer_l&#39;exercice_des_droits_des_personnes">les droits des personnes</a>. Ainsi, prévoir en amont d'un développement les bases légales des traitements prévus dans le projet vous permettra d'intégrer au mieux les fonctions nécessaires à la conformité à la loi de ces traitements et au respect des droits des personnes.</h4>
 <h2 id="définition-des-bases-légales-prévues-par-le-rgpd">Définition des bases légales prévues par le RGPD</h2>
 <ul>
 <li>Dans le cadre d'un développement pour un organisme privé (entreprises, associations, etc.), les bases légales les plus souvent utilisées sont :
@@ -998,6 +1003,7 @@ document.querySelector(output).innerHTML += toc;
 <ul>
 <li><p>La directive européenne ePrivacy requiert le consentement de l’utilisateur avant toute action visant à stocker des informations - via des cookies, identifiants ou autres traceurs (empreintes logiciels, pixels) ou à accéder à des informations stockées dans l’équipement terminal de l’utilisateur.</p></li>
 <li><p>Une exception existe néanmoins lorsque les cookies ont pour finalité exclusive de permettre ou faciliter la communication par voie électronique, ou sont strictement nécessaires à la fourniture d’un service demandé par l’utilisateur.</p></li>
+<li><p><a href="#Fiche_n°16_:_Mesurer_la_fréquentation_de_vos_sites_web_et_de_vos_applications">Sous certaines conditions</a>, les cookies relatifs à la mesure d'audience peuvent également être exemptés de consentement.</p></li>
 <li><p>Par ailleurs, le fait d’utiliser un seul traceur pour de multiples finalités n’exonère pas de recueillir le consentement pour les finalités qui le nécessitent. Par exemple, si un cookie d’authentification est également utilisé à des fins de ciblage publicitaire, le consentement de l’internaute devra être recueilli pour cette dernière finalité, de la même manière que pour un site non « loggué ».</p></li>
 </ul>
 <h1 id="fiche-n16-mesurer-la-fréquentation-de-vos-sites-web-et-de-vos-applications">Fiche n°16: Mesurer la fréquentation de vos sites web et de vos applications</h1>
