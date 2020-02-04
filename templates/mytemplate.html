@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style type="text/css">code{white-space: pre;}</style>
+$if(quotes)$
+  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$" type="text/css" />
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  TableOfContents();
+}
+);
+
+
+function TableOfContents(container, output) {
+var toc = "";
+var level = 0;
+var container = document.querySelector(container) || document.querySelector('#contents');
+var output = output || '#toc';
+//Inspiration from here: https://stackoverflow.com/questions/187619/is-there-a-javascript-solution-to-generating-a-table-of-contents-for-a-page
+container.innerHTML = container.innerHTML.replace(/<h([\d]) id=".*">([^<]+)?<\/h([\d])>/gi, function (str, openLevel, titleText, closeLevel) {
+            console.log(str,openLevel)
+            if (openLevel != closeLevel || openLevel>2) {
+                return str;
+            }
+
+
+            if (openLevel > level) {
+                toc += (new Array(openLevel - level + 1)).join('<ul>');
+            } else if (openLevel < level) {
+                toc += (new Array(level - openLevel + 1)).join('</li></ul>');
+            } else {
+                toc += (new Array(level+ 1)).join('</li>');
+            }
+
+            level = parseInt(openLevel);
+
+            var anchor = titleText.replace(/ /g, "_");
+            if(level ==2){
+                toc += '<li class="level'+level+'"><a  class="greyed" href="#' + anchor + '">' + titleText
+                    + '</a>';
+            }else{
+                toc += '<li class="level'+level+'"><a  href="#' + anchor + '">' + titleText
+                    + '</a>';
+            }
+
+
+            return '<h' + openLevel + '><a href="#' + anchor + '" id="' + anchor + '">'
+                + titleText + '</a></h' + closeLevel + '>';
+        }
+    );
+
+if (level) {
+    toc += (new Array(level + 1)).join('</ul>');
+}
+document.querySelector(output).innerHTML += toc;
+};
+</script>
+
+</head>
+<body>
+<div class="line">
+    <div class="tableofcontent">
+     <div style="overflow-y: scroll; height: 100%;">
+    <div id="toc">
+    </div>
+    </div>
+    </div>
+    <div id="contents" class="content">
+        $for(include-before)$
+        $include-before$
+        $endfor$
+        $if(title)$
+        <div id="$idprefix$header">
+        <h1 class="title">$title$</h1>
+        $if(subtitle)$
+        <h1 class="subtitle">$subtitle$</h1>
+        $endif$
+        $for(author)$
+        <h2 class="author">$author$</h2>
+        $endfor$
+        $if(date)$
+        <h3 class="date">$date$</h3>
+        $endif$
+        </div>
+        $endif$
+        $if(toc)$
+        <div id="$idprefix$TOC">
+        $toc$
+        </div>
+        $endif$
+        $body$
+        $for(include-after)$
+        $include-after$
+        $endfor$
+    </div>
+</div>
+</body>
+</html>
