@@ -46,4 +46,4 @@
 
 * **La plupart des grandes offres de mesures d'audience ne rentrent pas dans le périmètre de l'exemption et ce quelle que soit leur configuration**, car les fournisseurs de ces solutions indiquent réutiliser les données pour leur propre compte. Cela inclut [Google Analytics](https://support.google.com/analytics/answer/6004245?hl=fr), ainsi que [Quantcast Analytics](https://www.quantcast.com/terms/measure-terms-service/) ou encore [Facebook Analytics](https://developers.facebook.com/policy).
 
-* Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que Piwik que vous pouvez configurer vous-même.
+* Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que Matomo (anciennement Piwik) que vous pouvez configurer vous-même.
