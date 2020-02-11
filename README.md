@@ -52,7 +52,7 @@ Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ense
 
 12. [Informer les utilisateurs](#Fiche_n°12_:_Informer_les_personnes)
 
-13. [Préparer l'exercice des droits des personnes](#Fiche_n°13_:_Préparer_l'exercice_des_droits_des_personnes)
+13. [Préparer l'exercice des droits des personnes](#Fiche_n°13_:_Préparer_l’exercice_des_droits_des_personnes)
 
 14. [Gérer la durée de conservation des données](#Fiche_n°14_:_Gérer_la_durée_de_conservation_des_données)
 
