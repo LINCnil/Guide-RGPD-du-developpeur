@@ -8,23 +8,41 @@
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
+div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
 table.sourceCode { width: 100%; line-height: 100%; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; }
-code > span.dt { color: #902000; }
-code > span.dv { color: #40a070; }
-code > span.bn { color: #40a070; }
-code > span.fl { color: #40a070; }
-code > span.ch { color: #4070a0; }
-code > span.st { color: #4070a0; }
-code > span.co { color: #60a0b0; font-style: italic; }
-code > span.ot { color: #007020; }
-code > span.al { color: #ff0000; font-weight: bold; }
-code > span.fu { color: #06287e; }
-code > span.er { color: #ff0000; font-weight: bold; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
   </style>
   <style type="text/css">
   
@@ -380,8 +398,6 @@ document.querySelector(output).innerHTML += toc;
                                 <p align="center">
 <img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/master/templates/BANNIERE.JPG"  width="100%" align="middle">
 </p>
-
-
 <h1 id="guide-rgpd-du-développeur">Guide RGPD du développeur</h1>
 <h4 id="la-cnil-publie-un-guide-rgpd-pour-les-développeurs">La CNIL publie un guide RGPD pour les développeurs</h4>
 <p>Afin de vous accompagner dans la mise en conformité de vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.</p>
@@ -436,9 +452,9 @@ document.querySelector(output).innerHTML += toc;
 <p>Vous pouvez retrouver les instructions pour installer cet outil <a href="https://pandoc.org/installing.html">ici</a></p>
 <ul>
 <li><p><strong>Pour générer un fichier .docx</strong> :</p>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> -s --toc --toc-depth=1 -o Guide_RGPD_developpeur.docx [0-9][0-9]*.md</code></pre></li>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">pandoc</span> -s --toc --toc-depth=1 -o Guide_RGPD_developpeur.docx [0-9][0-9]*.md</code></pre></div></li>
 <li><p><strong>Pour générer un fichier .html</strong> :</p>
-<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> -s --template=<span class="st">&quot;templates/mytemplate.html&quot;</span> -H templates/pandoc.css  -o index.html README.md [0-9][0-9]*.md</code></pre></li>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">pandoc</span> -s --template=<span class="st">&quot;templates/mytemplate.html&quot;</span> -H templates/pandoc.css  -o index.html README.md [0-9][0-9]*.md</code></pre></div></li>
 </ul>
 <h1 id="fiche-n0-développer-en-conformité-avec-le-rgpd">Fiche n°0 : Développer en conformité avec le RGPD</h1>
 <h4 id="que-vous-travailliez-seule-ou-en-équipe-au-développement-dun-projet-que-vous-soyez-amenée-à-gérer-une-équipe-de-développement-ou-que-vous-soyez-un-prestataire-réalisant-des-développements-pour-des-tiers-il-est-indispensable-de-sassurer-durant-toute-la-vie-du-projet-que-les-données-de-vos-utilisateurs-ainsi-que-toutes-les-opérations-effectuées-sur-celles-ci-soit-protégées-en-permanence.">Que vous travailliez seul⋅e ou en équipe au développement d’un projet, que vous soyez amené⋅e à gérer une équipe de développement, ou que vous soyez un prestataire réalisant des développements pour des tiers, il est indispensable de s’assurer durant toute la vie du projet que les données de vos utilisateurs ainsi que toutes les opérations effectuées sur celles-ci soit protégées en permanence.</h4>
@@ -824,17 +840,23 @@ document.querySelector(output).innerHTML += toc;
 </ul>
 <h2 id="voici-quelques-exemples-de-droits-et-leur-possible-implémentation">Voici quelques exemples de droits et leur possible implémentation</h2>
 <ul>
-<li><p><strong>Droit d’accès</strong> : les personnes ont le droit d’obtenir une copie de toutes les informations que vous avez à leur sujet. Cela permet, entre autres, à une personne de savoir si des données la concernant sont traitées et d’en obtenir une copie lisible dans un format compréhensible. Il permet notamment de contrôler l’exactitude des données.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant d’afficher toutes les données relatives à une personne. S’il y a beaucoup de données, vous pouvez scinder ses données en plusieurs affichages. Si les données sont trop volumineuses, proposez à la personne de télécharger une archive contenant toutes ses données.</p></li>
-<li><strong>Droit à l’effacement</strong> : les personnes ont le droit de demander l’effacement de l’intégralité des données que vous détenez sur elles.<br /><strong><em>Possibles implémentations</em></strong> :
+<li><p><strong>Droit d’accès</strong> : les personnes ont le droit d’obtenir une copie de toutes les informations que vous avez à leur sujet. Cela permet, entre autres, à une personne de savoir si des données la concernant sont traitées et d’en obtenir une copie lisible dans un format compréhensible. Il permet notamment de contrôler l’exactitude des données.<br />
+<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant d’afficher toutes les données relatives à une personne. S’il y a beaucoup de données, vous pouvez scinder ses données en plusieurs affichages. Si les données sont trop volumineuses, proposez à la personne de télécharger une archive contenant toutes ses données.</p></li>
+<li><strong>Droit à l’effacement</strong> : les personnes ont le droit de demander l’effacement de l’intégralité des données que vous détenez sur elles.<br />
+<strong><em>Possibles implémentations</em></strong> :
 <ol style="list-style-type: decimal">
 <li>Prévoyez une fonctionnalité permettant d’effacer toutes les données relatives à une personne.</li>
 <li>Prévoyez aussi une notification automatique des sous-traitants afin qu’ils effacent eux aussi les données relatives à cette personne.</li>
 <li>Prévoyez un effacement des données également dans les sauvegardes, ou une autre solution permettant de ne pas restaurer les données effacées relatives à cette personne.</li>
 </ol></li>
-<li><p><strong>Droit d’opposition</strong> : les personnes ont le droit de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de s’opposer au traitement. Lorsque la personne exerce son droit d’opposition par ce biais, le responsable de traitement doit supprimer les données déjà collectées, et ne doit par la suite plus collecter de données associées à cette personne.</p></li>
-<li><p><strong>Droit à la portabilité</strong> : les personnes ont le droit de récupérer leurs données dans un format lisible par machine, pour leur propre usage ou pour les fournir à un autre organisme.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de télécharger ses données dans un format standard lisible par un ordinateur (CSV, XML, JSON, etc.)</p></li>
-<li><p><strong>Droit à la rectification</strong> : Les personnes ont le droit de demander la modification de leurs données lorsque celles-ci sont incorrectes afin de limiter l’utilisation ou la diffusion d’informations erronées.<br /><strong><em>Possible implémentation</em></strong> : permettez de pouvoir modifier directement les données dans le compte utilisateur.</p></li>
-<li><p><strong>Droit à la limitation du traitement</strong> : les personnes ont le droit de demander à ce que le traitement de leurs données soit bloqué pendant un certain temps, par exemple le temps d’examiner une contestation de sa part sur l’utilisation de ses données ou une demande d’exercice de droits.<br /><strong><em>Possible implémentation</em></strong> : permettez à des administrateurs de mettre des données relatives à une personne en « quarantaine » : ces données ne pourront alors plus être lues ou modifiées.</p></li>
+<li><p><strong>Droit d’opposition</strong> : les personnes ont le droit de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.<br />
+<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de s’opposer au traitement. Lorsque la personne exerce son droit d’opposition par ce biais, le responsable de traitement doit supprimer les données déjà collectées, et ne doit par la suite plus collecter de données associées à cette personne.</p></li>
+<li><p><strong>Droit à la portabilité</strong> : les personnes ont le droit de récupérer leurs données dans un format lisible par machine, pour leur propre usage ou pour les fournir à un autre organisme.<br />
+<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de télécharger ses données dans un format standard lisible par un ordinateur (CSV, XML, JSON, etc.)</p></li>
+<li><p><strong>Droit à la rectification</strong> : Les personnes ont le droit de demander la modification de leurs données lorsque celles-ci sont incorrectes afin de limiter l’utilisation ou la diffusion d’informations erronées.<br />
+<strong><em>Possible implémentation</em></strong> : permettez de pouvoir modifier directement les données dans le compte utilisateur.</p></li>
+<li><p><strong>Droit à la limitation du traitement</strong> : les personnes ont le droit de demander à ce que le traitement de leurs données soit bloqué pendant un certain temps, par exemple le temps d’examiner une contestation de sa part sur l’utilisation de ses données ou une demande d’exercice de droits.<br />
+<strong><em>Possible implémentation</em></strong> : permettez à des administrateurs de mettre des données relatives à une personne en « quarantaine » : ces données ne pourront alors plus être lues ou modifiées.</p></li>
 </ul>
 <h2 id="en-conclusion">En conclusion</h2>
 <ul>
@@ -895,6 +917,15 @@ document.querySelector(output).innerHTML += toc;
 <li>Le tableau suivant récapitule les exercices des droits à prévoir suivant les bases légales choisies :</li>
 </ul>
 <table>
+<colgroup>
+<col width="13%" />
+<col width="8%" />
+<col width="13%" />
+<col width="12%" />
+<col width="20%" />
+<col width="13%" />
+<col width="16%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="center"></th>
@@ -1009,7 +1040,7 @@ document.querySelector(output).innerHTML += toc;
 </ul>
 <h2 id="en-pratique">En pratique</h2>
 <ul>
-<li><p><strong>La plupart des grandes offres de mesures d'audience ne rentrent pas dans le périmètre de l'exemption et ce quelle que soit leur configuration</strong>, car les fournisseurs de ces solutions indiquent réutiliser les données pour leur propre compte. Cela inclut <a href="https://support.google.com/analytics/answer/6004245?hl=fr">Google Analytics</a>, ainsi que <a href="https://www.quantcast.com/terms/measure-terms-service/">Quantcast Analytics</a> ou encore <a href="https://developers.facebook.com/policy">Facebook Analytics</a>.</p></li>
+<li><p><strong>Les offres de mesure d’audience n’entrent pas dans le périmètre de l’exemption notamment lorsque les fournisseurs indiquent réutiliser les données pour leur propre compte.</strong> C’est le cas notamment plusieurs grandes offres de mesure d’audience disponibles sur le marché (voir notamment les politiques de confidentialité de <a href="https://support.google.com/analytics/answer/6004245?hl=fr">Google Analytics</a>, de <a href="https://www.quantcast.com/terms/measure-terms-service/">Quantcast Analytics</a> ou encore de <a href="https://developers.facebook.com/policy">Facebook Analytics</a>). Dans certains cas il peut être possible de configurer ces outils pour désactiver la réutilisation des données, vérifiez auprès de du fournisseur de votre outil.</p></li>
 <li><p>Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que Matomo (anciennement Piwik) que vous pouvez configurer vous-même.</p></li>
 </ul>
             </div>

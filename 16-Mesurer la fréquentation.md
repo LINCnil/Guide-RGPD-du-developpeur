@@ -44,6 +44,6 @@
 
 ## En pratique
 
-* **La plupart des grandes offres de mesures d'audience ne rentrent pas dans le périmètre de l'exemption et ce quelle que soit leur configuration**, car les fournisseurs de ces solutions indiquent réutiliser les données pour leur propre compte. Cela inclut [Google Analytics](https://support.google.com/analytics/answer/6004245?hl=fr), ainsi que [Quantcast Analytics](https://www.quantcast.com/terms/measure-terms-service/) ou encore [Facebook Analytics](https://developers.facebook.com/policy).
+* **Les offres de mesure d’audience n’entrent pas dans le périmètre de l’exemption notamment lorsque les fournisseurs indiquent réutiliser les données pour leur propre compte.** C’est le cas notamment plusieurs grandes offres de mesure d’audience disponibles sur le marché (voir notamment les politiques de confidentialité de [Google Analytics](https://support.google.com/analytics/answer/6004245?hl=fr), de [Quantcast Analytics](https://www.quantcast.com/terms/measure-terms-service/) ou encore de [Facebook Analytics](https://developers.facebook.com/policy)). Dans certains cas il peut être possible de configurer ces outils pour désactiver la réutilisation des données, vérifiez auprès de du fournisseur de votre outil.
 
 * Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que Matomo (anciennement Piwik) que vous pouvez configurer vous-même.
