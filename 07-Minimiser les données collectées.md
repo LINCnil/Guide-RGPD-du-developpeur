@@ -16,7 +16,7 @@
 
 * Certaines fonctionnalités peuvent permettre d’améliorer l’expérience utilisateur, mais ne sont **pas strictement nécessaires au bon fonctionnement de votre application** (par exemple la géolocalisation afin de simplifier une recherche géographique). Dans ce cas, l’utilisateur final doit pouvoir **choisir d’utiliser ou non** cette fonctionnalité. Dans le cas où il l’utilise, les données que vous êtes amené à collecter pour son fonctionnement ne doivent être conservées que pendant la durée strictement nécessaire à son fonctionnement et ne jamais être utilisées à d’autres fins.
 
-* Pensez à associer des **durées de conservation** pour chaque catégorie de données, en fonction de la finalité du traitement et des obligations légales ou réglementaires relative à leur conservation. Les journaux doivent également avoir une durée de conservation. Documentez les durées de conversation définies. Vous devrez être en mesure de les justifier.
+* Pensez à associer des **durées de conservation** pour chaque catégorie de données, en fonction de la finalité du traitement et des obligations légales ou réglementaires relative à leur conservation. Les journaux doivent également avoir une durée de conservation. Documentez les durées de conservation définies. Vous devrez être en mesure de les justifier.
 
 ## Une fois les données collectées, mettez en place des mécanismes d’effacement automatique
 
