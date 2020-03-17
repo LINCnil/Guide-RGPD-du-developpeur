@@ -20,23 +20,23 @@
 
 * **Ces conditions, comme précisé dans les [lignes directrices sur les cookies et autres traceurs](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000038783337), sont** :
 
-    * D’informer les utilisateurs de leur utilisation ;
+    * d’informer les utilisateurs de leur utilisation ;
 
-    * De leur donner la faculté de s’y opposer ;
+    * de leur donner la faculté de s’y opposer ;
 
-    * De limiter le dispositif aux seules finalités suivantes :
+    * de limiter le dispositif aux seules finalités suivantes :
 
         * la mesure d’audience,
 
         * l’A/B testing ;
 
-    * De ne pas recouper les données traitées avec d’autres traitements (fichiers clients, statistiques de fréquentation d’autres sites...) ;
+    * de ne pas recouper les données traitées avec d’autres traitements (fichiers clients, statistiques de fréquentation d’autres sites...) ;
 
-    * De limiter la portée du traceur à un seul éditeur de site ou d’application ;
+    * de limiter la portée du traceur à un seul éditeur de site ou d’application ;
 
-    * De tronquer le dernier octet de l’adresse IP ;
+    * de tronquer le dernier octet de l’adresse IP ;
 
-    * De limiter la durée de vie des traceurs à 13 mois.
+    * de limiter la durée de vie des traceurs à 13 mois.
 
 * Dans la mesure où les conditions sont respectées, **on donc passe d'un régime d'opt-in à un régime d'opt-out**.
 

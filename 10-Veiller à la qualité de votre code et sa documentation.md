@@ -17,13 +17,11 @@
 ## Contrôlez la qualité de votre code et de sa documentation
 
 * Un code de qualité passe par l’**adoption de bonnes pratiques et de conventions de codage** appliquées de manière cohérente sur l’ensemble de votre programme. Pour choisir votre convention de codage, le mieux est de se référer à des [conventions existantes](https://github.com/Kristories/awesome-guidelines). Voici quelques exemples de bonnes pratiques supplémentaires :
-    * **Utiliser des noms de variables et de fonctions explicites** permet de comprendre plus facilement ce qu’il se passe au premier regard ;
-    * **Correctement indenter son code** permet de percevoir la structure du code plus rapidement ;
-    * **Éviter la redondance de code** permet de réduire les efforts de correction qui doivent être apportés en plusieurs endroits. Un oubli est vite arrivé.
+    * **utiliser des noms de variables et de fonctions explicites** permet de comprendre plus facilement ce qu’il se passe au premier regard ;
+    * **correctement indenter son code** permet de percevoir la structure du code plus rapidement ;
+    * **éviter la redondance de code** permet de réduire les efforts de correction qui doivent être apportés en plusieurs endroits. Un oubli est vite arrivé.
 
-* **Des outils existent pour aider à contrôler la qualité d’un code**. Une fois correctement paramétrés, ils éviteront de relire le code pour vérifier la bonne mise en place des conventions de codage.
+* **Des outils peuvent vous aider à contrôler la qualité de votre code**. Une fois correctement paramétrés, ils éviteront de relire le code pour vérifier la bonne mise en place des conventions de codage. En voici quelques exemples :  
 
-* **Des outils peuvent vous aider à contrôler la qualité de votre code**, par exemple :
-
-    * Les **environnements de développement intégrés** (« _IDE_ »), éventuellement à l’aide de greffons (« _plugins_ »), peuvent être configurés pour respecter les règles d’indentation du code, les sauts de ligne entre les différentes portions de code ou encore la position des accolades et autres parenthèses ;
-    * Les **logiciels de mesure de la qualité du code source** peuvent signaler les duplications de code, le respect des règles de programmation ou des bugs potentiels.
+    * les **environnements de développement intégrés** (« _IDE_ »), éventuellement à l’aide de greffons (« _plugins_ »), peuvent être configurés pour respecter les règles d’indentation du code, les sauts de ligne entre les différentes portions de code ou encore la position des accolades et autres parenthèses ;
+    * les **logiciels de mesure de la qualité du code source** peuvent signaler les duplications de code, le respect des règles de programmation ou des bugs potentiels.

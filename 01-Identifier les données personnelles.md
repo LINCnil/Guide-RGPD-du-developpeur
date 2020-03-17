@@ -10,7 +10,7 @@
 ## Exemples de données à caractère personnel
 
 * Lorsqu’elles sont relatives à des personnes physiques, **les données suivantes sont des données à caractère personnel** :
-    * Nom, prénom, pseudonyme, date de naissance ;
+    * nom, prénom, pseudonyme, date de naissance ;
     * photos, enregistrements sonores de voix ;
     * numéro de téléphone fixe ou portable, adresse postale, adresse e-mail ;
     * adresse IP, identifiant de connexion informatique ou identifiant de cookie ;

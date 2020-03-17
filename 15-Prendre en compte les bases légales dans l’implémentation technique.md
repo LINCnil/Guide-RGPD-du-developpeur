@@ -5,13 +5,13 @@
 ## Définition des bases légales prévues par le RGPD
 
 * Dans le cadre d’un développement pour un organisme privé (entreprises, associations, etc.), les bases légales les plus souvent utilisées sont :
-    * **Le contrat** : le traitement est nécessaire à l’exécution ou à la préparation d’un contrat entre la personne concernée et l’organisme mettant en place le traitement ;
-    * **L’intérêt légitime** : l’organisme mettant en place le traitement poursuit un intérêt "légitime" à mettre en place le traitement et celui-ci n’est pas susceptible d’affecter les droits et libertés des personnes concernées ;
-    * **Le consentement** : la personne concernée a explicitement consenti au traitement.
+    * **le contrat** : le traitement est nécessaire à l’exécution ou à la préparation d’un contrat entre la personne concernée et l’organisme mettant en place le traitement ;
+    * **l’intérêt légitime** : l’organisme mettant en place le traitement poursuit un intérêt "légitime" à mettre en place le traitement et celui-ci n’est pas susceptible d’affecter les droits et libertés des personnes concernées ;
+    * **le consentement** : la personne concernée a explicitement consenti au traitement.
 
 * Si vous êtes une autorité publique ou un organisme poursuivant des missions d’intérêt public, d’autres bases légales peuvent également être utilisées :
-    * **L’obligation légale** : le traitement est imposé par des textes réglementaires.
-    * **La mission d’intérêt public** : le traitement est nécessaire à l’exécution d’une mission d’intérêt public.
+    * **l’obligation légale** : le traitement est imposé par des textes réglementaires;
+    * **la mission d’intérêt public** : le traitement est nécessaire à l’exécution d’une mission d’intérêt public.
 
 * Vous trouverez sur le site de la CNIL un [ensemble de fiches pratiques](https://www.cnil.fr/fr/les-bases-legales) qui vous permettra de vous accompagner dans le choix des bases légales les plus adaptées à vos traitements.
 

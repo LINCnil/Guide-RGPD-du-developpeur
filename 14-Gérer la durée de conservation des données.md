@@ -5,9 +5,9 @@
 ## Les cycles de conservation des données
 
 * Le cycle de conservation des données à caractère personnel peut être divisé en **trois phases successives distinctes** :
-    * La base active ;
-    * L’archivage intermédiaire ;
-    * L’archivage définitif ou la suppression.
+    * la base active ;
+    * l’archivage intermédiaire ;
+    * l’archivage définitif ou la suppression.
 
 
 * Les mécanismes de suppression de données personnelles des bases actives permettent de garantir que les données sont conservées et accessibles par les services opérationnels uniquement **le temps nécessaire à l’accomplissement de l’objectif poursuivi par le traitement**.

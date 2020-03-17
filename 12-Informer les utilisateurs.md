@@ -22,26 +22,26 @@
 
 * Dans tous les cas, il faut préciser :
 
-    * **L’identité et les coordonnées de l’organisme** qui collecte les données (qui traite les données ?) ;
-    * **Les finalités** (à quoi vont servir les données collectées ?) ;
-    * **La base légale** sur laquelle repose le traitement des données (retrouvez toutes les [**informations sur les bases légales**](https://www.cnil.fr/fr/les-bases-legales)) ;
-    * **Le caractère obligatoire ou facultatif du recueil des données** (ce
+    * **l’identité et les coordonnées de l’organisme** qui collecte les données (qui traite les données ?) ;
+    * **les finalités** (à quoi vont servir les données collectées ?) ;
+    * **la base légale** sur laquelle repose le traitement des données (retrouvez toutes les [**informations sur les bases légales**](https://www.cnil.fr/fr/les-bases-legales)) ;
+    * **le caractère obligatoire ou facultatif du recueil des données** (ce
      qui suppose une réflexion en amont sur l’utilité de collecter ces
     données au vu de l’objectif poursuivi – principe de « minimisation » des
      données) et les **conséquences pour la personne** en cas de non-fourniture des
     données ;
-    * **Les destinataires ou catégories de destinataires des données** (qui a besoin d’y accéder ou de les recevoir au vu des finalités définies, y compris les sous-traitants ?) ;
-    * **La durée de conservation des données** (ou critères permettant de la déterminer) ;
-    * **L’existence des droits des personnes concernées ainsi que les moyens de les exercer** ([les droits d’accès, de rectification, d’effacement et à la limitation](https://www.cnil.fr/fr/les-droits-pour-maitriser-vos-donnees-personnelles) sont applicables pour tous les traitements) ;
-    * **Les coordonnées du délégué à la protection des données** de l’organisme, s’il a été désigné, ou d’un point de contact sur les questions de protection des données personnelles ;
-    * **Le droit d’introduire une réclamation auprès de la CNIL.**
+    * **les destinataires ou catégories de destinataires des données** (qui a besoin d’y accéder ou de les recevoir au vu des finalités définies, y compris les sous-traitants ?) ;
+    * **la durée de conservation des données** (ou critères permettant de la déterminer) ;
+    * **l’existence des droits des personnes concernées ainsi que les moyens de les exercer** ([les droits d’accès, de rectification, d’effacement et à la limitation](https://www.cnil.fr/fr/les-droits-pour-maitriser-vos-donnees-personnelles) sont applicables pour tous les traitements) ;
+    * **les coordonnées du délégué à la protection des données** de l’organisme, s’il a été désigné, ou d’un point de contact sur les questions de protection des données personnelles ;
+    * **le droit d’introduire une réclamation auprès de la CNIL.**
 
 * Dans certains cas particuliers, il faut fournir des informations supplémentaires, comme dans le cas de transferts de données hors UE, de prise de décision entièrement automatisée ou de profilage, ou encore lorsque la base légale du traitement est l’intérêt légitime poursuivi par l’organisme qui collecte les données ([voir le site de la CNIL pour en savoir plus](https://www.cnil.fr/fr/conformite-rgpd-information-des-personnes-et-transparence)).
 
 * En cas de collecte indirecte, il faut ajouter :
 
-    * **Les catégories de données** recueillies ;
-    * **La provenance des données** (en indiquant notamment si elles sont issues de sources accessibles au public).
+    * **les catégories de données** recueillies ;
+    * **la provenance des données** (en indiquant notamment si elles sont issues de sources accessibles au public).
 
 ## Sous quelle forme dois-je fournir ces informations ?
 
