@@ -8,41 +8,23 @@
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
-div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
 table.sourceCode { width: 100%; line-height: 100%; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
 td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
   </style>
   <style type="text/css">
   
@@ -398,6 +380,8 @@ document.querySelector(output).innerHTML += toc;
                                 <p align="center">
 <img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/master/templates/BANNIERE.JPG"  width="100%" align="middle">
 </p>
+
+
 <h1 id="guide-rgpd-du-développeur">Guide RGPD du développeur</h1>
 <h4 id="la-cnil-publie-un-guide-rgpd-pour-les-développeurs">La CNIL publie un guide RGPD pour les développeurs</h4>
 <p>Afin de vous accompagner dans la mise en conformité de vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.</p>
@@ -452,9 +436,9 @@ document.querySelector(output).innerHTML += toc;
 <p>Vous pouvez retrouver les instructions pour installer cet outil <a href="https://pandoc.org/installing.html">ici</a></p>
 <ul>
 <li><p><strong>Pour générer un fichier .docx</strong> :</p>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">pandoc</span> -s --toc --toc-depth=1 -o Guide_RGPD_developpeur.docx [0-9][0-9]*.md</code></pre></div></li>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> -s --toc --toc-depth=1 -o Guide_RGPD_developpeur.docx [0-9][0-9]*.md</code></pre></li>
 <li><p><strong>Pour générer un fichier .html</strong> :</p>
-<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">pandoc</span> -s --template=<span class="st">&quot;templates/mytemplate.html&quot;</span> -H templates/pandoc.css  -o index.html README.md [0-9][0-9]*.md</code></pre></div></li>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">pandoc</span> -s --template=<span class="st">&quot;templates/mytemplate.html&quot;</span> -H templates/pandoc.css  -o index.html README.md [0-9][0-9]*.md</code></pre></li>
 </ul>
 <h1 id="fiche-n0-développer-en-conformité-avec-le-rgpd">Fiche n°0 : Développer en conformité avec le RGPD</h1>
 <h4 id="que-vous-travailliez-seule-ou-en-équipe-au-développement-dun-projet-que-vous-soyez-amenée-à-gérer-une-équipe-de-développement-ou-que-vous-soyez-un-prestataire-réalisant-des-développements-pour-des-tiers-il-est-indispensable-de-sassurer-durant-toute-la-vie-du-projet-que-les-données-de-vos-utilisateurs-ainsi-que-toutes-les-opérations-effectuées-sur-celles-ci-soit-protégées-en-permanence.">Que vous travailliez seul⋅e ou en équipe au développement d’un projet, que vous soyez amené⋅e à gérer une équipe de développement, ou que vous soyez un prestataire réalisant des développements pour des tiers, il est indispensable de s’assurer durant toute la vie du projet que les données de vos utilisateurs ainsi que toutes les opérations effectuées sur celles-ci soit protégées en permanence.</h4>
@@ -479,7 +463,7 @@ document.querySelector(output).innerHTML += toc;
 <ul>
 <li>Lorsqu’elles sont relatives à des personnes physiques, <strong>les données suivantes sont des données à caractère personnel</strong> :
 <ul>
-<li>Nom, prénom, pseudonyme, date de naissance ;</li>
+<li>nom, prénom, pseudonyme, date de naissance ;</li>
 <li>photos, enregistrements sonores de voix ;</li>
 <li>numéro de téléphone fixe ou portable, adresse postale, adresse e-mail ;</li>
 <li>adresse IP, identifiant de connexion informatique ou identifiant de cookie ;</li>
@@ -671,7 +655,7 @@ document.querySelector(output).innerHTML += toc;
 <li><p>En cas de collecte de données particulièrement sensibles, par exemple celles relatives à la <strong>santé ou à des condamnations pénales</strong>, veillez bien à ne collecter que le <strong>minimum requis</strong>. En raison de ces contraintes réglementaires, le plus simple est encore de <strong>ne pas les collecter</strong> si vous pouvez vous en passer.</p></li>
 <li><p>Minimisez la quantité de données collectées également dans les <strong>données de journalisation</strong> et n’y stockez pas de données sensibles ou critiques (données de santé, mots de passe, etc.).</p></li>
 <li><p>Certaines fonctionnalités peuvent permettre d’améliorer l’expérience utilisateur, mais ne sont <strong>pas strictement nécessaires au bon fonctionnement de votre application</strong> (par exemple la géolocalisation afin de simplifier une recherche géographique). Dans ce cas, l’utilisateur final doit pouvoir <strong>choisir d’utiliser ou non</strong> cette fonctionnalité. Dans le cas où il l’utilise, les données que vous êtes amené à collecter pour son fonctionnement ne doivent être conservées que pendant la durée strictement nécessaire à son fonctionnement et ne jamais être utilisées à d’autres fins.</p></li>
-<li><p>Pensez à associer des <strong>durées de conservation</strong> pour chaque catégorie de données, en fonction de la finalité du traitement et des obligations légales ou réglementaires relative à leur conservation. Les journaux doivent également avoir une durée de conservation. Documentez les durées de conversation définies. Vous devrez être en mesure de les justifier.</p></li>
+<li><p>Pensez à associer des <strong>durées de conservation</strong> pour chaque catégorie de données, en fonction de la finalité du traitement et des obligations légales ou réglementaires relative à leur conservation. Les journaux doivent également avoir une durée de conservation. Documentez les durées de conservation définies. Vous devrez être en mesure de les justifier.</p></li>
 </ul>
 <h2 id="une-fois-les-données-collectées-mettez-en-place-des-mécanismes-deffacement-automatique">Une fois les données collectées, mettez en place des mécanismes d’effacement automatique</h2>
 <ul>
@@ -738,15 +722,14 @@ document.querySelector(output).innerHTML += toc;
 <ul>
 <li>Un code de qualité passe par l’<strong>adoption de bonnes pratiques et de conventions de codage</strong> appliquées de manière cohérente sur l’ensemble de votre programme. Pour choisir votre convention de codage, le mieux est de se référer à des <a href="https://github.com/Kristories/awesome-guidelines">conventions existantes</a>. Voici quelques exemples de bonnes pratiques supplémentaires :
 <ul>
-<li><strong>Utiliser des noms de variables et de fonctions explicites</strong> permet de comprendre plus facilement ce qu’il se passe au premier regard ;</li>
-<li><strong>Correctement indenter son code</strong> permet de percevoir la structure du code plus rapidement ;</li>
-<li><strong>Éviter la redondance de code</strong> permet de réduire les efforts de correction qui doivent être apportés en plusieurs endroits. Un oubli est vite arrivé.</li>
+<li><strong>utiliser des noms de variables et de fonctions explicites</strong> permet de comprendre plus facilement ce qu’il se passe au premier regard ;</li>
+<li><strong>correctement indenter son code</strong> permet de percevoir la structure du code plus rapidement ;</li>
+<li><strong>éviter la redondance de code</strong> permet de réduire les efforts de correction qui doivent être apportés en plusieurs endroits. Un oubli est vite arrivé.</li>
 </ul></li>
-<li><p><strong>Des outils existent pour aider à contrôler la qualité d’un code</strong>. Une fois correctement paramétrés, ils éviteront de relire le code pour vérifier la bonne mise en place des conventions de codage.</p></li>
-<li><p><strong>Des outils peuvent vous aider à contrôler la qualité de votre code</strong>, par exemple :</p>
+<li><p><strong>Des outils peuvent vous aider à contrôler la qualité de votre code</strong>. Une fois correctement paramétrés, ils éviteront de relire le code pour vérifier la bonne mise en place des conventions de codage. En voici quelques exemples :</p>
 <ul>
-<li>Les <strong>environnements de développement intégrés</strong> (« <em>IDE</em> »), éventuellement à l’aide de greffons (« <em>plugins</em> »), peuvent être configurés pour respecter les règles d’indentation du code, les sauts de ligne entre les différentes portions de code ou encore la position des accolades et autres parenthèses ;</li>
-<li>Les <strong>logiciels de mesure de la qualité du code source</strong> peuvent signaler les duplications de code, le respect des règles de programmation ou des bugs potentiels.</li>
+<li>les <strong>environnements de développement intégrés</strong> (« <em>IDE</em> »), éventuellement à l’aide de greffons (« <em>plugins</em> »), peuvent être configurés pour respecter les règles d’indentation du code, les sauts de ligne entre les différentes portions de code ou encore la position des accolades et autres parenthèses ;</li>
+<li>les <strong>logiciels de mesure de la qualité du code source</strong> peuvent signaler les duplications de code, le respect des règles de programmation ou des bugs potentiels.</li>
 </ul></li>
 </ul>
 <h1 id="fiche-n11-tester-vos-applications">Fiche n°11 : Tester vos applications</h1>
@@ -793,21 +776,21 @@ document.querySelector(output).innerHTML += toc;
 <ul>
 <li><p>Dans tous les cas, il faut préciser :</p>
 <ul>
-<li><strong>L’identité et les coordonnées de l’organisme</strong> qui collecte les données (qui traite les données ?) ;</li>
-<li><strong>Les finalités</strong> (à quoi vont servir les données collectées ?) ;</li>
-<li><strong>La base légale</strong> sur laquelle repose le traitement des données (retrouvez toutes les <a href="https://www.cnil.fr/fr/les-bases-legales"><strong>informations sur les bases légales</strong></a>) ;</li>
-<li><strong>Le caractère obligatoire ou facultatif du recueil des données</strong> (ce qui suppose une réflexion en amont sur l’utilité de collecter ces données au vu de l’objectif poursuivi – principe de « minimisation » des données) et les <strong>conséquences pour la personne</strong> en cas de non-fourniture des données ;</li>
-<li><strong>Les destinataires ou catégories de destinataires des données</strong> (qui a besoin d’y accéder ou de les recevoir au vu des finalités définies, y compris les sous-traitants ?) ;</li>
-<li><strong>La durée de conservation des données</strong> (ou critères permettant de la déterminer) ;</li>
-<li><strong>L’existence des droits des personnes concernées ainsi que les moyens de les exercer</strong> (<a href="https://www.cnil.fr/fr/les-droits-pour-maitriser-vos-donnees-personnelles">les droits d’accès, de rectification, d’effacement et à la limitation</a> sont applicables pour tous les traitements) ;</li>
-<li><strong>Les coordonnées du délégué à la protection des données</strong> de l’organisme, s’il a été désigné, ou d’un point de contact sur les questions de protection des données personnelles ;</li>
-<li><strong>Le droit d’introduire une réclamation auprès de la CNIL.</strong></li>
+<li><strong>l’identité et les coordonnées de l’organisme</strong> qui collecte les données (qui traite les données ?) ;</li>
+<li><strong>les finalités</strong> (à quoi vont servir les données collectées ?) ;</li>
+<li><strong>la base légale</strong> sur laquelle repose le traitement des données (retrouvez toutes les <a href="https://www.cnil.fr/fr/les-bases-legales"><strong>informations sur les bases légales</strong></a>) ;</li>
+<li><strong>le caractère obligatoire ou facultatif du recueil des données</strong> (ce qui suppose une réflexion en amont sur l’utilité de collecter ces données au vu de l’objectif poursuivi – principe de « minimisation » des données) et les <strong>conséquences pour la personne</strong> en cas de non-fourniture des données ;</li>
+<li><strong>les destinataires ou catégories de destinataires des données</strong> (qui a besoin d’y accéder ou de les recevoir au vu des finalités définies, y compris les sous-traitants ?) ;</li>
+<li><strong>la durée de conservation des données</strong> (ou critères permettant de la déterminer) ;</li>
+<li><strong>l’existence des droits des personnes concernées ainsi que les moyens de les exercer</strong> (<a href="https://www.cnil.fr/fr/les-droits-pour-maitriser-vos-donnees-personnelles">les droits d’accès, de rectification, d’effacement et à la limitation</a> sont applicables pour tous les traitements) ;</li>
+<li><strong>les coordonnées du délégué à la protection des données</strong> de l’organisme, s’il a été désigné, ou d’un point de contact sur les questions de protection des données personnelles ;</li>
+<li><strong>le droit d’introduire une réclamation auprès de la CNIL.</strong></li>
 </ul></li>
 <li><p>Dans certains cas particuliers, il faut fournir des informations supplémentaires, comme dans le cas de transferts de données hors UE, de prise de décision entièrement automatisée ou de profilage, ou encore lorsque la base légale du traitement est l’intérêt légitime poursuivi par l’organisme qui collecte les données (<a href="https://www.cnil.fr/fr/conformite-rgpd-information-des-personnes-et-transparence">voir le site de la CNIL pour en savoir plus</a>).</p></li>
 <li><p>En cas de collecte indirecte, il faut ajouter :</p>
 <ul>
-<li><strong>Les catégories de données</strong> recueillies ;</li>
-<li><strong>La provenance des données</strong> (en indiquant notamment si elles sont issues de sources accessibles au public).</li>
+<li><strong>les catégories de données</strong> recueillies ;</li>
+<li><strong>la provenance des données</strong> (en indiquant notamment si elles sont issues de sources accessibles au public).</li>
 </ul></li>
 </ul>
 <h2 id="sous-quelle-forme-dois-je-fournir-ces-informations">Sous quelle forme dois-je fournir ces informations ?</h2>
@@ -840,23 +823,17 @@ document.querySelector(output).innerHTML += toc;
 </ul>
 <h2 id="voici-quelques-exemples-de-droits-et-leur-possible-implémentation">Voici quelques exemples de droits et leur possible implémentation</h2>
 <ul>
-<li><p><strong>Droit d’accès</strong> : les personnes ont le droit d’obtenir une copie de toutes les informations que vous avez à leur sujet. Cela permet, entre autres, à une personne de savoir si des données la concernant sont traitées et d’en obtenir une copie lisible dans un format compréhensible. Il permet notamment de contrôler l’exactitude des données.<br />
-<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant d’afficher toutes les données relatives à une personne. S’il y a beaucoup de données, vous pouvez scinder ses données en plusieurs affichages. Si les données sont trop volumineuses, proposez à la personne de télécharger une archive contenant toutes ses données.</p></li>
-<li><strong>Droit à l’effacement</strong> : les personnes ont le droit de demander l’effacement de l’intégralité des données que vous détenez sur elles.<br />
-<strong><em>Possibles implémentations</em></strong> :
+<li><p><strong>Droit d’accès</strong> : les personnes ont le droit d’obtenir une copie de toutes les informations que vous avez à leur sujet. Cela permet, entre autres, à une personne de savoir si des données la concernant sont traitées et d’en obtenir une copie lisible dans un format compréhensible. Il permet notamment de contrôler l’exactitude des données.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant d’afficher toutes les données relatives à une personne. S’il y a beaucoup de données, vous pouvez scinder ses données en plusieurs affichages. Si les données sont trop volumineuses, proposez à la personne de télécharger une archive contenant toutes ses données.</p></li>
+<li><strong>Droit à l’effacement</strong> : les personnes ont le droit de demander l’effacement de l’intégralité des données que vous détenez sur elles.<br /><strong><em>Possibles implémentations</em></strong> :
 <ol style="list-style-type: decimal">
 <li>Prévoyez une fonctionnalité permettant d’effacer toutes les données relatives à une personne.</li>
 <li>Prévoyez aussi une notification automatique des sous-traitants afin qu’ils effacent eux aussi les données relatives à cette personne.</li>
 <li>Prévoyez un effacement des données également dans les sauvegardes, ou une autre solution permettant de ne pas restaurer les données effacées relatives à cette personne.</li>
 </ol></li>
-<li><p><strong>Droit d’opposition</strong> : les personnes ont le droit de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.<br />
-<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de s’opposer au traitement. Lorsque la personne exerce son droit d’opposition par ce biais, le responsable de traitement doit supprimer les données déjà collectées, et ne doit par la suite plus collecter de données associées à cette personne.</p></li>
-<li><p><strong>Droit à la portabilité</strong> : les personnes ont le droit de récupérer leurs données dans un format lisible par machine, pour leur propre usage ou pour les fournir à un autre organisme.<br />
-<strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de télécharger ses données dans un format standard lisible par un ordinateur (CSV, XML, JSON, etc.)</p></li>
-<li><p><strong>Droit à la rectification</strong> : Les personnes ont le droit de demander la modification de leurs données lorsque celles-ci sont incorrectes afin de limiter l’utilisation ou la diffusion d’informations erronées.<br />
-<strong><em>Possible implémentation</em></strong> : permettez de pouvoir modifier directement les données dans le compte utilisateur.</p></li>
-<li><p><strong>Droit à la limitation du traitement</strong> : les personnes ont le droit de demander à ce que le traitement de leurs données soit bloqué pendant un certain temps, par exemple le temps d’examiner une contestation de sa part sur l’utilisation de ses données ou une demande d’exercice de droits.<br />
-<strong><em>Possible implémentation</em></strong> : permettez à des administrateurs de mettre des données relatives à une personne en « quarantaine » : ces données ne pourront alors plus être lues ou modifiées.</p></li>
+<li><p><strong>Droit d’opposition</strong> : les personnes ont le droit de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de s’opposer au traitement. Lorsque la personne exerce son droit d’opposition par ce biais, le responsable de traitement doit supprimer les données déjà collectées, et ne doit par la suite plus collecter de données associées à cette personne.</p></li>
+<li><p><strong>Droit à la portabilité</strong> : les personnes ont le droit de récupérer leurs données dans un format lisible par machine, pour leur propre usage ou pour les fournir à un autre organisme.<br /><strong><em>Possible implémentation</em></strong> : prévoyez une fonctionnalité permettant à la personne concernée de télécharger ses données dans un format standard lisible par un ordinateur (CSV, XML, JSON, etc.)</p></li>
+<li><p><strong>Droit à la rectification</strong> : Les personnes ont le droit de demander la modification de leurs données lorsque celles-ci sont incorrectes afin de limiter l’utilisation ou la diffusion d’informations erronées.<br /><strong><em>Possible implémentation</em></strong> : permettez de pouvoir modifier directement les données dans le compte utilisateur.</p></li>
+<li><p><strong>Droit à la limitation du traitement</strong> : les personnes ont le droit de demander à ce que le traitement de leurs données soit bloqué pendant un certain temps, par exemple le temps d’examiner une contestation de sa part sur l’utilisation de ses données ou une demande d’exercice de droits.<br /><strong><em>Possible implémentation</em></strong> : permettez à des administrateurs de mettre des données relatives à une personne en « quarantaine » : ces données ne pourront alors plus être lues ou modifiées.</p></li>
 </ul>
 <h2 id="en-conclusion">En conclusion</h2>
 <ul>
@@ -869,9 +846,9 @@ document.querySelector(output).innerHTML += toc;
 <ul>
 <li>Le cycle de conservation des données à caractère personnel peut être divisé en <strong>trois phases successives distinctes</strong> :
 <ul>
-<li>La base active ;</li>
-<li>L’archivage intermédiaire ;</li>
-<li>L’archivage définitif ou la suppression.</li>
+<li>la base active ;</li>
+<li>l’archivage intermédiaire ;</li>
+<li>l’archivage définitif ou la suppression.</li>
 </ul></li>
 <li><p>Les mécanismes de suppression de données personnelles des bases actives permettent de garantir que les données sont conservées et accessibles par les services opérationnels uniquement <strong>le temps nécessaire à l’accomplissement de l’objectif poursuivi par le traitement</strong>.</p></li>
 <li><p>Veillez à <strong>ne pas conserver les données en base active</strong> en les notant simplement <strong>comme étant archivées</strong>. Les données archivées (archive intermédiaire) ne doivent être accessibles qu’à un service spécifique chargé d’y accéder et de les sortir des archives le cas échéant.</p></li>
@@ -891,14 +868,14 @@ document.querySelector(output).innerHTML += toc;
 <ul>
 <li>Dans le cadre d’un développement pour un organisme privé (entreprises, associations, etc.), les bases légales les plus souvent utilisées sont :
 <ul>
-<li><strong>Le contrat</strong> : le traitement est nécessaire à l’exécution ou à la préparation d’un contrat entre la personne concernée et l’organisme mettant en place le traitement ;</li>
-<li><strong>L’intérêt légitime</strong> : l’organisme mettant en place le traitement poursuit un intérêt &quot;légitime&quot; à mettre en place le traitement et celui-ci n’est pas susceptible d’affecter les droits et libertés des personnes concernées ;</li>
-<li><strong>Le consentement</strong> : la personne concernée a explicitement consenti au traitement.</li>
+<li><strong>le contrat</strong> : le traitement est nécessaire à l’exécution ou à la préparation d’un contrat entre la personne concernée et l’organisme mettant en place le traitement ;</li>
+<li><strong>l’intérêt légitime</strong> : l’organisme mettant en place le traitement poursuit un intérêt &quot;légitime&quot; à mettre en place le traitement et celui-ci n’est pas susceptible d’affecter les droits et libertés des personnes concernées ;</li>
+<li><strong>le consentement</strong> : la personne concernée a explicitement consenti au traitement.</li>
 </ul></li>
 <li>Si vous êtes une autorité publique ou un organisme poursuivant des missions d’intérêt public, d’autres bases légales peuvent également être utilisées :
 <ul>
-<li><strong>L’obligation légale</strong> : le traitement est imposé par des textes réglementaires.</li>
-<li><strong>La mission d’intérêt public</strong> : le traitement est nécessaire à l’exécution d’une mission d’intérêt public.</li>
+<li><strong>l’obligation légale</strong> : le traitement est imposé par des textes réglementaires;</li>
+<li><strong>la mission d’intérêt public</strong> : le traitement est nécessaire à l’exécution d’une mission d’intérêt public.</li>
 </ul></li>
 <li><p>Vous trouverez sur le site de la CNIL un <a href="https://www.cnil.fr/fr/les-bases-legales">ensemble de fiches pratiques</a> qui vous permettra de vous accompagner dans le choix des bases légales les plus adaptées à vos traitements.</p></li>
 <li><p>Enfin, dans des cas très spécifiques, la <strong>sauvegarde des intérêts vitaux</strong> peut être retenue comme base légale, par exemple lorsque le traitement est nécessaire pour suivre la propagation d’épidémies ou dans les cas d’urgence humanitaire.</p></li>
@@ -917,15 +894,6 @@ document.querySelector(output).innerHTML += toc;
 <li>Le tableau suivant récapitule les exercices des droits à prévoir suivant les bases légales choisies :</li>
 </ul>
 <table>
-<colgroup>
-<col width="13%" />
-<col width="8%" />
-<col width="13%" />
-<col width="12%" />
-<col width="20%" />
-<col width="13%" />
-<col width="16%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="center"></th>
@@ -1023,17 +991,17 @@ document.querySelector(output).innerHTML += toc;
 <li><p><strong>Sous réserve d’un certain nombre de conditions</strong>, les cookies utilisés pour la mesure d’audience sont dispensés de consentement.</p></li>
 <li><p><strong>Ces conditions, comme précisé dans les <a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000038783337">lignes directrices sur les cookies et autres traceurs</a>, sont</strong> :</p>
 <ul>
-<li><p>D’informer les utilisateurs de leur utilisation ;</p></li>
-<li><p>De leur donner la faculté de s’y opposer ;</p></li>
-<li><p>De limiter le dispositif aux seules finalités suivantes :</p>
+<li><p>d’informer les utilisateurs de leur utilisation ;</p></li>
+<li><p>de leur donner la faculté de s’y opposer ;</p></li>
+<li><p>de limiter le dispositif aux seules finalités suivantes :</p>
 <ul>
 <li><p>la mesure d’audience,</p></li>
 <li><p>l’A/B testing ;</p></li>
 </ul></li>
-<li><p>De ne pas recouper les données traitées avec d’autres traitements (fichiers clients, statistiques de fréquentation d’autres sites...) ;</p></li>
-<li><p>De limiter la portée du traceur à un seul éditeur de site ou d’application ;</p></li>
-<li><p>De tronquer le dernier octet de l’adresse IP ;</p></li>
-<li><p>De limiter la durée de vie des traceurs à 13 mois.</p></li>
+<li><p>de ne pas recouper les données traitées avec d’autres traitements (fichiers clients, statistiques de fréquentation d’autres sites...) ;</p></li>
+<li><p>de limiter la portée du traceur à un seul éditeur de site ou d’application ;</p></li>
+<li><p>de tronquer le dernier octet de l’adresse IP ;</p></li>
+<li><p>de limiter la durée de vie des traceurs à 13 mois.</p></li>
 </ul></li>
 <li><p>Dans la mesure où les conditions sont respectées, <strong>on donc passe d'un régime d'opt-in à un régime d'opt-out</strong>.</p></li>
 <li><p>Il est par ailleurs possible pour un même tiers (sous-traitant) de fournir un service de mesure d’audience comparatif à de multiples éditeurs, sous réserve que <strong>les données soient collectées, traitées et stockées de manière indépendante pour chaque éditeur et que les traceurs soient indépendants les uns des autres</strong>.</p></li>
