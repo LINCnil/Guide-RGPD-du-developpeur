@@ -1,6 +1,6 @@
 # Fiche n°11 : Tester vos applications
 
-#### Tester son produit permet de s’assurer de son bon fonctionnement, d’une bonne expérience utilisateur et de l’absence de certaines erreurs avant et après sa mise en production. Tester son produit permet également de réduire les risques d’atteinte aux données personnelles.
+#### Tester son produit permet de vérifier son bon fonctionnement, de s’assurer d’une bonne expérience utilisateur ainsi que de trouver et prévenir des défauts avant sa mise en production. Tester son produit permet également de réduire les risques d’atteinte aux données personnelles.
 
 ## Automatisez les tests
 
