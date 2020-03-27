@@ -27,7 +27,7 @@
 
 * Si votre traitement s’inscrit dans une relation contractuelle et que sa finalité est objectivement et strictement nécessaire à la fourniture du service de l’utilisateur (par exemple, le nom, le prénom et l’adresse pour créer un compte sur un site de e-commerce) alors **la base légale du contrat devrait être appropriée**.
 
-* Si votre traitement ne s’inscrit pas dans une relation contractuelle avec l’utilisateur, alors **les bases légales du consentement ou de l’intérêt légitime** peuvent être mobilisées. si votre traitement est potentiellement intrusif (profilage, collecte de données de géolocalisation, etc.), le consentement est susceptible d’être la base légale appropriée.
+* Si votre traitement ne s’inscrit pas dans une relation contractuelle avec l’utilisateur, alors **les bases légales du consentement ou de l’intérêt légitime** peuvent être mobilisées. Si votre traitement est potentiellement intrusif (profilage, collecte de données de géolocalisation, etc.), le consentement est susceptible d’être la base légale appropriée.
 
 * Lorsque votre traitement contient des **données sensibles** (données de santé, données relatives à la vie ou à l’orientation sexuelle, etc.), alors vous devrez identifier, en plus de la base légale, une exception prévue par l’[article 9 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2#Article9).
 
@@ -53,7 +53,7 @@
 
 ## Le cas spécifique des cookies et autres traceurs
 
-* La directive européenne ePrivacy requiert le consentement de l’utilisateur avant toute action visant à stocker des informations - via des cookies, identifiants ou autres traceurs (empreintes logiciels, pixels) ou à accéder à des informations stockées dans l’équipement terminal de l’utilisateur.
+* La directive européenne ePrivacy requiert le consentement de l’utilisateur avant toute action visant à stocker des informations - via des cookies, identifiants ou autres traceurs (empreintes logiciels, pixels) - ou à accéder à des informations stockées dans l’équipement terminal de l’utilisateur.
 
 * Une exception existe néanmoins lorsque les cookies ont pour finalité exclusive de permettre ou faciliter la communication par voie électronique, ou sont strictement nécessaires à la fourniture d’un service demandé par l’utilisateur.
 
