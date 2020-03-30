@@ -16,17 +16,17 @@
 
 * **Suivre [la recommandation de la CNIL sur les mots de passe](https://www.cnil.fr/fr/mots-de-passe-des-recommandations-de-securite-minimales-pour-les-entreprises-et-les-particuliers)**. Pensez notamment à limiter le nombre de tentatives d’accès.
 
-* **Ne stockez jamais les mots de passe en clair**. Stockez-les sous forme de hachage (hash) au moyen d’une librairie éprouvée, comme [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
+* **Ne stockez jamais les mots de passe en clair**. Stockez-les sous forme de hachage (hash) au moyen d’une librairie éprouvée, comme [bcrypt](https://fr.wikipedia.org/wiki/Bcrypt).
 
 * **Dans le cas où des cookies sont utilisés pour permettre l’authentification**, il est recommandé :
 
     * de forcer l’utilisation d’HTTPS via l’[HSTS](https://fr.wikipedia.org/wiki/HTTP_Strict_Transport_Security) ;
 
-    * d’utiliser l’indicateur `secure` ;
+    * d’utiliser l’indicateur `Secure` ;
 
     * d’utiliser l’indicateur `HttpOnly`.
 
-* **Testez les suites cryptographiques installées sur les systèmes** et désactivez les suites obsolètes (RC4, MD4, MD5, etc.). Favorisez l’utilisation de l’AES256. [Lire la note de l’ANSSI sur le sujet](https://www.ssi.gouv.fr/uploads/2014/11/RGS_v-2-0_B1.pdf)
+* **Testez les suites cryptographiques installées sur les systèmes** et désactivez les suites obsolètes (RC4, MD4, MD5, etc.). Favorisez l’utilisation de l’AES256. [Lire la note de l’ANSSI sur le sujet](https://www.ssi.gouv.fr/uploads/2014/11/RGS_v-2-0_B1.pdf).
 
 * **Adoptez une politique spécifique de mots de passe pour les administrateurs**. Changez les mots de passe, au moins, lors de chaque départ d’un administrateur et en cas de suspicion de compromission. Favorisez l’authentification forte lorsque c’est possible.
 
@@ -45,7 +45,7 @@
 
 * **Utilisez des outils de détection des vulnérabilités** pour les traitements les plus critiques afin de détecter d’éventuelles failles de sécurité. Des systèmes de détection et prévention des attaques sur des systèmes ou serveurs critiques peuvent aussi être utilisés. Ces tests doivent être menés régulièrement et avant toute mise en production d’une nouvelle version logicielle.
 
-* **Restreignez ou interdisez l’accès physique et logique aux ports de diagnostic et de configuration à distance.** Vous pouvez par exemple lister l’ensemble des ports ouverts au moyen de l’outil *netstat*.
+* **Restreignez ou interdisez l’accès physique et logique aux ports de diagnostic et de configuration à distance.** Vous pouvez par exemple lister l’ensemble des ports ouverts au moyen de l’outil [*netstat*](https://fr.wikipedia.org/wiki/Netstat).
 
 * **Protégez les bases de données que vous rendez accessibles sur Internet**, au moins en restreignant au maximum les accès (par exemple par filtrage IP) et en changeant le mot de passe par défaut du compte administrateur.
 
