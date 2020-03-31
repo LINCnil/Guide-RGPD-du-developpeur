@@ -38,12 +38,12 @@
 
     * de limiter la durée de vie des traceurs à 13 mois.
 
-* Dans la mesure où les conditions sont respectées, **on donc passe d'un régime d'opt-in à un régime d'opt-out**.
+* Dans la mesure où les conditions sont respectées, **on passe donc d'un régime d'opt-in à un régime d'opt-out**.
 
 * Il est par ailleurs possible pour un même tiers (sous-traitant) de fournir un service de mesure d’audience comparatif à de multiples éditeurs, sous réserve que **les données soient collectées, traitées et stockées de manière indépendante pour chaque éditeur et que les traceurs soient indépendants les uns des autres**.
 
 ## En pratique
 
-* **Les offres de mesure d’audience n’entrent pas dans le périmètre de l’exemption notamment lorsque les fournisseurs indiquent réutiliser les données pour leur propre compte.** C’est le cas notamment plusieurs grandes offres de mesure d’audience disponibles sur le marché (voir notamment les politiques de confidentialité de [Google Analytics](https://support.google.com/analytics/answer/6004245?hl=fr), de [Quantcast Analytics](https://www.quantcast.com/terms/measure-terms-service/) ou encore de [Facebook Analytics](https://developers.facebook.com/policy)). Dans certains cas il peut être possible de configurer ces outils pour désactiver la réutilisation des données, vérifiez auprès de du fournisseur de votre outil.
+* **Les offres de mesure d’audience n’entrent pas dans le périmètre de l’exemption notamment lorsque les fournisseurs indiquent réutiliser les données pour leur propre compte.** C’est le cas notamment de plusieurs grandes offres de mesure d’audience disponibles sur le marché (voir notamment les politiques de confidentialité de [Google Analytics](https://support.google.com/analytics/answer/6004245?hl=fr), de [Quantcast Analytics](https://www.quantcast.com/terms/measure-terms-service/) ou encore de [Facebook Analytics](https://developers.facebook.com/policy)). Dans certains cas il peut être possible de configurer ces outils pour désactiver la réutilisation des données, vérifiez auprès du fournisseur de votre outil.
 
-* Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que Matomo (anciennement Piwik) que vous pouvez configurer vous-même.
+* Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que [Matomo](https://matomo.org/) (anciennement Piwik) que vous pouvez configurer vous-même.
