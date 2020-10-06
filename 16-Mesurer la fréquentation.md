@@ -1,49 +1,38 @@
 # Fiche n°16 : Mesurer la fréquentation de vos sites web et de vos applications
 
-#### Les outils de mesures d’audience sont utilisés afin d’obtenir des informations sur la navigation des visiteurs sur un site web ou une application mobile. Ils permettent notamment de comprendre comment les utilisateurs arrivent sur un site et de reconstituer leur parcours. Utilisant des cookies, ils sont soumis à la règle du consentement, sauf dans un cas particulier.
+#### Les outils de mesures d’audience sont utilisés pour obtenir des informations sur la navigation des internautes sur son site. Ils permettent notamment de comprendre comment les utilisateurs arrivent sur un site web ou une application mobile et de reconstituer leur parcours. Utilisant des cookies ou d’autres traceurs, ils peuvent être exemptés de consentement sous certaines conditions.
 
-## Obtenir le consentement
-
-* De manière générale, **avant de déposer ou lire un cookie ou traceur,** les éditeurs de sites ou d’applications doivent :
-
-    * informer les internautes de la finalité des cookies ;
-
-    * obtenir leur consentement ;
-
-    * leur fournir un moyen de les refuser.
-
-* Sauf à rentrer exactement dans le périmètre défini ci-après, **cette obligation s’applique aux traceurs utilisés pour la mesure d’audience**.
 
 ## Bénéficier de l’exemption de consentement
 
-* **Sous réserve d’un certain nombre de conditions**, les cookies utilisés pour la mesure d’audience sont dispensés de consentement.
+* La gestion d’un site web ou d’une application requiert presque systématiquement l’utilisation de statistiques de fréquentation et/ou de performance. **Certains traceurs de mesure d’audience peuvent être exemptés de consentement.**
 
-* **Ces conditions, comme précisé dans les [lignes directrices sur les cookies et autres traceurs](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000038783337), sont** :
+* La condition pour pouvoir utiliser des traceurs de mesure d’audience sans consentement est de **s’assurer qu’ils soient bien strictement nécessaires à la fourniture d'un service de communication en ligne à la demande expresse de l'utilisateur**, conformément à l’article 82 de la loi Informatique et Libertés.
 
-    * d’informer les utilisateurs de leur utilisation ;
+* Afin de se limiter à ce qui est strictement nécessaire à la fourniture du service, la CNIL souligne que ces traceurs doivent :
 
-    * de leur donner la faculté de s’y opposer simplement sur tous systèmes d’exploitation, terminaux et navigateurs, par exemple via un bouton ou une case à cocher présenté lors de l’information utilisateur ;
+    * **avoir une finalité strictement limitée à la seule mesure de l’audience du site ou de l’application** (mesure des performances, détection de problèmes de navigation, optimisation des performances techniques ou de son ergonomie, estimation de la puissance des serveurs nécessaires, analyse des contenus consulté), pour le compte exclusif de l’éditeur ;
 
-    * de limiter le dispositif aux seules finalités suivantes :
+    * **ne pas permettre le suivi global de la navigation de la personne** utilisant différentes applications ou naviguant sur différents sites web ;
 
-        * la mesure d’audience,
+    * **servir uniquement à produire des données statistiques anonymes** ;
 
-        * l’A/B testing ;
+    * **ne pas conduire à un recoupement des données avec d’autres traitements ou à ce que les données soient transmises à des tiers**.
 
-    * de ne pas recouper les données traitées avec d’autres traitements (fichiers clients, statistiques de fréquentation d’autres sites...) ;
+* La CNIL recommande par ailleurs que :
 
-    * de limiter la portée du traceur à un seul éditeur de site ou d’application ;
+    * **les utilisateurs soient informés de la mise en œuvre de ces traceurs**, par exemple via la politique de confidentialité du site ou de l’application mobile ;
 
-    * de tronquer le dernier octet de l’adresse IP ;
+    * **la durée de vie des traceurs soit limitée à une durée permettant une comparaison pertinente des audiences dans le temps**, comme c’est le cas d’une durée de treize mois, et qu’elle ne soit pas prorogée automatiquement lors des nouvelles visites ;
 
-    * de limiter la durée de vie des traceurs à 13 mois.
+    * les informations collectées par l'intermédiaire de ces traceurs soient conservées **pour une durée maximale de vingt-cinq mois** ;
 
-* Dans la mesure où ces conditions sont respectées, **on passe donc d'un régime d'opt-in à un régime d'opt-out**.
+    * les durées de vie et de conservation ci-dessus mentionnées **fassent l’objet d’un réexamen périodique** afin d’être limitées au strict nécessaire.
 
-* Il est par ailleurs possible pour un même tiers (sous-traitant) de fournir un service de mesure d’audience comparatif à de multiples éditeurs, sous réserve que **les données soient collectées, traitées et stockées de manière indépendante pour chaque éditeur et que les traceurs soient indépendants les uns des autres**.
+* Il est par ailleurs possible pour un sous-traitant de fournir un service de mesure d’audience comparatif à de multiples éditeurs, sous réserve que les données soient collectées, traitées et stockées de manière indépendante pour chaque éditeur et que les traceurs soient indépendants les uns des autres.
+
+
 
 ## En pratique
 
-* **Les offres de mesure d’audience n’entrent pas dans le périmètre de l’exemption notamment lorsque les fournisseurs indiquent réutiliser les données pour leur propre compte.** C’est le cas notamment de plusieurs grandes offres de mesure d’audience disponibles sur le marché (voir notamment les politiques de confidentialité de [Google Analytics](https://support.google.com/analytics/answer/6004245?hl=fr), de [Quantcast Analytics](https://www.quantcast.com/terms/measure-terms-service/) ou encore de [Facebook Analytics](https://developers.facebook.com/policy)). Dans certains cas il peut être possible de configurer ces outils pour désactiver la réutilisation des données, vérifiez auprès du fournisseur de votre outil.
-
-* Pour pouvoir bénéficier de cette exemption de consentement rapprochez-vous de votre éditeur de solution ou bien utilisez un logiciel libre tel que [Matomo](https://matomo.org/) (anciennement Piwik) que vous pouvez configurer vous-même.
+* **Les offres de mesure d’audience n’entrent pas dans le périmètre de l’exemption notamment lorsque les fournisseurs indiquent réutiliser les données pour leur propre compte.** C’est le cas notamment de plusieurs grandes offres de mesure d’audience disponibles sur le marché (voir notamment les politiques de confidentialité de [Google Analytics](https://support.google.com/analytics/answer/6004245?hl=fr), de [Quantcast Analytics](https://www.quantcast.com/terms/measure-terms-service/) ou encore de [Facebook Analytics](https://developers.facebook.com/policy)). Dans certains cas il peut être possible de configurer ces outils pour désactiver la réutilisation des données, vérifiez auprès du fournisseur de votre outil qu’il s’engage contractuellement à ne pas réutiliser les données collectées. Soyez également attentifs aux éventuels transferts de données hors de l’Union Européenne qui pourraient être réalisés par votre fournisseur de solution.
