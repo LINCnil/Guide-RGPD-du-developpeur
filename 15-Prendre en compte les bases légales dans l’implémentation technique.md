@@ -33,23 +33,30 @@
 
 ## Les exercices des droits et les modalités d’information à prévoir suivant la base légale
 
+* Les bases légales utilisées doivent **toujours figurer dans les informations transmises à la personne**.
+
+* Il est recommandé de **documenter le choix de vos bases légales**. Ces choix peuvent par exemple être indiqués dans une cartographie des traitements ou associés à votre documentation technique.
+
 * Le tableau suivant récapitule les exercices des droits à prévoir suivant les bases légales choisies :
 
 |                       | Droit d’accès | Droit de rectification | Droit à l’effacement | Droit à la limitation du traitement | Droit à la portabilité | Droit d’opposition          |
 |:---------------------:|:-------------:|:----------------------:|:--------------------:|:-----------------------------------:|:----------------------:|:---------------------------:|
 | **Consentement**      | ✔             | ✔                      | ✔                    | ✔                                   | ✔                      | **retrait du consentement** |
 | **Contrat**           | ✔             | ✔                      | ✔                    | ✔                                   | ✔                      | ✘                           |
-| **Intérêt légitime**  | ✔             | ✔                      | ✔                    | ✔                                   | ✘                      | ✔                           |
-| **Obligation légale** | ✔             | ✔                      | ✘                    | ✔                                   | ✘                      | ✘                           |
+| **Intérêt légitime** *  | ✔             | ✔                      | ✔                    | ✔                                   | ✘                      | ✔                           |
+| **Obligation légale** | ✔             | ✔                      | ✔**                  | ✔                                   | ✘                      | ✘                           |
 | **Intérêt public**    | ✔             | ✔                      | ✘                    | ✔                                   | ✘                      | ✔                           |
 | **Intérêts vitaux**   | ✔             | ✔                      | ✔                    | ✔                                   | ✘                      | ✘                           |
 
-* Les bases légales utilisées doivent **toujours figurer dans les informations transmises à la personne**.
+\* **Lorsque votre traitement est fondé sur l’intérêt légitime**, vous devrez également indiquer les intérêts légitimes poursuivis (lutte contre la fraude, sécurité du système, etc.)
 
-* **Lorsque votre traitement est fondé sur l’intérêt légitime**, vous devrez également indiquer les intérêts légitimes poursuivis (lutte contre la fraude, sécurité du système, etc.)
+\** **Lorsque votre traitement est fondé sur l’obligation légale**, le droit à l’effacement peut s’appliquer si le traitement répond aux conditions suivantes :
 
-* Il est recommandé de **documenter le choix de vos bases légales**. Ces choix peuvent par exemple être indiqués dans une cartographie des traitements ou associés à votre documentation technique.
+1. les données à caractère personnel ne sont plus nécessaires au regard des finalités pour lesquelles elles ont été collectées ou traitées d'une autre manière; ou
 
+2. les données à caractère personnel ont fait l'objet d'un traitement illicite; ou
+
+3. les données à caractère personnel doivent être effacées pour respecter une obligation légale qui est prévue par le droit de l'Union ou par le droit de l'État membre auquel le responsable du traitement est soumis.
 
 ## Le cas spécifique des cookies et autres traceurs
 
