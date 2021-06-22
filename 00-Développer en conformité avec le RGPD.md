@@ -1,6 +1,6 @@
 # Fiche n°0 : Développer en conformité avec le RGPD
 
-#### Que vous travailliez seul⋅e ou en équipe au développement d’un projet, que vous soyez amené⋅e à gérer une équipe de développement, ou que vous soyez un prestataire réalisant des développements pour des tiers, il est indispensable de s’assurer durant toute la vie du projet que les données de vos utilisateurs ainsi que toutes les opérations effectuées sur celles-ci soit protégées en permanence.
+#### Que vous travailliez seul⋅e ou en équipe au développement d’un projet, que vous soyez amené⋅e à gérer une équipe de développement, ou que vous soyez un prestataire réalisant des développements pour des tiers, il est indispensable de s’assurer durant toute la vie du projet que les données de vos utilisateurs ainsi que toutes les opérations effectuées sur celles-ci soient protégées en permanence.
 
 Les étapes suivantes vous aideront dans le développement d’applications ou de sites web respectueux de la vie privée :
 
