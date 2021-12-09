@@ -1,16 +1,21 @@
 # Fiche n°15 : Prendre en compte les bases légales dans l’implémentation technique
 
-#### Pour pouvoir être mis en œuvre, les traitements de données personnelles doivent se fonder sur l’une des « bases légales » mentionnées à l’[article 6 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2#Article6). La base légale d’un traitement est en quelque sorte la justification de l’existence même du traitement. Le choix d’une base légale va directement impacter les conditions de mise en œuvre du traitement et [les droits des personnes](#Fiche_n°13_:_Préparer_l’exercice_des_droits_des_personnes). Ainsi, prévoir en amont d’un développement les bases légales des traitements prévus dans le projet vous permettra d’intégrer au mieux les fonctions nécessaires à la conformité à la loi de ces traitements et au respect des droits des personnes.
+#### Pour pouvoir être mis en œuvre, les traitements de données personnelles doivent se fonder sur l’une des « bases légales » mentionnées à l’[article 6 du RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2#Article6). La base légale d’un traitement est en quelque sorte la justification de l’existence même du traitement. Le choix d’une base légale va directement impacter les conditions de mise en œuvre du traitement et [les droits des personnes](#Fiche_n°13%c2%a0:_Préparer_l’exercice_des_droits_des_personnes). Ainsi, prévoir en amont d’un développement les bases légales des traitements prévus dans le projet vous permettra d’intégrer au mieux les fonctions nécessaires à la conformité à la loi de ces traitements et au respect des droits des personnes.
 
 ## Définition des bases légales prévues par le RGPD
 
 * Dans le cadre d’un développement pour un organisme privé (entreprises, associations, etc.), les bases légales les plus souvent utilisées sont :
+
     * **le contrat** : le traitement est nécessaire à l’exécution ou à la préparation d’un contrat entre la personne concernée et l’organisme mettant en place le traitement ;
+
     * **l’intérêt légitime** : l’organisme mettant en place le traitement poursuit un intérêt "légitime" à mettre en place le traitement et celui-ci n’est pas susceptible d’affecter les droits et libertés des personnes concernées ;
+
     * **le consentement** : la personne concernée a explicitement consenti au traitement.
 
 * Si vous êtes une autorité publique ou un organisme poursuivant des missions d’intérêt public, d’autres bases légales peuvent également être utilisées :
+
     * **l’obligation légale** : le traitement est imposé par des textes réglementaires;
+
     * **la mission d’intérêt public** : le traitement est nécessaire à l’exécution d’une mission d’intérêt public.
 
 * Vous trouverez sur le site de la CNIL un [ensemble de fiches pratiques](https://www.cnil.fr/fr/les-bases-legales) qui vous permettra de vous accompagner dans le choix des bases légales les plus adaptées à vos traitements.
@@ -57,13 +62,3 @@
 2. les données à caractère personnel ont fait l'objet d'un traitement illicite; ou
 
 3. les données à caractère personnel doivent être effacées pour respecter une obligation légale qui est prévue par le droit de l'Union ou par le droit de l'État membre auquel le responsable du traitement est soumis.
-
-## Le cas spécifique des cookies et autres traceurs
-
-* La directive européenne ePrivacy requiert le consentement de l’utilisateur avant toute action visant à stocker des informations - via des cookies, identifiants ou autres traceurs (empreintes logiciels, pixels) - ou à accéder à des informations stockées dans l’équipement terminal de l’utilisateur.
-
-* Une exception existe néanmoins lorsque les cookies ont pour finalité exclusive de permettre ou faciliter la communication par voie électronique, ou sont strictement nécessaires à la fourniture d’un service demandé par l’utilisateur.
-
-* [Sous certaines conditions](#Fiche_n°16_:_Mesurer_la_fréquentation_de_vos_sites_web_et_de_vos_applications), les cookies relatifs à la mesure d'audience peuvent également être exemptés de consentement. 
-
-* Par ailleurs, le fait d’utiliser un seul traceur pour de multiples finalités n’exonère pas de recueillir le consentement pour les finalités qui le nécessitent. Par exemple, si un cookie d’authentification est également utilisé à des fins de ciblage publicitaire, le consentement de l’internaute devra être recueilli pour cette dernière finalité, de la même manière que pour un site non « loggué ».

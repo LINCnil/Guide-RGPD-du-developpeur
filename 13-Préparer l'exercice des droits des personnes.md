@@ -9,7 +9,7 @@
 
 * Tous les organismes qui utilisent des données personnelles ont **l’obligation d’indiquer où et comment** les personnes peuvent exercer leurs droits relatifs à ces données. Vous pouvez par exemple mentionner une adresse e-mail ou un formulaire web au moment de l’information des personnes, ainsi que dans votre politique de vie privée.
 
-* Afin de faciliter l’exercice des droits des personnes, ceux-ci peuvent être aussi **implémentés**, totalement ou en partie, directement dans **l’application ou le logiciel que vous développez**. Cette implémentation spécifique n’est pas obligatoire, mais elle permet de répondre aux attentes des utilisateurs et de réduire le temps et la complexité de traitement de ce type de demandes.
+* Afin de faciliter l’exercice des droits des personnes, ceux-ci peuvent être aussi **implémentés**, totalement ou en partie, directement dans **l’application ou le logiciel que vous développez** ou sur des dispositifs associés par exemple sur des objets connectés sans écran. Cette implémentation spécifique n’est pas obligatoire, mais elle permet de répondre aux attentes des utilisateurs et de réduire le temps et la complexité de traitement de ce type de demandes.
 
 * Avant tout, en cas d’accès ou d’opérations directement effectuées par une personne pour exercer ses droits, n’oubliez pas de gérer son **authentification** de façon sécurisée. De manière générale, **tracez** également toutes les opérations ayant un impact sur ses données personnelles.
 
@@ -21,7 +21,9 @@
 * **Droit à l’effacement** : les personnes ont le droit de  demander l’effacement de l’intégralité des données que vous détenez sur elles.  
 **_Possibles implémentations_** :
     1. Prévoyez une fonctionnalité permettant d’effacer toutes les données relatives à une personne.
+
     2. Prévoyez aussi une notification automatique des sous-traitants afin qu’ils effacent eux aussi les données relatives à cette personne.
+    
     3. Prévoyez un effacement des données également dans les sauvegardes, ou une autre solution permettant de ne pas restaurer les données effacées relatives à cette personne.
 
 * **Droit d’opposition** : les personnes ont le droit de s’opposer dans certains cas à ce que leurs données soient utilisées pour un objectif précis.  
@@ -36,8 +38,24 @@
 * **Droit à la limitation du traitement** : les personnes ont le droit de demander à ce que le traitement de leurs données soit bloqué pendant un certain temps, par exemple le temps d’examiner une contestation de sa part sur l’utilisation de ses données ou une demande d’exercice de droits.  
 **_Possible implémentation_** : permettez à des administrateurs de mettre des données relatives à une personne en « quarantaine » : ces données ne pourront alors plus être lues ou modifiées.
 
+<details>
+     <summary> <em>L'exercice de droit en pratique</em> </summary>
+<br>
+
+* Lorsqu’une personne souhaite exercer un droit, elle doit pouvoir **savoir vers qui s’adresser** de façon simple. Les informations de contact doivent être **facilement accessibles** et être localisées à des endroits paraissant logiques, par exemple dans le compte utilisateur, dans des informations contextuelles, les politiques de confidentialité, les politiques de vie privée, une FAQ, etc.
+
+* L’exercice d’un droit peut constituer un événement exceptionnel dans le parcours utilisateur classique d’un service. De fait, il est d’autant plus important de bien la guider dans cette démarche qui peut paraître intimidante : **proposer des étapes simples** pour formuler une demande, rappeler l’**utilité des droits et des résultats attendus**, mettre à disposition des **modèles de demande pour faciliter les démarches**.
+
+* **L’exercice d’un droit** peut s’effectuer par **différentes modalités et différents formats**: formulaire, mail, comptes en ligne, courrier. Le site Données & Design fournit des [exemples d’interfaces pour faciliter les exercices de droits](https://design.cnil.fr/concepts/exercice-des-droits/).
+
+* Tout au long du processus d’exercice des droits, il est important de veiller à ce que la personne soit informée de l’évolution de sa demande. Lui faire des retours régulièrement, pour **attester de la bonne réception** de sa demande ou encore pour lui faire des **retours sur les décisions prises** suite à celle-ci, dans un **format accessible** et correspondant à celui avec lequel elle vous a contacté est donc nécessaire.
+
+* Afin d’assurer à la personne une bonne continuité dans sa démarche d’exercice de droit, ou en cas de contestation de sa part de la décision que vous prenez auprès d’une autorité de protection, il est recommandé de permettre à la personne de pouvoir garder facilement une **trace de sa démarche**. Un système d’impression de demandes, d’archivage ou de téléchargements des échanges, etc. peuvent ainsi être mis en place. 
+*
+</details>
+
 ## En conclusion
 
-* Le site [Données & Design](https://design.cnil.fr) développé par le Laboratoire d’Innovation Numérique de la CNIL développe ces concepts et contient des [exemples d’interfaces d’exercice des droits](https://design.cnil.fr/concepts/exercice-des-droits/).
+* Le site [Données & Design](https://design.cnil.fr) développé par le Laboratoire d’Innovation Numérique de la CNIL (LINC).
 
 * Enfin, soyez **inventifs** ! (En cas de doute, demandez conseil à la CNIL.)

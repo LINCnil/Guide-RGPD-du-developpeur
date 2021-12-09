@@ -1,0 +1,51 @@
+# configuration nginx 1.17.7
+# générée à partir de https://ssl-config.mozilla.org/ avec des commentaires supplémentaires
+
+# configuration HTTP, qui redirige automatiquement l'URL vers HTTPS
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    return 301 https://$host$request_uri;
+}
+
+# configuration HTTPS
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+
+    # certificat du site et certificats intermédiaires
+    ssl_certificate /path/to/signed_cert_plus_intermediates;
+    # clé privée du certificat
+    ssl_certificate_key /path/to/private_key;
+    # dimensionnement du cache TLS et des timeouts
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:MozSSL:10m;  # à peu près 40000 sessions
+    # pas de tickets de session
+    # car ils peuvent compromettre la confidentialité persistance ("forward secrecy") des communications
+    ssl_session_tickets off;
+
+    # paramètres Diffie-Hellman
+    # il est préférable d'utiliser des paramètres d'au moins 2048 bits, voire plus
+    ssl_dhparam /path/to/dhparam;
+
+    # support de TLS 1.2 et 1.3 (les deux dernières versions)
+    ssl_protocols TLSv1.2 TLSv1.3;
+    # utilisation d'algorithmes à l'état de l'art, permettant la confidentialité persistance et l'authentification des connexions
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;
+    # utiliser les suites cryptographiques les plus performantes pour le client
+    ssl_prefer_server_ciphers off;
+
+    # activation de HSTS, qui force une connexion HTTPS au site, pour une durée de 2 ans
+    add_header Strict-Transport-Security "max-age=63072000" always;
+
+    # agrafage ("stapling") OCSP, qui permet de vérifier en temps réel la révocation d'un certificat
+    ssl_stapling on;
+    ssl_stapling_verify on;
+
+    # Vérification de la chaîne de confiance pour OCSP
+    ssl_trusted_certificate /path/to/root_CA_cert_plus_intermediates;
+
+    # serveur DNS à utiliser (à modifier)
+    resolver 127.0.0.1;
+}

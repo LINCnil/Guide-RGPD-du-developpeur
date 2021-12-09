@@ -16,51 +16,53 @@ Il propose des conseils et des bonnes pratiques, et offre ainsi des clés de com
 
 #### Que contient le guide ?
 
-Ce guide est découpé en **16 fiches thématiques** qui couvrent la plupart des besoins des développeurs pour les accompagner à chaque étape de leur projet, de la préparation du développement à la mesure de l’audience.
+Ce guide est découpé en **18 fiches thématiques** et complété par **des exemples de codes** qui couvrent la plupart des besoins des développeurs pour les accompagner à chaque étape de leur projet, de la préparation du développement au déploiement de nouveaux services.
 
 Le  règlement général  sur  la protection des données (ou RGPD) précise que la protection des droits et libertés des personnes physiques exige de  prendre  des  **«  mesures  techniques  et  organisationnelles  appropriées  afin  de  garantir que les exigences du présent règlement sont respectées »** (considérant 78).
 
 La détermination de ces mesures est forcément **liée au contexte des traitements mis en place**, et le responsable de traitement (l'entité publique ou privée qui traite des données personnelles) doit à ce titre assurer la sécurité des données qu'il est amené à traiter.
 
-Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ensemble des exigences des règlementations ni à être à prescriptives**, elles apportent un premier niveau de mesures permettant de prendre en compte les problématiques de protection de la vie privée dans les développements informatiques qui ont vocation à être appliquées à tous les projets traitant des données. En fonction de la nature des traitements opérés dans certains cas des mesures complémentaires devront être mises en œuvre  afin de respecter pleinement la réglementation.
+Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ensemble des exigences des règlementations ni à être à prescriptives**, elles apportent un premier niveau de mesures permettant de prendre en compte les problématiques de protection de la vie privée dans les développements informatiques qui ont vocation à être appliquées à tous les projets traitant des données. En fonction de la nature des traitements opérés, des mesures complémentaires devront être mises en œuvre dans certains cas afin de respecter pleinement la réglementation.
 
 ## Tables des matières
 
-   0. [Développer en conformité avec le RGPD](#Fiche_n°0_:_Développer_en_conformité_avec_le_RGPD.md)
+0. [Développer en conformité avec le RGPD](#Fiche_n°0%c2%a0:_Développer_en_conformité_avec_le_RGPD)
 
-1. [Identifier les données à caractère personnel](#Fiche_n°1_:_Identifier_les_données_à_caractère_personnel)
+1. [Identifier les données à caractère personnel](#Fiche_n°1%c2%a0:_Identifier_les_données_à_caractère_personnel)
 
-2. [Préparer son développement](#Fiche_n%C2%B02_:_Pr%C3%A9parer_son_d%C3%A9veloppement)
+2. [Préparer son développement](#Fiche_n°2%c2%a0:_Préparer_son_développement)
 
-3. [Sécuriser son environnement de développement](#Fiche_n°3_:_Sécuriser_son_environnement_de_développement)
+3. [Sécuriser son environnement de développement](#Fiche_n°3%c2%a0:_Sécuriser_son_environnement_de_développement)
 
-4. [Gérer son code source](#Fiche_n°4_:_Gérer_son_code_source)
+4. [Gérer son code source](#Fiche_n°4%c2%a0:_Gérer_son_code_source)
 
-5. [Faire un choix éclairé de son architecture](#Fiche_n°5_:_Faire_un_choix_éclairé_de_son_architecture)
+5. [Faire un choix éclairé de son architecture](#Fiche_n°5%c2%a0:_Faire_un_choix_éclairé_de_son_architecture)
 
-6. [Sécuriser vos sites web, vos applications et vos serveurs](#Fiche_n°6_:_Sécuriser_vos_sites_web,_vos_applications_et_vos_serveurs)
+6. [Sécuriser vos sites web, vos applications et vos serveurs](#Fiche_n°6%c2%a0:_Sécuriser_vos_sites_web,_vos_applications_et_vos_serveurs)
 
-7. [Minimiser les données collectées](#Fiche_n°7_:_Minimiser_les_données_collectées)
+7. [Minimiser les données collectées](#Fiche_n°7%c2%a0:_Minimiser_les_données_collectées)
 
-8. [Gérer les profils utilisateurs](#Fiche_n°8_:_Gérer_les_utilisateurs)
+8. [Gérer les profils utilisateurs](#Fiche_n°8%c2%a0:_Gérer_les_utilisateurs)
 
-9. [Maîtriser vos bibliothèques et vos SDK](#Fiche_n°09_:_Maîtriser_vos_bibliothèques_et_vos_SDK)
+9. [Maîtriser vos bibliothèques et vos SDK](#Fiche_n°9%c2%a0:_Maîtriser_vos_bibliothèques_et_vos_SDK)
 
-10. [Veiller à la qualité de votre code et sa documentation](#Fiche_n°10_:_Veiller_à_la_qualité_de_votre_code_et_sa_documentation)
+10. [Veiller à la qualité de votre code et sa documentation](#Fiche_n°10%c2%a0:_Veiller_à_la_qualité_de_votre_code_et_sa_documentation)
 
-11. [Tester vos applications](#Fiche_n°11_:_Tester_vos_applications)
+11. [Tester vos applications](#Fiche_n°11%c2%a0:_Tester_vos_applications)
 
-12. [Informer les utilisateurs](#Fiche_n°12_:_Informer_les_personnes)
+12. [Informer les utilisateurs](#Fiche_n°12%c2%a0:_Informer_les_personnes)
 
-13. [Préparer l'exercice des droits des personnes](#Fiche_n°13_:_Préparer_l’exercice_des_droits_des_personnes)
+13. [Préparer l'exercice des droits des personnes](#Fiche_n°13%c2%a0:_Préparer_l’exercice_des_droits_des_personnes)
 
-14. [Gérer la durée de conservation des données](#Fiche_n°14_:_Gérer_la_durée_de_conservation_des_données)
+14. [Gérer la durée de conservation des données](#Fiche_n°14%c2%a0:_Gérer_la_durée_de_conservation_des_données)
 
-15. [Prendre en compte les bases légales dans l’implémentation technique ](#Fiche_n°15_:_Prendre_en_compte_les_bases_légales_dans_l’implémentation_technique)
+15. [Prendre en compte les bases légales dans l’implémentation technique ](#Fiche_n°15%c2%a0:_Prendre_en_compte_les_bases_légales_dans_l’implémentation_technique)
 
-16. [Mesurer la fréquentation de vos sites web et de vos applications](#Fiche_n°16:_Mesurer_la_fréquentation_de_vos_sites_web_et_de_vos_applications)
+16. [Analyser les pratiques en matière de traceurs sur vos sites et vos applications](#Fiche_n°16%c2%a0:_Analyser_les_traceurs)
 
+17. [Mesurer la fréquentation de vos sites web et de vos applications](#Fiche_n°17%c2%a0:_Mesurer_la_fréquentation_de_vos_sites_web_et_de_vos_applications)
 
+18. [Se prémunir contre les attaques informatiques](#Fiche_n°18%c2%a0:_Se_prémunir_contre_les_attaques_informatiques)
 
 ## Comment contribuer à ce guide ?
 

@@ -22,8 +22,30 @@
 
 * Mettez en œuvre un système de **purge automatique** à l’expiration de la durée de conservation. Vous pouvez également mettre en place des revues manuelles des données stockées de façon périodique.
 
+<details>
+     <summary><em>Exemple d'implémentation de purge automatique en MySQL</em></summary>
+<br>
+
+En MySQL, l'_event scheduler_ permet de supprimer les données périmées automatiquement. Par exemple :
+
+```sql
+CREATE EVENT e_mensuel
+    ON SCHEDULE
+      EVERY 30 DAY
+    COMMENT 'supprime automatiquement les lignes inscrites de plus d un an'
+    DO
+      BEGIN
+        DELETE from votreTable
+   			WHERE datediff(now(), votreTable.votreColonneDate) > 365;
+      END
+```
+Son pré-requis est  d'associer une date d'inscription à chacune des lignes de la base de données afin de permettre le calcul de sa date de péremption.
+
+</details>
+<br>
+
 * Afin de garantir un effacement complet, effacez **physiquement** toutes les données qui ne sont plus nécessaires grâce à des outils spécialisés ou en détruisant les supports physiques.
 
-* Si les données sont encore utiles, vous pouvez réduire leur sensibilité en les **pseudonymisant**, voire en les **anonymisant**. En cas de pseudonymisation, ces données restent soumises à la réglementation sur les données personnelles ([voir la fiche 1](#Fiche_n°1_:_Identifier_les_données_à_caractère_personnel)).
+* Si les données sont encore utiles, vous pouvez réduire leur sensibilité en les **pseudonymisant**, voire en les **anonymisant**. En cas de pseudonymisation, ces données restent soumises à la réglementation sur les données personnelles ([voir la fiche 1](#Fiche_n°1%c2%a0:_Identifier_les_données_à_caractère_personnel)).
 
 * Journalisez les **procédures d’effacement automatique**. Les journaux correspondants pourront être utilisés comme **preuve d’effacement** d’une donnée.

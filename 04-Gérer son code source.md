@@ -8,6 +8,17 @@
 
 * Paramétrez correctement votre environnement en utilisant les fonctionnalités proposées par votre gestionnaire de code source. Il est recommandé de mettre en place une **authentification forte** et/ou une **authentification par clés SSH** dès le début de votre projet.
 
+<details>
+     <summary><em> Mise en place d'une authentification forte sur les services de gestion de développement de logiciels </em></summary>
+<br>
+
+* Le logiciel libre [GitLab](https://docs.gitlab.com/) offre des fonctionnalités de [double authentification](https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html) et [d'accès par jeton d'authentification avec gestion des droits](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html). Ces deux fonctionnalités se retrouvent également sur des services web comme [GitHub](https://help.github.com/en/github/authenticating-to-github/configuring-two-factor-authentication).
+
+*  **Pensez à sauvegarder vos codes de récupération dans un endroit sûr**, par exemple un gestionnaire de mot de passe ou conservez leur impression dans un endroit sécurisé.
+
+</details>
+<br>
+
 * Par ailleurs, attribuez aux utilisateurs de votre gestionnaire de code source des *niveaux d’accès* à votre projet et définissez pour chacun des niveaux les **permissions** correspondantes  (par exemple, un niveau « invité » avec des droits limités en lecture, un niveau « développeur » avec des droits en écriture, etc.).
 
 * Faites des **sauvegardes** régulières de votre système de gestion de code source. En particulier, pensez à sauvegarder votre serveur principal où toutes les modifications sont enregistrées.
@@ -20,11 +31,16 @@
 * Mettez en œuvre des **outils de métriques de qualité de code** qui scanneront votre code dès son _commit_ pour vérifier sa bonne qualité. Vous pouvez également ajouter des scripts de contrôle de ces métriques dans la [configuration du gestionnaire de code source](https://git-scm.com/book/uz/v2/Customizing-Git-Git-Hooks) : le _commit_ sera alors annulé si le code source n’est pas d’une qualité suffisante.
 
 * Conservez vos secrets et mots de passe en dehors de votre dépôt de code source :
-    * dans des **fichiers à part, qui n’ont pas fait l’objet d’un _commit_**. Pensez à utiliser les fichiers spéciaux de votre gestionnaire de code source (tels que _.gitignore_ pour _Git_) afin de ne pas _commiter_ les fichiers sensibles par erreur.
-    * dans des **variables d’environnement**, en prenant soin de vérifier que les variables d’environnement ne sont pas accidentellement écrites dans des *logs* ou affichées lors d’une erreur de l’application.
-    * en utilisant des [**logiciels spécifiques de gestion de secrets ou de gestion de configuration**](https://www.digitalocean.com/community/tutorials/an-introduction-to-managing-secrets-safely-with-version-control-systems#using-configuration-management-systems-for-secret-management).  
 
-  Enfin, si vous devez inclure de telles données dans votre dépôt, pensez à **chiffrer/déchiffrer automatiquement** les fichiers en utilisant un *greffon* de votre gestionnaire de code source (par exemple [_git-crypt_](https://github.com/AGWA/git-crypt)).
+    * dans des **fichiers à part, qui n’ont pas fait l’objet d’un _commit_**. Pensez à utiliser les fichiers spéciaux de votre gestionnaire de code source (tels que _.gitignore_ pour _Git_) afin de ne pas _commiter_ les fichiers sensibles par erreur.
+
+    * dans des **variables d’environnement**, en prenant soin de vérifier que les variables d’environnement ne sont pas accidentellement écrites dans des *logs* ou affichées lors d’une erreur de l’application.
+
+    * en les stockant dans des **enclaves sécurisées** ou des **dépots séparés avec accès restreint** que vous pourrez appeler comme dépendance externe de votre projet.
+
+    * en utilisant des [**logiciels spécifiques de gestion de secrets ou de gestion de configuration**] (par exemple [Vault](https://github.com/hashicorp/vault) de la société HashiCorp, [Keywhiz](https://square.github.io/keywhiz) de la société Square ou [Knox](https://github.com/pinterest/knox) de la société Pinterest).
+
+    *   Enfin, si vous devez inclure de telles données dans votre dépôt, pensez à **chiffrer/déchiffrer automatiquement** les fichiers en utilisant un *greffon* de votre gestionnaire de code source (par exemple [_git-crypt_](https://github.com/AGWA/git-crypt)).
 
 * Après un _commit_ qui contient des données personnelles ou d’autres données critiques, n’oubliez pas de [purger](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) [complètement](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository#purging-a-file-from-your-repositorys-history) le dépôt de code source : même après modification, les données peuvent rester disponibles dans l’historique de votre dépôt.
 

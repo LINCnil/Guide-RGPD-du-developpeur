@@ -1,0 +1,41 @@
+# configuration Apache 2.4.41
+# générée à partir de https://ssl-config.mozilla.org/ avec des commentaires supplémentaires
+# nécessite mod_ssl, mod_socache_shmcb, mod_rewrite, and mod_headers
+
+# configuration HTTP, qui redirige automatiquement l'URL vers HTTPS
+<VirtualHost *:80>
+    RewriteEngine On
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R=301,L]
+</VirtualHost>
+
+# configuration HTTPS
+<VirtualHost *:443>
+    SSLEngine on
+
+    # certificat du site et certificats intermédiaires
+    # attention à bien ajouter les paramètres Diffie-Hellman à la fin du fichier
+    # il est préférable d'utiliser des paramètre d'au moins 2048 bits, voire plus
+    SSLCertificateFile      /path/to/signed_cert_and_intermediate_certs_and_dhparams
+    clé privée du certificat
+    SSLCertificateKeyFile   /path/to/private_key
+
+    # utiliser aussi HTTP/2 si ce protocole est disponible
+    Protocols h2 http/1.1
+
+    # activation de HSTS, qui force une connexion HTTPS au site, pour une durée de 2 ans
+    Header always set Strict-Transport-Security "max-age=63072000"
+</VirtualHost>
+
+# support de TLS 1.2 et 1.3 (les deux dernières versions)
+SSLProtocol             all -SSLv3 -TLSv1 -TLSv1.1
+# utilisation d'algorithmes à l'état de l'art, permettant la confidentialité persistance et l'authentification des connexions
+SSLCipherSuite          ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
+# utiliser les suites cryptographiques les plus performantes pour le client
+SSLHonorCipherOrder     off
+# pas de tickets de session
+# car ils peuvent compromettre la confidentialité persistance ("forward secrecy") des communications
+SSLSessionTickets       off
+
+# agrafage ("stapling") OCSP, qui permet de vérifier en temps réel la révocation d'un certificat
+SSLUseStapling On
+SSLStaplingCache "shmcb:logs/ssl_stapling(32768)"

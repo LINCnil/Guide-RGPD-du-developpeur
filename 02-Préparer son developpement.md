@@ -17,7 +17,7 @@
 
 #### Architecture et fonctionnalités
 
-* **Intégrez la protection de la vie privée, y compris les exigences de sécurité des données, dès la conception de l’application ou du service**. Ces exigences doivent influer sur les [choix d’architecture](#Fiche_n°5_:_Faire_un_choix_éclairé_de_son_architecture) (par exemple décentralisée vs centralisée) ou de fonctionnalités (par exemple anonymisation à bref délai, minimisation des données). Le paramétrage par défaut de l’application doit respecter les exigences minimales de sécurité et être en conformité avec la loi. Par exemple, la complexité par défaut des mots de passe doit respecter à minima la [recommandation de la CNIL relative aux mots de passe](https://www.legifrance.gouv.fr/affichCnil.do?oldAction=rechExpCnil&id=CNILTEXT000033929210&fastReqId=1726469546&fastPos=3).
+* **Intégrez la protection de la vie privée, y compris les exigences de sécurité des données, dès la conception de l’application ou du service**. Ces exigences doivent influer sur les [choix d’architecture](#Fiche_n°5%c2%a0:_Faire_un_choix_éclairé_de_son_architecture) (par exemple décentralisée vs centralisée) ou de fonctionnalités (par exemple anonymisation à bref délai, minimisation des données). Le paramétrage par défaut de l’application doit respecter les exigences minimales de sécurité et être en conformité avec la loi. Par exemple, la complexité par défaut des mots de passe doit respecter à minima la [recommandation de la CNIL relative aux mots de passe](https://www.legifrance.gouv.fr/affichCnil.do?oldAction=rechExpCnil&id=CNILTEXT000033929210&fastReqId=1726469546&fastPos=3).
 
 * **Gardez la maîtrise de votre système**. Il est important de garder la maîtrise de votre système, autant afin d’en assurer le bon fonctionnement que de garantir un haut niveau de sécurité. Garder un système simple permet d’en comprendre précisément les rouages et d’identifier ses points de fragilité. Dans le cas où une certaine complexité est nécessaire, il est conseillé de démarrer d’un système simple, correctement conçu et sécurisé. Ensuite, il est possible d’en augmenter la complexité petit à petit, tout en continuant de sécuriser les nouveautés qui s’ajoutent.
 
@@ -35,4 +35,4 @@
 
     * Il faut à tout prix éviter de coder sa solution définitive dans un langage tout juste appris et pas encore maîtrisé. Dans le cas contraire, vous vous exposez à un risque accru de faille de sécurité du fait du manque d’expérience.
 
-* **Mettez en place un environnement de développement sécurisé et permettant le versionnage du code**, en suivant la [fiche dédiée](#Fiche_n°3_:_Sécuriser_son_environnement_de_développement) de ce guide.
+* **Mettez en place un environnement de développement sécurisé et permettant le versionnage du code**, en suivant la [fiche dédiée](#Fiche_n°3%c2%a0:_Sécuriser_son_environnement_de_développement) de ce guide.
