@@ -38,7 +38,7 @@
 
     * en les stockant dans des **enclaves sécurisées** ou des **dépots séparés avec accès restreint** que vous pourrez appeler comme dépendance externe de votre projet.
 
-    * en utilisant des [**logiciels spécifiques de gestion de secrets ou de gestion de configuration**] (par exemple [Vault](https://github.com/hashicorp/vault) de la société HashiCorp, [Keywhiz](https://square.github.io/keywhiz) de la société Square ou [Knox](https://github.com/pinterest/knox) de la société Pinterest).
+    * en utilisant des **logiciels spécifiques de gestion de secrets ou de gestion de configuration** (par exemple [Vault](https://github.com/hashicorp/vault) de la société HashiCorp, [Keywhiz](https://square.github.io/keywhiz) de la société Square ou [Knox](https://github.com/pinterest/knox) de la société Pinterest).
 
     *   Enfin, si vous devez inclure de telles données dans votre dépôt, pensez à **chiffrer/déchiffrer automatiquement** les fichiers en utilisant un *greffon* de votre gestionnaire de code source (par exemple [_git-crypt_](https://github.com/AGWA/git-crypt)).
 
