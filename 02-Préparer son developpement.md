@@ -10,7 +10,7 @@
 
 * Pour tout développement à destination du grand public, **menez une réflexion sur les paramètres relatifs à la vie privée**, et notamment sur le paramétrage par défaut, par exemple les caractéristiques et les contenus des utilisateurs visibles par défaut.
 
-* **Réalisez une [analyse d’impact sur la protection des données (AIPD)](https://www.cnil.fr/fr/RGPD-analyse-impact-protection-des-donnees-aipd)**. Pour [certaines opérations de traitement](https://www.cnil.fr/sites/default/files/atoms/files/liste-traitements-avec-aipd-requise-v2.pdf), elle  est obligatoire. Dans les autres cas c’est une bonne pratique qui vous permettra d’identifier et de traiter tous les risques en amont de vos développements. La CNIL dispose d’une section spéciale sur son site et elle met à disposition un [logiciel gratuit](https://www.cnil.fr/fr/outil-pia-telechargez-et-installez-le-logiciel-de-la-cnil) consacré à ce type d’analyse.
+* **Réalisez une [analyse d’impact sur la protection des données (AIPD)](https://www.cnil.fr/fr/RGPD-analyse-impact-protection-des-donnees-aipd)**. Pour [certaines opérations de traitement](https://www.cnil.fr/sites/default/files/atoms/files/liste-traitements-avec-aipd-requise-v2.pdf), elle est obligatoire. Dans les autres cas c’est une bonne pratique qui vous permettra d’identifier et de traiter tous les risques en amont de vos développements. La CNIL dispose d’une section spéciale sur son site et elle met à disposition un [logiciel gratuit](https://www.cnil.fr/fr/outil-pia-telechargez-et-installez-le-logiciel-de-la-cnil) consacré à ce type d’analyse.
 
 
 ## Choix technologiques

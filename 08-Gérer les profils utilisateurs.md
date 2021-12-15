@@ -35,6 +35,6 @@
 
 * Le gestionnaire de mots de passe libre [KeePass](https://keepass.fr/), dans sa en version 2.10, a obtenu la [Certification de Sécurité de Premier Niveau](https://www.ssi.gouv.fr/administration/produits-certifies/cspn/) (CSPN) de l'ANSSI.
 
-* Les gestionnaires de mots de passe intégrés aux navigateurs sont particulièrement **exposés aux vulnérabilités des sites**, par exemple les attaques de type [Cross Site Scripting](https://www.cert.ssi.gouv.fr/information/CERTA-2002-INF-001/) (XSS) ou  [Cross-Site Request Forgery](https://www.cert.ssi.gouv.fr/information/CERTA-2008-INF-003/) (CSRF). La fiche 18 [Se prémunir contre les attaques informatiques](#Fiche_n°18%c2%a0:_Se_prémunir_contre_les_attaques_informatiques) illustre en détail le fonctionnement de cette attaque.
+* Les gestionnaires de mots de passe intégrés aux navigateurs sont particulièrement **exposés aux vulnérabilités des sites**, par exemple les attaques de type [Cross Site Scripting](https://www.cert.ssi.gouv.fr/information/CERTA-2002-INF-001/) (XSS) ou [Cross-Site Request Forgery](https://www.cert.ssi.gouv.fr/information/CERTA-2008-INF-003/) (CSRF). La fiche 18 [Se prémunir contre les attaques informatiques](#Fiche_n°18%c2%a0:_Se_prémunir_contre_les_attaques_informatiques) illustre en détail le fonctionnement de cette attaque.
 
 </details>

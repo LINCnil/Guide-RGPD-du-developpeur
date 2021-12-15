@@ -60,7 +60,7 @@
 
 * **Elle doit être fournie de manière claire et compréhensible**, c’est-à-dire avec un vocabulaire simple (phrases courtes, sans termes juridiques ou techniques, sans ambiguïtés) et une information adaptée au public visé (avec une attention particulière à l’égard des enfants et personnes vulnérables).
 
-* **Elle doit être écrite de manière concise**. Afin d’éviter l’écueil du déluge d’informations noyant l’utilisateur, il faut **amener les informations les plus pertinentes au bon moment**. Vous pouvez adopter une approche à **plusieurs niveaux**, en veillant à ce que **les  personnes bénéficient  d’un  aperçu  clair  des  informations  qui  leur  sont  accessibles**  sur  le  traitement  de  ses  données  à  caractère  personnel  et  du  moyen  de  trouver  les  informations  détaillées.
+* **Elle doit être écrite de manière concise**. Afin d’éviter l’écueil du déluge d’informations noyant l’utilisateur, il faut **amener les informations les plus pertinentes au bon moment**. Vous pouvez adopter une approche à **plusieurs niveaux**, en veillant à ce que **les personnes bénéficient d’un aperçu clair des informations qui leur sont accessibles** sur le traitement de ses données à caractère personnel et du moyen de trouver les informations détaillées.
 
 * **Elle doit être adaptée au support d'usage.** Par exemple, pour des dispositifs sans écran comme des enceintes connectées, vous pouvez vous reposer sur un dispositif externe ("application compagnon") pour délivrer une information exhaustive aux utilisateurs. Un premier niveau d’information doit également être accessible par l’interface d’usage du dispositif.
 

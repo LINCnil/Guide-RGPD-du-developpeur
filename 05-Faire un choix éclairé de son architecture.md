@@ -4,7 +4,7 @@
 
 ## Étudier le parcours de ses données
 
-*  Représentez et décrivez en amont du projet le fonctionnement attendu de votre projet, avec un schéma des flux de données et la description détaillée des processus mis en œuvre et des supports utilisés.
+* Représentez et décrivez en amont du projet le fonctionnement attendu de votre projet, avec un schéma des flux de données et la description détaillée des processus mis en œuvre et des supports utilisés.
 
 * Lorsque les données sont uniquement **stockées sur le terminal de l’utilisateur** (stockage local) ou restent **confinées sur des réseaux de communication intégralement sous la maîtrise de l’utilisateur** (par exemple, le Wi-Fi ou autre réseau local), le principal point d’attention est celui de la sécurité des données. Les durées de conservation sur ces données peuvent être déterminées par la personne elle-même ; elle doit cependant être en mesure de supprimer ces données à tout moment.
 
@@ -31,7 +31,7 @@ Ces analyses peuvent vous accompagner dans l'identification des développements 
 
 ## En cas de recours à un prestataire pour l’hébergement
 
-* **Choisir un prestataire garantissant la  mise en  place  de  mesures  de  sécurité  et  de  confidentialité appropriées, et suffisamment transparentes**. La CNIL vous propose des [modèles de clauses de confidentialité](https://www.cnil.fr/sites/default/files/typo/document/Recommandations_pour_les_entreprises_qui_envisagent_de_souscrire_a_des_services_de_Cloud.pdf).
+* **Choisir un prestataire garantissant la mise en place de mesures de sécurité et de confidentialité appropriées, et suffisamment transparentes**. La CNIL vous propose des [modèles de clauses de confidentialité](https://www.cnil.fr/sites/default/files/typo/document/Recommandations_pour_les_entreprises_qui_envisagent_de_souscrire_a_des_services_de_Cloud.pdf).
 
 * **S’assurer de connaître la localisation géographique des serveurs qui vont héberger vos données**. Vous pouvez être amené⋅e à effectuer des transferts de données hors de l’Union européenne (UE) et de l’espace économique européen (EEE). Si les données peuvent circuler librement dans l’UE/EEE, les transferts hors de cet espace sont possibles, à condition d’assurer un [niveau de protection des données suffisant et approprié](https://www.cnil.fr/fr/transferer-des-donnees-hors-de-lue). La CNIL fournit sur site une carte permettant de visualiser les [différents niveaux de protection des données des pays dans le monde](https://www.cnil.fr/fr/la-protection-des-donnees-dans-le-monde).
 

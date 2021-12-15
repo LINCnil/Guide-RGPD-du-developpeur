@@ -24,7 +24,7 @@
 
     * utiliser des identifiants de ressource **qui ne soient ni uniquement numériques, ni consécutifs**, et ayant une construction aléatoire, impossible à découvrir pour les attaquants ;
 
-    * **rendre le « path traversal » inopérant** par la mise en place d’un mécanisme de « chroot », la restriction de  l’utilisation des caractères utilisés par les attaquants tels que « ../ », désactiver la fonction de « directory browsing », neutraliser les messages d'erreur en affichant un message générique de type « erreur 404" » ;
+    * **rendre le « path traversal » inopérant** par la mise en place d’un mécanisme de « chroot », la restriction de l’utilisation des caractères utilisés par les attaquants tels que « ../ », désactiver la fonction de « directory browsing », neutraliser les messages d'erreur en affichant un message générique de type « erreur 404" » ;
 
 
 ### Ressources :
