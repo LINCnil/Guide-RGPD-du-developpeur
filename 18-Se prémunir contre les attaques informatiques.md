@@ -135,6 +135,7 @@
 * [CAPEC-66: SQL Injection](https://capec.mitre.org/data/definitions/66.html)
 * [CERT-FR: Injection de données](https://www.cert.ssi.gouv.fr/information/CERTA-2004-INF-001/)
 * [OWASP: Injection](https://owasp.org/Top10/A03_2021-Injection/)
+* [OWASP: Prévention des injections SQL)](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 
 ## Les programmes malveillants et les rançongiciels
 
