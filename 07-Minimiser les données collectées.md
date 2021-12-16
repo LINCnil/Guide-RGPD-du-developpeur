@@ -39,7 +39,7 @@ CREATE EVENT e_mensuel
    			WHERE datediff(now(), votreTable.votreColonneDate) > 365;
       END
 ```
-Son pré-requis est  d'associer une date d'inscription à chacune des lignes de la base de données afin de permettre le calcul de sa date de péremption.
+Son pré-requis est d'associer une date d'inscription à chacune des lignes de la base de données afin de permettre le calcul de sa date de péremption.
 
 </details>
 <br>

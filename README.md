@@ -1,16 +1,16 @@
-<p align="center"><img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/master/templates/BANNIERE.JPG"  width="100%" align="middle"></p>
+<p align="center"><img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/master/templates/BANNIERE.JPG" width="100%" align="middle"></p>
 
 
 # Guide RGPD du développeur
 #### La CNIL publie un guide RGPD pour les développeurs
 
-Afin de vous accompagner dans la mise en conformité de  vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.
+Afin de vous accompagner dans la mise en conformité de vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.
 
 Ce guide est publié sous [licence GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) et sous [licence ouverte 2.0](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf) (explicitement compatible avec [CC-BY 4.0 FR](https://creativecommons.org/licenses/by/4.0/deed.fr)). Vous pouvez donc librement contribuer à son enrichissement.
 
 #### Ce guide s’adresse-t-il uniquement aux développeurs ?
 
-Que vous travailliez seul(e) ou en équipe au développement d'un projet, que vous soyez amené(e) à gérer une équipe de développement, que vous soyez un prestataire, ou simplement curieux, ce guide contient une première approche des grands principes du RGPD et des différents points d’attention à prendre en compte dans le déploiement d’applications  respectueuse de la vie privée de ses utilisateurs.
+Que vous travailliez seul(e) ou en équipe au développement d'un projet, que vous soyez amené(e) à gérer une équipe de développement, que vous soyez un prestataire, ou simplement curieux, ce guide contient une première approche des grands principes du RGPD et des différents points d’attention à prendre en compte dans le déploiement d’applications respectueuse de la vie privée de ses utilisateurs.
 
 Il propose des conseils et des bonnes pratiques, et offre ainsi des clés de compréhension du RGPD utiles pour tous les acteurs, quelle que soit la taille de leur structure. Il peut également faire l’objet d’échanges au sein des services et dans la relation avec vos clients.
 
@@ -18,7 +18,7 @@ Il propose des conseils et des bonnes pratiques, et offre ainsi des clés de com
 
 Ce guide est découpé en **18 fiches thématiques** et complété par **des exemples de codes** qui couvrent la plupart des besoins des développeurs pour les accompagner à chaque étape de leur projet, de la préparation du développement au déploiement de nouveaux services.
 
-Le  règlement général  sur  la protection des données (ou RGPD) précise que la protection des droits et libertés des personnes physiques exige de  prendre  des  **«  mesures  techniques  et  organisationnelles  appropriées  afin  de  garantir que les exigences du présent règlement sont respectées »** (considérant 78).
+Le règlement général sur la protection des données (ou RGPD) précise que la protection des droits et libertés des personnes physiques exige de prendre des **« mesures techniques et organisationnelles appropriées afin de garantir que les exigences du présent règlement sont respectées »** (considérant 78).
 
 La détermination de ces mesures est forcément **liée au contexte des traitements mis en place**, et le responsable de traitement (l'entité publique ou privée qui traite des données personnelles) doit à ce titre assurer la sécurité des données qu'il est amené à traiter.
 

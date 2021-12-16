@@ -47,7 +47,7 @@ La visualisation des dépendances des applications compilées, ou "packagées", 
 
 * L'outil [otool](https://www.unix.com/man-page/osx/1/otool/) liste les dépendances des bibliothèques d'applications macOS et iOS.
 
-* L'outil [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) affiche sous forme de graphique les dépendances de projet  _javascript_.
+* L'outil [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) affiche sous forme de graphique les dépendances de projet _javascript_.
 
 
 </details>

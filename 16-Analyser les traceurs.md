@@ -5,7 +5,7 @@
 
 ## Les traceurs visés par l'obligation du recueil du consentement préalablement à leur usage
 
-* **Cette obligation s’applique à toutes les solutions techniques reposant sur des opérations de lecture ou écriture dans le terminal et désignées par la CNIL sous le terme de « traceur »**. Elles s'appliquent notamment aux cookies, mais aussi aux « local shared objects » appelés parfois les « cookies Flash », le « local storage » mis en œuvre au sein du standard HTML 5, les identifications par calcul d’empreinte du terminal ou « fingerprinting », les identifiants générés  par les systèmes d’exploitation (qu’ils soient publicitaires ou non : IDFA, IDFV, Android ID, etc.) ou les navigateurs (identifiants de cohorte,etc.), les identifiants matériels (adresse MAC, numéro de série ou tout autre identifiant d’un  appareil),  etc.
+* **Cette obligation s’applique à toutes les solutions techniques reposant sur des opérations de lecture ou écriture dans le terminal et désignées par la CNIL sous le terme de « traceur »**. Elles s'appliquent notamment aux cookies, mais aussi aux « local shared objects » appelés parfois les « cookies Flash », le « local storage » mis en œuvre au sein du standard HTML 5, les identifications par calcul d’empreinte du terminal ou « fingerprinting », les identifiants générés par les systèmes d’exploitation (qu’ils soient publicitaires ou non : IDFA, IDFV, Android ID, etc.) ou les navigateurs (identifiants de cohorte,etc.), les identifiants matériels (adresse MAC, numéro de série ou tout autre identifiant d’un appareil), etc.
 
 * La CNIL a identifié cinq catégories de finalité qui **nécessitent obligatoirement un consentement préalable de l'utilisateur avant leur dépôt**:
 	* la publicité personnalisée ;
@@ -18,7 +18,7 @@
 
 * **Certains traceurs peuvent être exemptés du recueil de consentement** : les traceurs destinés à l’authentification auprès d’un service, ceux destinés à garder en mémoire le contenu d’un panier d’achat sur un site marchand, certains traceurs visant à générer des statistiques de fréquentation, ou encore ceux permettant aux sites payants de limiter l’accès gratuit à un échantillon de contenu demandé par les utilisateurs.
 
-* Le fait d'utiliser **un seul traceur pour de multiples finalités n’exonère pas de recueillir le consentement pour chacune des  finalités qui le nécessite**. Par exemple, si un cookie d’authentification est également utilisé à des fins de ciblage publicitaire, le consentement de l’internaute devra être recueilli pour cette dernière finalité, de la même manière que pour un site non « loggué ».
+* Le fait d'utiliser **un seul traceur pour de multiples finalités n’exonère pas de recueillir le consentement pour chacune des finalités qui le nécessite**. Par exemple, si un cookie d’authentification est également utilisé à des fins de ciblage publicitaire, le consentement de l’internaute devra être recueilli pour cette dernière finalité, de la même manière que pour un site non « loggué ».
 
 * [Sous certaines conditions](#Fiche_n°16%c2%a0:_Mesurer_la_fréquentation_de_vos_sites_web_et_de_vos_applications), les cookies relatifs à la mesure d'audience **peuvent être exempté du recueil de consentement**. La CNIL a mis en place un programme permettant de connaître [les configurations à suivre pour différents outils](https://www.cnil.fr/fr/solutions-de-mesure-daudience-exemptees-de-consentement-la-cnil-lance-un-programme-devaluation). 
 
@@ -52,12 +52,12 @@
 	* une explication des conséquences qui s'attachent à une acceptation ou un refus,
 	* un bouton pour accepter et refuser (refuser les traceurs devant être aussi aisé que de les accepter).
 
-<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-1.jpg"  width="50%" align="middle"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-1.jpg" width="50%" align="middle"></p>
 
 
 * Le second niveau d'interface doit **permettre à l'utilisateur de faire un choix sur la finalité de traceurs**:
-<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-2.jpg"  width="30%" align="middle"style="display:inline-block;">
-<img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-2-details.jpg"  width="30%" align="middle"style="display:inline-block;">
+<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-2.jpg" width="30%" align="middle" style="display:inline-block;">
+<img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-2-details.jpg" width="30%" align="middle" style="display:inline-block;">
 </p>
 
 * [D'autres exemples d'interface](https://www.cnil.fr/sites/default/files/atoms/files/recommandation-cookies-et-autres-traceurs.pdf), notamment pour les applications, sont disponibles dans la recommandation de la CNIL proposant des modalités pratiques de mise en conformité en cas de recours aux "cookies et autres traceurs".

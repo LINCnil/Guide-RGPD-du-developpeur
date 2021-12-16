@@ -19,7 +19,7 @@
 </details>
 <br>
 
-* Par ailleurs, attribuez aux utilisateurs de votre gestionnaire de code source des *niveaux d’accès* à votre projet et définissez pour chacun des niveaux les **permissions** correspondantes  (par exemple, un niveau « invité » avec des droits limités en lecture, un niveau « développeur » avec des droits en écriture, etc.).
+* Par ailleurs, attribuez aux utilisateurs de votre gestionnaire de code source des *niveaux d’accès* à votre projet et définissez pour chacun des niveaux les **permissions** correspondantes (par exemple, un niveau « invité » avec des droits limités en lecture, un niveau « développeur » avec des droits en écriture, etc.).
 
 * Faites des **sauvegardes** régulières de votre système de gestion de code source. En particulier, pensez à sauvegarder votre serveur principal où toutes les modifications sont enregistrées.
 
@@ -40,7 +40,7 @@
 
     * en utilisant des **logiciels spécifiques de gestion de secrets ou de gestion de configuration** (par exemple [Vault](https://github.com/hashicorp/vault) de la société HashiCorp, [Keywhiz](https://square.github.io/keywhiz) de la société Square ou [Knox](https://github.com/pinterest/knox) de la société Pinterest).
 
-    *   Enfin, si vous devez inclure de telles données dans votre dépôt, pensez à **chiffrer/déchiffrer automatiquement** les fichiers en utilisant un *greffon* de votre gestionnaire de code source (par exemple [_git-crypt_](https://github.com/AGWA/git-crypt)).
+    * Enfin, si vous devez inclure de telles données dans votre dépôt, pensez à **chiffrer/déchiffrer automatiquement** les fichiers en utilisant un *greffon* de votre gestionnaire de code source (par exemple [_git-crypt_](https://github.com/AGWA/git-crypt)).
 
 * Après un _commit_ qui contient des données personnelles ou d’autres données critiques, n’oubliez pas de [purger](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) [complètement](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository#purging-a-file-from-your-repositorys-history) le dépôt de code source : même après modification, les données peuvent rester disponibles dans l’historique de votre dépôt.
 
