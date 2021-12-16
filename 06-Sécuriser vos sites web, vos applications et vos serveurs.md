@@ -10,7 +10,7 @@
 
 * **Limitez les ports de communication** strictement nécessaires au bon fonctionnement des applications installées. Si l’accès à un serveur web n’est possible qu’à l’aide du protocole HTTPS, seul le ports 443 de ce serveur, et éventuellement le port 80 afin de rediriger vers le protocole HTTPS, doit être accessible sur Internet. Les autres ports doivent alors être bloqués au niveau du pare-feu.
 
-* **L’ANSSI a publié sur son site des [recommandations spécifiques](https://www.ssi.gouv.fr/entreprise/bonnes-pratiques/)** pour [mettre en œuvre TLS](https://www.ssi.gouv.fr/entreprise/guide/recommandations-de-securite-relatives-a-tls/) ou [pour sécuriser un site web](https://www.ssi.gouv.fr/entreprise/guide/recommandations-pour-la-securisation-des-sites-web/).
+* **L’ANSSI a publié sur son site des [recommandations spécifiques](https://www.ssi.gouv.fr/entreprise/bonnes-pratiques/)** pour [mettre en œuvre TLS](https://www.ssi.gouv.fr/entreprise/guide/recommandations-de-securite-relatives-a-tls/) ou [pour sécuriser un site web](https://www.ssi.gouv.fr/uploads/2013/05/anssi-guide-recommandations_mise_en_oeuvre_site_web_maitriser_standards_securite_cote_navigateur-v2.0.pdf).
 
 <details>
      <summary> <em> En savoir plus sur la mise en place de TLS</em> </summary>
