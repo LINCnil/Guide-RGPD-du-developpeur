@@ -52,12 +52,12 @@
 	* une explication des conséquences qui s'attachent à une acceptation ou un refus,
 	* un bouton pour accepter et refuser (refuser les traceurs devant être aussi aisé que de les accepter).
 
-<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-1.jpg" width="50%" align="middle"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-1.jpg" width="50%" align="middle"></p>
 
 
 * Le second niveau d'interface doit **permettre à l'utilisateur de faire un choix sur la finalité de traceurs**:
-<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-2.jpg" width="30%" align="middle" style="display:inline-block;">
-<img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/master/annexes/Bandeau-Cookie-Niveau-2-details.jpg" width="30%" align="middle" style="display:inline-block;">
+<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-2.jpg" width="30%" align="middle" style="display:inline-block;">
+<img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-2-details.jpg" width="30%" align="middle" style="display:inline-block;">
 </p>
 
 * [D'autres exemples d'interface](https://www.cnil.fr/sites/default/files/atoms/files/recommandation-cookies-et-autres-traceurs.pdf), notamment pour les applications, sont disponibles dans la recommandation de la CNIL proposant des modalités pratiques de mise en conformité en cas de recours aux "cookies et autres traceurs".
