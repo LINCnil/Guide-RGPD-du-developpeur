@@ -23,7 +23,7 @@
 
 * Faites des **sauvegardes** régulières de votre système de gestion de code source. En particulier, pensez à sauvegarder votre serveur principal où toutes les modifications sont enregistrées.
 
-* Mettez en place des procédures de développement pour travailler efficacement même si **plusieurs personnes développent en même temps**. Par exemple, vous pouvez décider de ne pas travailler sur la même branche (_master_), mais de mettre en place des branches par fonctionnalité, qui seront fusionnées dans la branche principale au fur et à mesure du développement. De telles stratégies de développement sont déjà bien documentées, par exemple dans [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/). Par ailleurs, certains gestionnaires de code source proposent de configurer des **branches protégées** qui empêchent des modifications non autorisées sur les fichiers contenus dans ces branches.
+* Mettez en place des procédures de développement pour travailler efficacement même si **plusieurs personnes développent en même temps**. Par exemple, vous pouvez décider de ne pas travailler sur la même branche (_master_ ou _main_), mais de mettre en place des branches par fonctionnalité, qui seront fusionnées dans la branche principale au fur et à mesure du développement. De telles stratégies de développement sont déjà bien documentées, par exemple dans [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/). Par ailleurs, certains gestionnaires de code source proposent de configurer des **branches protégées** qui empêchent des modifications non autorisées sur les fichiers contenus dans ces branches.
 
 
 ## Soyez vigilant sur le contenu de votre code source
