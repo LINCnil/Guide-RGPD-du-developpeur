@@ -50,4 +50,4 @@ La clef privée ne doit jamais être envoyée ou partagée avec un tiers. Pour p
 
 * **Tracez** les accès à vos machines et, si possible, mettez en place une **analyse automatique des journaux**. Afin de conserver des traces fiables, l'usage de compte générique est à proscrire.
 
-* La plupart des services centralisés (Gitlab ou Jenkins par exemple) nécessite la création de jetons individuels pour authentifier les requêtes (“Webhook”). Il est recommandé d'associer une durée de vie limitée à ces jetons et de les revoquer lorsqu'ils ne sont plus utilisés.
+* La plupart des services centralisés (Gitlab ou Jenkins par exemple) nécessite la création de jetons individuels pour authentifier les requêtes (“Webhook”). Il est recommandé d'associer une durée de vie limitée à ces jetons et de les révoquer lorsqu'ils ne sont plus utilisés.
