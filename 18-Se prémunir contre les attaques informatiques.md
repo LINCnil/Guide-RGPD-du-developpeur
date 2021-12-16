@@ -73,7 +73,7 @@
     * afficher la date et l’heure de la dernière connexion sur l’interface de l’utilisateur.
     
 ### Ressources :
-* [ANSSI : Recommandations de sécurité relatives aux mots de passe](https://www.ssi.gouv.fr/uploads/IMG/pdf/NP_MDP_NoteTech.pdf)
+* [ANSSI : Recommandations relatives à l'authentification multifacteur et aux mots de passe - v2.0 du 08/10/2021](https://www.ssi.gouv.fr/uploads/2021/10/anssi-guide-authentification_multifacteur_et_mots_de_passe.pdf)
 * [OWASP: Bruteforce attack](https://owasp.org/www-community/attacks/Brute_force_attack)
 
 ## Injection de code indirecte (“Cross-Site Scripting”/XSS)
@@ -108,7 +108,7 @@
 * [CAPEC-63: Cross-Site Scripting](https://capec.mitre.org/data/definitions/63.html)
 * [CERT-FR: Cross-Site Scripting](https://www.cert.ssi.gouv.fr/information/CERTA-2002-INF-001/)
 * [OWASP: Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-* [ANSSI: Recommandations pour la sécurisation des sites web (XSS)](https://www.ssi.gouv.fr/uploads/IMG/pdf/NP_Securite_Web_NoteTech.pdf#page=13&zoom=auto,-141,461)
+* [ANSSI: Recommandations pour la sécurisation des sites web (XSS)](hhttps://www.ssi.gouv.fr/uploads/2013/05/anssi-guide-recommandations_mise_en_oeuvre_site_web_maitriser_standards_securite_cote_navigateur-v2.0.pdf#section.5.2)
 
 ## Injection SQL (SQLi)
 
@@ -134,8 +134,7 @@
 
 * [CAPEC-66: SQL Injection](https://capec.mitre.org/data/definitions/66.html)
 * [CERT-FR: Injection de données](https://www.cert.ssi.gouv.fr/information/CERTA-2004-INF-001/)
-* [OWASP: Injection](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html)
-* [ANSSI: Recommandations pour la sécurisation des sites web (Injection SQL)](https://www.ssi.gouv.fr/uploads/IMG/pdf/NP_Securite_Web_NoteTech.pdf#page=12&zoom=auto,-141,393)
+* [OWASP: Injection](https://owasp.org/Top10/A03_2021-Injection/)
 
 ## Les programmes malveillants et les rançongiciels
 
