@@ -30,7 +30,7 @@ Deux exemples de configuration [Apache](annexes/conf_tls_apache.txt) et [Nginx](
      <summary><em>Voir une implémentation Frontend de vérification de force de mot de passe</em></summary>
 <br>
 
-Dans sa délibération du 10 janvier 2017 portant adoption d'une recommandation relative aux mots de passe, la CNIl spécifie que si le mot de passe n'est pas utilisé en conjonction avec un second facteur, et sans blocage de fréquence ("frequency capping"), un mot de passe devrait être constitué de 12 caractères et comprendre majuscule, minuscule, chiffres et caractères spéciaux.
+Dans sa délibération du 10 janvier 2017 portant adoption d'une recommandation relative aux mots de passe, la CNIL spécifie que si le mot de passe n'est pas utilisé en conjonction avec un second facteur, et sans blocage de fréquence ("frequency capping"), un mot de passe devrait être constitué de 12 caractères et comprendre majuscule, minuscule, chiffres et caractères spéciaux.
 
 En conséquence, pour vérifier l'adhérence à ces règles, le code suivant est adéquat :
 ```javascript
