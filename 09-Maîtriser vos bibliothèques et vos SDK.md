@@ -36,7 +36,7 @@
 * **Cartographiez vos dépendances.** Les bibliothèques et SDK tiers peuvent également intégrer d’autres composants : auditer leur code vous permettra de mieux cartographier toutes vos dépendances et de mieux agir si un problème affecte l’une d’elles. Il est aussi recommandé de faire des audits sécurité de vos composants tiers et d’effectuer une veille sur ceux-ci ;
 
 <details>
-     <summary> <em> Les outils de visualisation des dépendances des applications </summary>
+     <summary> <em> Les outils de visualisation des dépendances des applications </em> </summary>
 <br>
 
 Les gestionnaires de dépendances intègrent des fonctionnalités de suivi et d'audit. A titre d'exemple, la commande `npm audit` affiche un rapport des vulnérabilités connues de chaque dépendance d'un projet _node.js_.
