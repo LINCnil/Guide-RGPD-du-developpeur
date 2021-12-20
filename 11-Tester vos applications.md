@@ -51,20 +51,20 @@ La génération de données fictives peut se faire au travers d'outils construit
 
 ```python
 from faker import Faker
-# Défini une instance localisée en France
-fake = Faker(fr_FR)
+# Définit une instance localisée en France
+fake = Faker("fr_FR")
 # Numéro de téléphone
 fake.phone_number()
-#'+33 3 38 24 21 94'
-#Adresse email
+# '+33 3 38 24 21 94'
+# Adresse email
 fake.ascii_email()
-#'lorraineboutin@live.com'
+# 'lorraineboutin@live.com'
 # Numéro de carte de crédit
 fake.credit_card_number()
-#'180009753513939'
-#IBAN
+# '180009753513939'
+# IBAN
 fake.iban()
-#'FR05660487647593824219489241'
+# 'FR05660487647593824219489241'
 ```
 
 </details>
