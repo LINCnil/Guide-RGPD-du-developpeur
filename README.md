@@ -1,8 +1,8 @@
 <p align="center"><img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/main/templates/BANNIERE.JPG" width="100%" align="middle"></p>
 
 
-# Guide RGPD du développeur
-#### La CNIL publie un guide RGPD pour les développeurs
+# Guide RGPD des équipes de développement
+#### La CNIL publie un guide RGPD pour les développeurs et les développeuses
 
 Afin de vous accompagner dans la mise en conformité de vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.
 
