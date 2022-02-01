@@ -33,7 +33,7 @@
 
 * Les gestionnaires de mots de passe permettent de **centraliser l'ensemble des identifiants et des mots de passe** dans une base de données unique. Certains d'entres permettent également de tester la robustesse des mots de passe et d'en générer automatiquement et de manière aléatoire tout en répondant aux contraintes imposées par les systèmes. Assurez-vous avant tout usage que les mots de passes conservées par le logiciel sont chiffrés et protégés par un mot de passe suffisamment robuste. 
 
-* Le gestionnaire de mots de passe libre [KeePass](https://keepass.fr/), dans sa en version 2.10, a obtenu la [Certification de Sécurité de Premier Niveau](https://www.ssi.gouv.fr/administration/produits-certifies/cspn/) (CSPN) de l'ANSSI.
+* Le gestionnaire de mots de passe libre [KeePass](https://keepass.info/), dans sa en version 2.10, a obtenu la [Certification de Sécurité de Premier Niveau](https://www.ssi.gouv.fr/administration/produits-certifies/cspn/) (CSPN) de l'ANSSI.
 
 * Les gestionnaires de mots de passe intégrés aux navigateurs sont particulièrement **exposés aux vulnérabilités des sites**, par exemple les attaques de type [Cross Site Scripting](https://www.cert.ssi.gouv.fr/information/CERTA-2002-INF-001/) (XSS) ou [Cross-Site Request Forgery](https://www.cert.ssi.gouv.fr/information/CERTA-2008-INF-003/) (CSRF). La fiche 18 [Se prémunir contre les attaques informatiques](#Fiche_n°18%c2%a0:_Se_prémunir_contre_les_attaques_informatiques) illustre en détail le fonctionnement de cette attaque.
 
