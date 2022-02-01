@@ -382,8 +382,8 @@ document.querySelector(output).innerHTML += toc;
 </p>
 
 
-<h1 id="guide-rgpd-du-développeur">Guide RGPD du développeur</h1>
-<h4 id="la-cnil-publie-un-guide-rgpd-pour-les-développeurs">La CNIL publie un guide RGPD pour les développeurs</h4>
+<h1 id="guide-rgpd-des-équipes-de-développement">Guide RGPD des équipes de développement</h1>
+<h4 id="la-cnil-publie-un-guide-rgpd-pour-les-développeurs-et-les-développeuses">La CNIL publie un guide RGPD pour les développeurs et les développeuses</h4>
 <p>Afin de vous accompagner dans la mise en conformité de vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.</p>
 <p>Ce guide est publié sous <a href="https://www.gnu.org/licenses/gpl-3.0.html">licence GPLv3</a> et sous <a href="https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf">licence ouverte 2.0</a> (explicitement compatible avec <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC-BY 4.0 FR</a>). Vous pouvez donc librement contribuer à son enrichissement.</p>
 <h4 id="ce-guide-sadresse-t-il-uniquement-aux-développeurs">Ce guide s’adresse-t-il uniquement aux développeurs ?</h4>
@@ -419,7 +419,7 @@ document.querySelector(output).innerHTML += toc;
 <h2 id="comment-contribuer-à-ce-guide">Comment contribuer à ce guide ?</h2>
 <p><strong>Ce guide est disponible en deux versions</strong> :</p>
 <ul>
-<li>Une <a href="https://cnil.fr/developpeur">version web sur le site de la CNIL</a> et dans l'onglet <a href="https://github.com/LINCnil/Guide-RGPD-du-developpeur/releases">&quot;Releases&quot;</a> de ce repository ;</li>
+<li>Une <a href="https://cnil.fr/developpeur">version web sur le site de la CNIL</a>, et un export PDF dans l'onglet <a href="https://github.com/LINCnil/Guide-RGPD-du-developpeur/releases">&quot;Releases&quot;</a> de ce repository ;</li>
 <li>Cette <a href="https://github.com/LINCnil/Guide-RGPD-du-developpeur">version GitHub</a>, qui offre la possibilité à tous d’y contribuer.</li>
 </ul>
 <p><strong>La contribution se fait en quelques étapes</strong> :</p>
@@ -658,7 +658,7 @@ document.querySelector(output).innerHTML += toc;
 <li><strong>Suivez <a href="https://www.cnil.fr/fr/mots-de-passe-des-recommandations-de-securite-minimales-pour-les-entreprises-et-les-particuliers">les recommandations de la CNIL sur les mots de passe</a></strong>. Pensez notamment à limiter le nombre de tentatives d’accès.</li>
 </ul>
 <p><details> <summary><em>Voir une implémentation Frontend de vérification de force de mot de passe</em></summary> <br></p>
-<p>Dans sa délibération du 10 janvier 2017 portant adoption d'une recommandation relative aux mots de passe, la CNIl spécifie que si le mot de passe n'est pas utilisé en conjonction avec un second facteur, et sans blocage de fréquence (&quot;frequency capping&quot;), un mot de passe devrait être constitué de 12 caractères et comprendre majuscule, minuscule, chiffres et caractères spéciaux.</p>
+<p>Dans sa délibération du 10 janvier 2017 portant adoption d'une recommandation relative aux mots de passe, la CNIL spécifie que si le mot de passe n'est pas utilisé en conjonction avec un second facteur, et sans blocage de fréquence (&quot;frequency capping&quot;), un mot de passe devrait être constitué de 12 caractères et comprendre majuscule, minuscule, chiffres et caractères spéciaux.</p>
 <p>En conséquence, pour vérifier l'adhérence à ces règles, le code suivant est adéquat :</p>
 <pre class="sourceCode javascript"><code class="sourceCode javascript"><span class="kw">function</span> <span class="fu">checkPassword</span>(pass) {
     <span class="kw">if</span> (!pass)
@@ -844,7 +844,7 @@ Nmap done: 1 IP address (1 host up) scanned in 4.99 seconds</code></pre>
 <p><details> <summary> <em> Les gestionnaires de mot de passe en pratique </em> </summary> <br></p>
 <ul>
 <li><p>Les gestionnaires de mots de passe permettent de <strong>centraliser l'ensemble des identifiants et des mots de passe</strong> dans une base de données unique. Certains d'entres permettent également de tester la robustesse des mots de passe et d'en générer automatiquement et de manière aléatoire tout en répondant aux contraintes imposées par les systèmes. Assurez-vous avant tout usage que les mots de passes conservées par le logiciel sont chiffrés et protégés par un mot de passe suffisamment robuste.</p></li>
-<li><p>Le gestionnaire de mots de passe libre <a href="https://keepass.fr/">KeePass</a>, dans sa en version 2.10, a obtenu la <a href="https://www.ssi.gouv.fr/administration/produits-certifies/cspn/">Certification de Sécurité de Premier Niveau</a> (CSPN) de l'ANSSI.</p></li>
+<li><p>Le gestionnaire de mots de passe libre <a href="https://keepass.info/">KeePass</a>, dans sa en version 2.10, a obtenu la <a href="https://www.ssi.gouv.fr/administration/produits-certifies/cspn/">Certification de Sécurité de Premier Niveau</a> (CSPN) de l'ANSSI.</p></li>
 <li><p>Les gestionnaires de mots de passe intégrés aux navigateurs sont particulièrement <strong>exposés aux vulnérabilités des sites</strong>, par exemple les attaques de type <a href="https://www.cert.ssi.gouv.fr/information/CERTA-2002-INF-001/">Cross Site Scripting</a> (XSS) ou <a href="https://www.cert.ssi.gouv.fr/information/CERTA-2008-INF-003/">Cross-Site Request Forgery</a> (CSRF). La fiche 18 <a href="#Fiche_n°18%c2%a0:_Se_prémunir_contre_les_attaques_informatiques">Se prémunir contre les attaques informatiques</a> illustre en détail le fonctionnement de cette attaque.</p></li>
 </ul>
 <p></details></p>
@@ -892,6 +892,10 @@ Nmap done: 1 IP address (1 host up) scanned in 4.99 seconds</code></pre>
 <li><p><strong>Gérez les mises à jour de vos dépendances,</strong> particulièrement dans le cas de mises à jour de sécurité qui corrigent des vulnérabilités. Vous devez mettre en place une procédure documentée pour les gérer et les déployer le plus vite possible ;</p></li>
 <li><p><strong>Faites attention aux versions des bibliothèques et SDK en fin de support</strong> qui ne seront plus maintenues : essayez de trouver une autre solution (choisir une nouvelle bibliothèque, renouveler un support commercial) ;</p></li>
 <li><p><strong>Surveillez les statuts des projets open-source,</strong> notamment le changement de propriétaire du domaine ou du package, certaines attaques utilisant des mises à jour malicieuses de dépendances populaires.</p></li>
+</ul>
+<h2 id="ressources-utiles">Ressources utiles</h2>
+<ul>
+<li>La <a href="https://cwe.mitre.org">base de données des faiblesses du code CWE</a>, maintenue par l'organisme MITRE, liste les vulnérabilités que l'on peut rencontrer dans les logiciels et les dépendances.</li>
 </ul>
 <h1 id="fiche-n10-veiller-à-la-qualité-de-votre-code-et-sa-documentation">Fiche n°10 : Veiller à la qualité de votre code et sa documentation</h1>
 <h4 id="il-est-indispensable-dadopter-au-plus-tôt-une-bonne-hygiène-décriture-de-code.-une-bonne-lisibilité-de-votre-code-permettra-de-réduire-leffort-de-maintenance-daudit-et-de-corrections-des-bogues-dans-le-temps-que-vous-vos-collaborateurs-ou-vos-futurs-contributeurs-devront-fournir.">Il est indispensable d’adopter au plus tôt une bonne hygiène d’écriture de code. Une bonne lisibilité de votre code permettra de réduire l’effort de maintenance, d’audit et de corrections des bogues dans le temps, que vous, vos collaborateurs ou vos futurs contributeurs devront fournir.</h4>
@@ -1022,20 +1026,20 @@ help(Example.do_something)
 <p>Lors du développement de votre service, il est toujours préférable d'utiliser des données fictives. A défaut, les environnement des tests doivent faire l’objet des mêmes mesures de sécurité que l’environnement de production.</p>
 <p>La génération de données fictives peut se faire au travers d'outils construits pour tester vos services en générant des données variées et parfois inattendues. Par exemple, en python, la librairie <a href="https://pypi.org/project/Faker/"><strong>Faker</strong></a> permet simplement de générer de nombreux types de données :</p>
 <pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> faker <span class="ch">import</span> Faker
-<span class="co"># Défini une instance localisée en France</span>
-fake = Faker(fr_FR)
+<span class="co"># Définit une instance localisée en France</span>
+fake = Faker(<span class="st">&quot;fr_FR&quot;</span>)
 <span class="co"># Numéro de téléphone</span>
 fake.phone_number()
-<span class="co">#&#39;+33 3 38 24 21 94&#39;</span>
-<span class="co">#Adresse email</span>
+<span class="co"># &#39;+33 3 38 24 21 94&#39;</span>
+<span class="co"># Adresse email</span>
 fake.ascii_email()
-<span class="co">#&#39;lorraineboutin@live.com&#39;</span>
+<span class="co"># &#39;lorraineboutin@live.com&#39;</span>
 <span class="co"># Numéro de carte de crédit</span>
 fake.credit_card_number()
-<span class="co">#&#39;180009753513939&#39;</span>
-<span class="co">#IBAN</span>
+<span class="co"># &#39;180009753513939&#39;</span>
+<span class="co"># IBAN</span>
 fake.iban()
-<span class="co">#&#39;FR05660487647593824219489241&#39;</span></code></pre>
+<span class="co"># &#39;FR05660487647593824219489241&#39;</span></code></pre>
 <p></details> <br></p>
 <ul>
 <li>Si vous avez besoin d’<strong>importer des configurations existantes</strong> depuis la production dans vos scénarios de test, pensez à <strong>anonymiser les données personnelles</strong> qui peuvent être présentes.</li>
@@ -1100,7 +1104,7 @@ fake.iban()
 <li><p>Si ces risques sont élevés, l’organisme doit également en informer les personnes concernées le plus rapidement possible et leur adresser des conseils pour protéger leurs données (ex. annulation d’une carte bancaire compromise, modification d’un mot de passe, modification des paramétrages vie privée…).</p></li>
 <li><p>La notification de la violation à la CNIL doit se faire via le <a href="https://www.cnil.fr/fr/notifier-une-violation-de-donnees-personnelles">site web de la CNIL</a>. La fiche 18 <a href="#Fiche_n°18%c2%a0:_Se_prémunir_contre_les_attaques_informatiques">Se prémunir contre les attaques informatiques</a> donne quelques exemples d'attaques qui peuvent conduire à devoir notifier la CNIL et, le cas échéant, les personnes concernées.</p></li>
 </ul>
-<h2 id="ressources-utiles">Ressources utiles</h2>
+<h2 id="ressources-utiles-1">Ressources utiles</h2>
 <ul>
 <li>Le site <a href="https://design.cnil.fr">Données &amp; Design</a> développé par le Laboratoire d’Innovation Numérique de la CNIL.</li>
 <li>Le site de la CNIL contient également <a href="https://www.cnil.fr/fr/rgpd-exemples-de-mentions-dinformation">de nombreux exemples de notices d’information</a>.</li>
