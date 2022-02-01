@@ -68,5 +68,5 @@ La visualisation des dépendances des applications compilées, ou "packagées", 
 
 ## Ressources utiles
 
-* La [base de données des faiblesses du code CWE](https://cwe.mitre.org),maintenue par l'organisme MITRE, liste les vulnérabilités que l'on peut rencontrer dans les logiciels et les dépendances.
+* La [base de données des faiblesses du code CWE](https://cwe.mitre.org), maintenue par l'organisme MITRE, liste les vulnérabilités que l'on peut rencontrer dans les logiciels et les dépendances.
 
