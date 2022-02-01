@@ -7,7 +7,7 @@
 
 * La documentation est parfois laissée de côté au moment du développement, par manque de temps ou de visibilité sur l’ensemble du projet. Elle est pourtant **cruciale pour la maintenabilité de votre projet** : elle permet de comprendre globalement le fonctionnement du code, et de savoir quelles parties du code sont affectées par une modification.
 
-* **Documentez l’architecture, pas uniquement le code** : vous devez être en capacité de garder une vision d’ensemble lorsque vous écrivez votre documentation et d’aider les développeurs à comprendre de manière globale le fonctionnement de tous vos composants. En conséquence, privilégiez les schémas et des explications claires lorsque vous documentez votre projet.
+* **Documentez l’architecture, pas uniquement le code** : vous devez être en capacité de garder une vision d’ensemble lorsque vous écrivez votre documentation et d’aider les développeuses et développeurs à comprendre de manière globale le fonctionnement de tous vos composants. En conséquence, privilégiez les schémas et des explications claires lorsque vous documentez votre projet.
 
 * **Maintenez la documentation en même temps que le code** : la meilleure façon d’avoir une documentation à jour est de la modifier au fil de l’eau en même temps que le code.
 

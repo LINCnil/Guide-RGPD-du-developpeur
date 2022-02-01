@@ -19,7 +19,7 @@
 </details>
 <br>
 
-* Par ailleurs, attribuez aux utilisateurs de votre gestionnaire de code source des *niveaux d’accès* à votre projet et définissez pour chacun des niveaux les **permissions** correspondantes (par exemple, un niveau « invité » avec des droits limités en lecture, un niveau « développeur » avec des droits en écriture, etc.).
+* Par ailleurs, attribuez aux utilisateurs de votre gestionnaire de code source des *niveaux d’accès* à votre projet et définissez pour chacun des niveaux les **permissions** correspondantes (par exemple, un niveau « invité » avec des droits limités en lecture, un niveau « équipe de développement » avec des droits en écriture, etc.).
 
 * Faites des **sauvegardes** régulières de votre système de gestion de code source. En particulier, pensez à sauvegarder votre serveur principal où toutes les modifications sont enregistrées.
 

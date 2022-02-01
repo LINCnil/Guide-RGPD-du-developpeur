@@ -382,15 +382,15 @@ document.querySelector(output).innerHTML += toc;
 </p>
 
 
-<h1 id="guide-rgpd-des-équipes-de-développement">Guide RGPD des équipes de développement</h1>
-<h4 id="la-cnil-publie-un-guide-rgpd-pour-les-développeurs-et-les-développeuses">La CNIL publie un guide RGPD pour les développeurs et les développeuses</h4>
+<h1 id="guide-rgpd-de-l-equipe-de-développement">Guide RGPD de l'équipe de développement</h1>
+<h4 id="la-cnil-publie-un-guide-rgpd-pour-les-développeuses-et-développeurs">La CNIL publie un guide RGPD pour les développeuses et développeurs</h4>
 <p>Afin de vous accompagner dans la mise en conformité de vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.</p>
 <p>Ce guide est publié sous <a href="https://www.gnu.org/licenses/gpl-3.0.html">licence GPLv3</a> et sous <a href="https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf">licence ouverte 2.0</a> (explicitement compatible avec <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC-BY 4.0 FR</a>). Vous pouvez donc librement contribuer à son enrichissement.</p>
-<h4 id="ce-guide-sadresse-t-il-uniquement-aux-développeurs">Ce guide s’adresse-t-il uniquement aux développeurs ?</h4>
+<h4 id="ce-guide-sadresse-t-il-uniquement-aux-développeuses-et-développeurs">Ce guide s’adresse-t-il uniquement aux développeuses et développeurs ?</h4>
 <p>Que vous travailliez seul(e) ou en équipe au développement d'un projet, que vous soyez amené(e) à gérer une équipe de développement, que vous soyez un prestataire, ou simplement curieux, ce guide contient une première approche des grands principes du RGPD et des différents points d’attention à prendre en compte dans le déploiement d’applications respectueuse de la vie privée de ses utilisateurs.</p>
 <p>Il propose des conseils et des bonnes pratiques, et offre ainsi des clés de compréhension du RGPD utiles pour tous les acteurs, quelle que soit la taille de leur structure. Il peut également faire l’objet d’échanges au sein des services et dans la relation avec vos clients.</p>
 <h4 id="que-contient-le-guide">Que contient le guide ?</h4>
-<p>Ce guide est découpé en <strong>18 fiches thématiques</strong> et complété par <strong>des exemples de codes</strong> qui couvrent la plupart des besoins des développeurs pour les accompagner à chaque étape de leur projet, de la préparation du développement au déploiement de nouveaux services.</p>
+<p>Ce guide est découpé en <strong>18 fiches thématiques</strong> et complété par <strong>des exemples de codes</strong> qui couvrent la plupart des besoins des développeuses et développeurs pour les accompagner à chaque étape de leur projet, de la préparation du développement au déploiement de nouveaux services.</p>
 <p>Le règlement général sur la protection des données (ou RGPD) précise que la protection des droits et libertés des personnes physiques exige de prendre des <strong>« mesures techniques et organisationnelles appropriées afin de garantir que les exigences du présent règlement sont respectées »</strong> (considérant 78).</p>
 <p>La détermination de ces mesures est forcément <strong>liée au contexte des traitements mis en place</strong>, et le responsable de traitement (l'entité publique ou privée qui traite des données personnelles) doit à ce titre assurer la sécurité des données qu'il est amené à traiter.</p>
 <p>Les bonnes pratiques de ce guide <strong>n’ont donc pas vocation à couvrir l’ensemble des exigences des règlementations ni à être à prescriptives</strong>, elles apportent un premier niveau de mesures permettant de prendre en compte les problématiques de protection de la vie privée dans les développements informatiques qui ont vocation à être appliquées à tous les projets traitant des données. En fonction de la nature des traitements opérés, des mesures complémentaires devront être mises en œuvre dans certains cas afin de respecter pleinement la réglementation.</p>
@@ -432,7 +432,7 @@ document.querySelector(output).innerHTML += toc;
 <li>Utiliser l'option &quot;Fork&quot; pour faire vos propres modifications et proposer leur inclusion via le bouton &quot;Pull Requests&quot;</li>
 </ul></li>
 </ul>
-<p><strong>Votre proposition de contribution sera examinée par la CNIL avant sa publication</strong>. La version web du guide RGPD du développeur sera régulièrement mise à jour.</p>
+<p><strong>Votre proposition de contribution sera examinée par la CNIL avant sa publication</strong>. La version web du guide RGPD de l'équipe de développement sera régulièrement mise à jour.</p>
 <h2 id="usage">Usage</h2>
 <p>Pour faire vous-même une « release » de ce repository, vous pouvez utiliser l’outil <strong>Pandoc</strong>. Cet outil vous permettra de convertir les fiches en un fichier docx ou bien un document HTML.</p>
 <p>Vous pouvez retrouver les instructions pour installer cet outil <a href="https://pandoc.org/installing.html">ici</a></p>
@@ -536,7 +536,7 @@ document.querySelector(output).innerHTML += toc;
 <li><p><strong>Mettez en place un environnement de développement sécurisé et permettant le versionnage du code</strong>, en suivant la <a href="#Fiche_n°3%c2%a0:_Sécuriser_son_environnement_de_développement">fiche dédiée</a> de ce guide.</p></li>
 </ul>
 <h1 id="fiche-n3-sécuriser-son-environnement-de-développement">Fiche n°3 : Sécuriser son environnement de développement</h1>
-<h4 id="la-sécurité-des-serveurs-de-production-de-développement-dintégration-continue-ainsi-que-les-postes-de-travail-des-développeurs-doit-être-une-priorité-car-ils-centralisent-laccès-à-un-grand-nombre-de-données.">La sécurité des serveurs de production, de développement, d'intégration continue ainsi que les postes de travail des développeurs doit être une priorité car ils centralisent l'accès à un grand nombre de données.</h4>
+<h4 id="la-sécurité-des-serveurs-de-production-de-développement-dintégration-continue-ainsi-que-les-postes-de-travail-des-développeuses-et-développeurs-doit-être-une-priorité-car-ils-centralisent-laccès-à-un-grand-nombre-de-données.">La sécurité des serveurs de production, de développement, d'intégration continue ainsi que les postes de travail des développeuses et développeurs doit être une priorité car ils centralisent l'accès à un grand nombre de données.</h4>
 <h2 id="évaluez-vos-risques-et-adoptez-les-mesures-de-sécurité-adéquates">Évaluez vos risques et adoptez les mesures de sécurité adéquates</h2>
 <ul>
 <li><p><strong>Évaluez les risques</strong> dans les outils et les processus utilisés pour vos développements. Recensez vos mesures de sécurité existantes et définissez un plan d'action permettant d'améliorer la couverture de vos risques. Désignez une personne responsable de sa mise en œuvre.</p></li>
@@ -584,7 +584,7 @@ document.querySelector(output).innerHTML += toc;
 </ul>
 <p></details> <br></p>
 <ul>
-<li><p>Par ailleurs, attribuez aux utilisateurs de votre gestionnaire de code source des <em>niveaux d’accès</em> à votre projet et définissez pour chacun des niveaux les <strong>permissions</strong> correspondantes (par exemple, un niveau « invité » avec des droits limités en lecture, un niveau « développeur » avec des droits en écriture, etc.).</p></li>
+<li><p>Par ailleurs, attribuez aux utilisateurs de votre gestionnaire de code source des <em>niveaux d’accès</em> à votre projet et définissez pour chacun des niveaux les <strong>permissions</strong> correspondantes (par exemple, un niveau « invité » avec des droits limités en lecture, un niveau « équipe de développement » avec des droits en écriture, etc.).</p></li>
 <li><p>Faites des <strong>sauvegardes</strong> régulières de votre système de gestion de code source. En particulier, pensez à sauvegarder votre serveur principal où toutes les modifications sont enregistrées.</p></li>
 <li><p>Mettez en place des procédures de développement pour travailler efficacement même si <strong>plusieurs personnes développent en même temps</strong>. Par exemple, vous pouvez décider de ne pas travailler sur la même branche (<em>master</em> ou <em>main</em>), mais de mettre en place des branches par fonctionnalité, qui seront fusionnées dans la branche principale au fur et à mesure du développement. De telles stratégies de développement sont déjà bien documentées, par exemple dans <a href="https://nvie.com/posts/a-successful-git-branching-model/">Git Flow</a>. Par ailleurs, certains gestionnaires de code source proposent de configurer des <strong>branches protégées</strong> qui empêchent des modifications non autorisées sur les fichiers contenus dans ces branches.</p></li>
 </ul>
@@ -902,7 +902,7 @@ Nmap done: 1 IP address (1 host up) scanned in 4.99 seconds</code></pre>
 <h2 id="documentez-le-code-et-larchitecture">Documentez le code et l’architecture</h2>
 <ul>
 <li><p>La documentation est parfois laissée de côté au moment du développement, par manque de temps ou de visibilité sur l’ensemble du projet. Elle est pourtant <strong>cruciale pour la maintenabilité de votre projet</strong> : elle permet de comprendre globalement le fonctionnement du code, et de savoir quelles parties du code sont affectées par une modification.</p></li>
-<li><p><strong>Documentez l’architecture, pas uniquement le code</strong> : vous devez être en capacité de garder une vision d’ensemble lorsque vous écrivez votre documentation et d’aider les développeurs à comprendre de manière globale le fonctionnement de tous vos composants. En conséquence, privilégiez les schémas et des explications claires lorsque vous documentez votre projet.</p></li>
+<li><p><strong>Documentez l’architecture, pas uniquement le code</strong> : vous devez être en capacité de garder une vision d’ensemble lorsque vous écrivez votre documentation et d’aider les développeuses et développeurs à comprendre de manière globale le fonctionnement de tous vos composants. En conséquence, privilégiez les schémas et des explications claires lorsque vous documentez votre projet.</p></li>
 <li><p><strong>Maintenez la documentation en même temps que le code</strong> : la meilleure façon d’avoir une documentation à jour est de la modifier au fil de l’eau en même temps que le code.</p></li>
 <li><p><strong>« Versionnez » la documentation avec le code</strong> : si vous utilisez un gestionnaire de code source vous pouvez pour chaque « <em>commit</em> » modifiant votre code inclure également les changements de documentation (voir notamment <a href="#Fiche_n°4%c2%a0:_Gérer_son_code_source">la fiche « Gérer son code source »</a>).</p></li>
 </ul>
@@ -972,7 +972,7 @@ help(Example.do_something)
 # affiche uniquement la documentation de la méthode</code></pre>
 <p></details></p>
 <ul>
-<li><strong>Pensez à aborder la sécurité dans votre documentation</strong> : n’oubliez pas d’envisager la dimension sécurité dans la documentation utilisateur ou développeur. Vous pouvez notamment documenter les différents choix de configuration de votre application, et expliquer quels sont les réglages les plus sécurisés.</li>
+<li><strong>Pensez à aborder la sécurité dans votre documentation</strong> : n’oubliez pas d’envisager la dimension sécurité dans la documentation utilisateur ou équipe de développement. Vous pouvez notamment documenter les différents choix de configuration de votre application, et expliquer quels sont les réglages les plus sécurisés.</li>
 </ul>
 <h2 id="contrôlez-la-qualité-de-votre-code-et-de-sa-documentation">Contrôlez la qualité de votre code et de sa documentation</h2>
 <ul>
@@ -1359,7 +1359,7 @@ fake.iban()
 <li><p><strong>La CNIL liste sur <a href="https://www.cnil.fr/fr/cookies-solutions-pour-les-outils-de-mesure-daudience">son site</a> un ensemble de solution identifiées comme pouvant être configurées pour rentrer dans le périmètre de l’exemption au recueil de consentement</strong>. Ces solutions sont systématiquement accompagnées d'un guide afin de permettre la bonne configuration par les éditeurs de site souhaitant les utiliser. Il n’est bien sûr pas exclu que d’autres solutions puissent respecter le critère de stricte nécessité au bon fonctionnement et aux opérations d’administration courante du site web ou de l’application, mais c’est alors à l'éditeur de documenter son analyse.</p></li>
 </ul>
 <h1 id="fiche-n18-se-prémunir-contre-les-attaques-informatiques">Fiche n°18 : Se prémunir contre les attaques informatiques</h1>
-<h4 id="la-destruction-la-perte-laltération-ou-la-divulgation-non-autorisée-de-données-à-caractère-personnel-transmises-conservées-ou-traitées-par-un-organisme-constituent-une-violation-de-données-personnelles.-en-tant-que-développeur-vous-êtes-tenus-de-mettre-en-œuvre-toutes-les-mesures-nécessaires-dans-vos-applications-pour-prévenir-les-attaques-ou-les-négligences-pouvant-entrainer-de-telles-violations.">La destruction, la perte, l'altération, ou la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées par un organisme constituent une violation de données personnelles. En tant que développeur, vous êtes tenus de mettre en œuvre toutes les mesures nécessaires dans vos applications pour prévenir les attaques ou les négligences pouvant entrainer de telles violations.</h4>
+<h4 id="la-destruction-la-perte-laltération-ou-la-divulgation-non-autorisée-de-données-à-caractère-personnel-transmises-conservées-ou-traitées-par-un-organisme-constituent-une-violation-de-données-personnelles.-en-tant-que-développeuse-ou-développeur-vous-êtes-tenu.e.s-de-mettre-en-œuvre-toutes-les-mesures-nécessaires-dans-vos-applications-pour-prévenir-les-attaques-ou-les-négligences-pouvant-entrainer-de-telles-violations.">La destruction, la perte, l'altération, ou la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées par un organisme constituent une violation de données personnelles. En tant que développeuse ou développeur, vous êtes tenu·e·s de mettre en œuvre toutes les mesures nécessaires dans vos applications pour prévenir les attaques ou les négligences pouvant entrainer de telles violations.</h4>
 <h4 id="cette-fiche-dresse-une-liste-non-exhaustive-de-vulnérabilités-ayant-conduit-à-des-violations-de-données-notifiées-à-la-cnil.-elle-liste-des-exemples-de-mesures-qui-auraient-permis-de-les-éviter.">Cette fiche dresse une liste non-exhaustive de vulnérabilités ayant conduit à des violations de données notifiées à la CNIL. Elle liste des exemples de mesures qui auraient permis de les éviter.</h4>
 <h2 id="manipulation-durl">Manipulation d'URL</h2>
 <ul>

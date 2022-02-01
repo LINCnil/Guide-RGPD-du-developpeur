@@ -1,6 +1,6 @@
 # Fiche n°3 : Sécuriser son environnement de développement
 
-#### La sécurité des serveurs de production, de développement, d'intégration continue ainsi que les postes de travail des développeurs doit être une priorité car ils centralisent l'accès à un grand nombre de données.
+#### La sécurité des serveurs de production, de développement, d'intégration continue ainsi que les postes de travail des développeuses et développeurs doit être une priorité car ils centralisent l'accès à un grand nombre de données.
 
 ## Évaluez vos risques et adoptez les mesures de sécurité adéquates
 
