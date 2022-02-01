@@ -1,14 +1,14 @@
 <p align="center"><img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/main/templates/BANNIERE.JPG" width="100%" align="middle"></p>
 
 
-# Guide RGPD des équipes de développement
-#### La CNIL publie un guide RGPD pour les développeurs et les développeuses
+# Guide RGPD de l'équipe de développement
+#### La CNIL publie un guide RGPD pour les développeuses et développeurs
 
 Afin de vous accompagner dans la mise en conformité de vos développements projet web ou applicatif, la CNIL a élaboré un guide de bonnes pratiques des développements en open source.
 
 Ce guide est publié sous [licence GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) et sous [licence ouverte 2.0](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf) (explicitement compatible avec [CC-BY 4.0 FR](https://creativecommons.org/licenses/by/4.0/deed.fr)). Vous pouvez donc librement contribuer à son enrichissement.
 
-#### Ce guide s’adresse-t-il uniquement aux développeurs ?
+#### Ce guide s’adresse-t-il uniquement aux développeuses et développeurs ?
 
 Que vous travailliez seul(e) ou en équipe au développement d'un projet, que vous soyez amené(e) à gérer une équipe de développement, que vous soyez un prestataire, ou simplement curieux, ce guide contient une première approche des grands principes du RGPD et des différents points d’attention à prendre en compte dans le déploiement d’applications respectueuse de la vie privée de ses utilisateurs.
 
@@ -16,7 +16,7 @@ Il propose des conseils et des bonnes pratiques, et offre ainsi des clés de com
 
 #### Que contient le guide ?
 
-Ce guide est découpé en **18 fiches thématiques** et complété par **des exemples de codes** qui couvrent la plupart des besoins des développeurs pour les accompagner à chaque étape de leur projet, de la préparation du développement au déploiement de nouveaux services.
+Ce guide est découpé en **18 fiches thématiques** et complété par **des exemples de codes** qui couvrent la plupart des besoins des développeuses et développeurs pour les accompagner à chaque étape de leur projet, de la préparation du développement au déploiement de nouveaux services.
 
 Le règlement général sur la protection des données (ou RGPD) précise que la protection des droits et libertés des personnes physiques exige de prendre des **« mesures techniques et organisationnelles appropriées afin de garantir que les exigences du présent règlement sont respectées »** (considérant 78).
 
@@ -79,7 +79,7 @@ Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ense
     * Utiliser l’onglet "Issue" pour ouvrir des commentaires ou participer à la discussion
     * Utiliser l'option "Fork" pour faire vos propres modifications et proposer leur inclusion via le bouton "Pull Requests"
 
-**Votre proposition de contribution sera examinée par la CNIL avant sa publication**. La version web du guide RGPD du développeur sera régulièrement mise à jour.
+**Votre proposition de contribution sera examinée par la CNIL avant sa publication**. La version web du guide RGPD de l'équipe de développement sera régulièrement mise à jour.
 
 ## Usage
 

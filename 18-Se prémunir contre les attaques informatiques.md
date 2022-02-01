@@ -1,6 +1,6 @@
 # Fiche n°18 : Se prémunir contre les attaques informatiques
 
-#### La destruction, la perte, l'altération, ou la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées par un organisme constituent une violation de données personnelles. En tant que développeur, vous êtes tenus de mettre en œuvre toutes les mesures nécessaires dans vos applications pour prévenir les attaques ou les négligences pouvant entrainer de telles violations.
+#### La destruction, la perte, l'altération, ou la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées par un organisme constituent une violation de données personnelles. En tant que développeuse ou développeur, vous êtes tenu•e•s de mettre en œuvre toutes les mesures nécessaires dans vos applications pour prévenir les attaques ou les négligences pouvant entrainer de telles violations.
 
 #### Cette fiche dresse une liste non-exhaustive de vulnérabilités ayant conduit à des violations de données notifiées à la CNIL. Elle liste des exemples de mesures qui auraient permis de les éviter.
 
