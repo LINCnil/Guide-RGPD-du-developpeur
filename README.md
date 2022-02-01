@@ -68,7 +68,7 @@ Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ense
 
 **Ce guide est disponible en deux versions** :
 
-* Une [version web sur le site de la CNIL](https://cnil.fr/developpeur) et dans l'onglet ["Releases"](https://github.com/LINCnil/Guide-RGPD-du-developpeur/releases) de ce repository ;
+* Une [version web sur le site de la CNIL](https://cnil.fr/developpeur), et un export PDF dans l'onglet ["Releases"](https://github.com/LINCnil/Guide-RGPD-du-developpeur/releases) de ce repository ;
 * Cette [version GitHub](https://github.com/LINCnil/Guide-RGPD-du-developpeur), qui offre la possibilité à tous d’y contribuer.
 
 **La contribution se fait en quelques étapes** :
@@ -82,7 +82,6 @@ Les bonnes pratiques de ce guide **n’ont donc pas vocation à couvrir l’ense
 **Votre proposition de contribution sera examinée par la CNIL avant sa publication**. La version web du guide RGPD du développeur sera régulièrement mise à jour.
 
 ## Usage
-
 
 Pour faire vous-même une « release » de ce repository, vous pouvez utiliser l’outil **Pandoc**. Cet outil vous permettra de convertir les fiches en un fichier docx ou bien un document HTML.
 
