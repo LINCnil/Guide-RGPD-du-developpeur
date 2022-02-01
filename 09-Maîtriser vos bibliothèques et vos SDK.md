@@ -65,3 +65,8 @@ La visualisation des dépendances des applications compilées, ou "packagées", 
 * **Faites attention aux versions des bibliothèques et SDK en fin de support** qui ne seront plus maintenues : essayez de trouver une autre solution (choisir une nouvelle bibliothèque, renouveler un support commercial) ;
 
 * **Surveillez les statuts des projets open-source,** notamment le changement de propriétaire du domaine ou du package, certaines attaques utilisant des mises à jour malicieuses de dépendances populaires.
+
+## Ressources utiles
+
+* La [base de données des faiblesses du code CWE](https://cwe.mitre.org),maintenue par l'organisme MITRE, liste les vulnérabilités que l'on peut rencontrer dans les logiciels et les dépendances.
+
