@@ -6,7 +6,7 @@
 
 * Il faut informer les personnes concernées :
 
-    * **en cas de collecte directe des données** c’est-à-dire lorsque des données sont recueillies directement auprès des personnes. Par exemple, cet type de collecte concerne : les formulaires, les achats en ligne, la souscription d’un contrat, ouverture d’un compte bancaire. 
+    * **en cas de collecte directe des données** c’est-à-dire lorsque des données sont recueillies directement auprès des personnes. Par exemple, ce type de collecte concerne : les formulaires, les achats en ligne, la souscription d’un contrat, ouverture d’un compte bancaire. 
     
     * lorsqu’elles sont **recueillies via des dispositifs ou des technologies d’observation de l’activité des personnes**. Par exemple, l' analyse de la navigation sur Internet, géolocalisation et Wi-Fi _analytics/tracking_ pour la mesure d’audience ;
 

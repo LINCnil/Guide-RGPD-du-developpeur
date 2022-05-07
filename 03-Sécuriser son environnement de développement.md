@@ -30,9 +30,9 @@ Par exemple en utilisant l'outil ssh-keygen (disponible sous linux et OSX), util
 ```bash
 ssh-keygen -t ed25519
 ```
-Cette commande va créer ou utiliser votre répertoire de clés SSH, par exemple sur Linux `/home/username/.ssh/`), et y écrire deux éléments : une clef privée et une clef publique.
+Cette commande va créer ou utiliser votre répertoire de clés SSH, par exemple sur Linux `/home/username/.ssh/`), et y écrire deux éléments : une clé privée et une clé publique.
 
-Vous pouvez alors soit envoyer la clé publique au serveur pour le configurer (si vous avez un moyen d'authentification préexistant), soit la copier dans votre presse-papier pour la fournir au servir que vous souhaitez utiliser :
+Vous pouvez alors soit envoyer la clé publique au serveur pour le configurer (si vous avez un moyen d'authentification préexistant), soit la copier dans votre presse-papier pour la fournir au service que vous souhaitez utiliser :
 
 ```bash
 #Pour envoyer :
@@ -41,7 +41,7 @@ ssh-copy-id -i ~/.ssh/key.pub user@host
 sudo apt install xclip
 xclip -sel clip < ~/.ssh/key.pub
 ```
-La clef privée ne doit jamais être envoyée ou partagée avec un tiers. Pour plus d'info sur les mesures organisationnelles à mettre en place pour une bonne gestion des clefs, voir la norme [NISTIR 7966](https://nvlpubs.nist.gov/nistpubs/ir/2015/NIST.IR.7966.pdf).
+La clé privée ne doit jamais être envoyée ou partagée avec un tiers. Pour plus d'info sur les mesures organisationnelles à mettre en place pour une bonne gestion des clés, voir la norme [NISTIR 7966](https://nvlpubs.nist.gov/nistpubs/ir/2015/NIST.IR.7966.pdf).
 
 </details>
 <br>
