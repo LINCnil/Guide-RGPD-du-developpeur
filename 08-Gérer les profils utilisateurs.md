@@ -38,3 +38,8 @@
 * Les gestionnaires de mots de passe intégrés aux navigateurs sont particulièrement **exposés aux vulnérabilités des sites**, par exemple les attaques de type [Cross Site Scripting](https://www.cert.ssi.gouv.fr/information/CERTA-2002-INF-001/) (XSS) ou [Cross-Site Request Forgery](https://www.cert.ssi.gouv.fr/information/CERTA-2008-INF-003/) (CSRF). La fiche 18 [Se prémunir contre les attaques informatiques](#Fiche_n°18%c2%a0:_Se_prémunir_contre_les_attaques_informatiques) illustre en détail le fonctionnement de cette attaque.
 
 </details>
+
+## Ressources utiles
+
+* La [recommandation relative à la journalisation](https://www.cnil.fr/fr/la-cnil-publie-une-recommandation-relative-aux-mesures-de-journalisation) de la CNIL qui délivre des conseils pour déterminer les mesures à prendre selon le type de traitement de données.
+
