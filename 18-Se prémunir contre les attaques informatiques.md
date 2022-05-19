@@ -82,7 +82,7 @@
 
 * Ces injections peuvent permettrent **l’exécution de scripts malveillants sur le navigateur de l'internaute**. Elle peuvent notamment donner lieu : à l’affichage d’une fausse fenêtre d’authentification afin de dérober les identifiants et le mot de passe de l’utilisateur, à l’exécution de commandes système, à la redirection vers un site malveillant, à la récupération des cookies présents sur la machine (ex : cookie d’authentification), au téléchargement de programmes malveillants ou encore à l’enregistrement des frappes clavier (key logging), etc.
 
-* Ces injections prendre plusieurs formes :
+* Ces injections peuvent prendre plusieurs formes :
 
     * le contenu malveillant peut être **injecté directement sur le site** par l'attaquant, par exemple dans ses champs de commentaires ;
 
@@ -100,7 +100,7 @@
 
     * vérifier les éléments récupérés en paramètre et rejeter tous ceux qui ne sont pas attendus par l’application ;
 
-    * vérifier que les téléversements (upload) légitimes (photos de profil, par exemple) sur le serveur soient au format attendu et placé dans un répertoire ne permettant pas leur exécution ;
+    * vérifier que les téléversements (upload) légitimes (photos de profil, par exemple) sur le serveur soient au format attendu et placés dans un répertoire ne permettant pas leur exécution ;
 
     * exécuter des outils automatisés de détection de failles et de flux « anormaux » (présence de scripts dans les journaux et requêtes serveurs).
 
