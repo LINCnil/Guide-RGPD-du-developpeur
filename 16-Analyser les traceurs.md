@@ -44,7 +44,7 @@
 
 * Les finalités choisies doivent être formulées **de manière intelligible et dans un langage adapté et suffisamment clair pour permettre aux utilisateurs de comprendre précisément ce à quoi ils consentent**.
 
-* Il est fortement recommandé de hiérachiser les informations délivrées à l'utilisateur sur plusieurs niveaux pour plus de clarté. 
+* Il est fortement recommandé de hiérarchiser les informations délivrées à l'utilisateur sur plusieurs niveaux pour plus de clarté. 
 
 * **Le premier niveau** de l'interface doit comprendre :
 	* une liste des finalités poursuivies,

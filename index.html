@@ -556,14 +556,14 @@ document.querySelector(output).innerHTML += toc;
 <p>Si vous devez vous connecter à un service en ligne ou à l'un de vos serveurs, faites le choix d'algorithme asymétriques, ECDSA ou bien RSA.</p>
 <p>Par exemple en utilisant l'outil ssh-keygen (disponible sous linux et OSX), utiliser les commandes :</p>
 <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ssh-keygen</span> -t ed25519</code></pre>
-<p>Cette commande va créer ou utiliser votre répertoire de clés SSH, par exemple sur Linux <code>/home/username/.ssh/</code>), et y écrire deux éléments : une clef privée et une clef publique.</p>
-<p>Vous pouvez alors soit envoyer la clé publique au serveur pour le configurer (si vous avez un moyen d'authentification préexistant), soit la copier dans votre presse-papier pour la fournir au servir que vous souhaitez utiliser :</p>
+<p>Cette commande va créer ou utiliser votre répertoire de clés SSH, par exemple sur Linux <code>/home/username/.ssh/</code>), et y écrire deux éléments : une clé privée et une clé publique.</p>
+<p>Vous pouvez alors soit envoyer la clé publique au serveur pour le configurer (si vous avez un moyen d'authentification préexistant), soit la copier dans votre presse-papier pour la fournir au service que vous souhaitez utiliser :</p>
 <pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#Pour envoyer :</span>
 <span class="kw">ssh-copy-id</span> -i ~/.ssh/key.pub user@host
 <span class="co">#Pour copier sur des systèmes Debian ou Ubuntu:</span>
 <span class="kw">sudo</span> apt install xclip
 <span class="kw">xclip</span> -sel clip <span class="kw">&lt;</span> ~/.ssh/key.pub</code></pre>
-<p>La clef privée ne doit jamais être envoyée ou partagée avec un tiers. Pour plus d'info sur les mesures organisationnelles à mettre en place pour une bonne gestion des clefs, voir la norme <a href="https://nvlpubs.nist.gov/nistpubs/ir/2015/NIST.IR.7966.pdf">NISTIR 7966</a>.</p>
+<p>La clé privée ne doit jamais être envoyée ou partagée avec un tiers. Pour plus d'info sur les mesures organisationnelles à mettre en place pour une bonne gestion des clés, voir la norme <a href="https://nvlpubs.nist.gov/nistpubs/ir/2015/NIST.IR.7966.pdf">NISTIR 7966</a>.</p>
 <p></details> <br></p>
 <ul>
 <li><p>Favorisez une <strong>authentification forte</strong> sur les services utilisés par l'équipe de développement.</p></li>
@@ -1050,7 +1050,7 @@ fake.iban()
 <ul>
 <li><p>Il faut informer les personnes concernées :</p>
 <ul>
-<li><p><strong>en cas de collecte directe des données</strong> c’est-à-dire lorsque des données sont recueillies directement auprès des personnes. Par exemple, cet type de collecte concerne : les formulaires, les achats en ligne, la souscription d’un contrat, ouverture d’un compte bancaire.</p></li>
+<li><p><strong>en cas de collecte directe des données</strong> c’est-à-dire lorsque des données sont recueillies directement auprès des personnes. Par exemple, ce type de collecte concerne : les formulaires, les achats en ligne, la souscription d’un contrat, ouverture d’un compte bancaire.</p></li>
 <li><p>lorsqu’elles sont <strong>recueillies via des dispositifs ou des technologies d’observation de l’activité des personnes</strong>. Par exemple, l' analyse de la navigation sur Internet, géolocalisation et Wi-Fi <em>analytics/tracking</em> pour la mesure d’audience ;</p></li>
 <li><p><strong>en cas de collecte indirecte des données personnelles</strong>, lorsque les données ne sont pas recueillies directement auprès des personnes. Par exemple, les données récupérées auprès de partenaires commerciaux, de courtiers en données, de sources accessibles au public ou d’autres personnes.</p></li>
 </ul></li>
@@ -1310,7 +1310,7 @@ fake.iban()
 <p>5- Sur chaque page, <strong>intégrer une icône ou lien pour faire réapparaitre l'interface</strong> afin de permettre le retrait du consentement.</p>
 <p>6- Régulièrement, <strong>tester votre site ou votre application</strong> pour bien s'assurer qu'aucun traceur non nécessaire n'est déposé sans consentement et documentez votre conformité.</p></li>
 <li><p>Les finalités choisies doivent être formulées <strong>de manière intelligible et dans un langage adapté et suffisamment clair pour permettre aux utilisateurs de comprendre précisément ce à quoi ils consentent</strong>.</p></li>
-<li><p>Il est fortement recommandé de hiérachiser les informations délivrées à l'utilisateur sur plusieurs niveaux pour plus de clarté.</p></li>
+<li><p>Il est fortement recommandé de hiérarchiser les informations délivrées à l'utilisateur sur plusieurs niveaux pour plus de clarté.</p></li>
 <li><strong>Le premier niveau</strong> de l'interface doit comprendre :
 <ul>
 <li>une liste des finalités poursuivies,</li>
@@ -1356,7 +1356,7 @@ fake.iban()
 <h2 id="en-pratique-1">En pratique</h2>
 <ul>
 <li><p><strong>Les offres de mesure d’audience n’entrent pas dans le périmètre de l’exemption notamment lorsque les fournisseurs indiquent réutiliser les données pour leur propre compte.</strong> C’est le cas notamment de plusieurs grandes offres de mesure d’audience disponibles sur le marché (voir notamment les politiques de confidentialité de <a href="https://support.google.com/analytics/answer/6004245?hl=fr">Google Analytics</a>, de <a href="https://www.quantcast.com/terms/measure-terms-service/">Quantcast Analytics</a> ou encore de <a href="https://developers.facebook.com/policy">Facebook Analytics</a>). Dans certains cas il peut être possible de configurer ces outils pour désactiver la réutilisation des données, vérifiez auprès du fournisseur de votre outil qu’il s’engage contractuellement à ne pas réutiliser les données collectées. Soyez également attentifs aux éventuels transferts de données hors de l’Union Européenne qui pourraient être réalisés par votre fournisseur de solution.</p></li>
-<li><p><strong>La CNIL liste sur <a href="https://www.cnil.fr/fr/cookies-solutions-pour-les-outils-de-mesure-daudience">son site</a> un ensemble de solution identifiées comme pouvant être configurées pour rentrer dans le périmètre de l’exemption au recueil de consentement</strong>. Ces solutions sont systématiquement accompagnées d'un guide afin de permettre la bonne configuration par les éditeurs de site souhaitant les utiliser. Il n’est bien sûr pas exclu que d’autres solutions puissent respecter le critère de stricte nécessité au bon fonctionnement et aux opérations d’administration courante du site web ou de l’application, mais c’est alors à l'éditeur de documenter son analyse.</p></li>
+<li><p><strong>La CNIL liste sur <a href="https://www.cnil.fr/fr/cookies-solutions-pour-les-outils-de-mesure-daudience">son site</a> un ensemble de solutions identifiées comme pouvant être configurées pour rentrer dans le périmètre de l’exemption au recueil de consentement</strong>. Ces solutions sont systématiquement accompagnées d'un guide afin de permettre la bonne configuration par les éditeurs de site souhaitant les utiliser. Il n’est bien sûr pas exclu que d’autres solutions puissent respecter le critère de stricte nécessité au bon fonctionnement et aux opérations d’administration courante du site web ou de l’application, mais c’est alors à l'éditeur de documenter son analyse.</p></li>
 </ul>
 <h1 id="fiche-n18-se-prémunir-contre-les-attaques-informatiques">Fiche n°18 : Se prémunir contre les attaques informatiques</h1>
 <h4 id="la-destruction-la-perte-laltération-ou-la-divulgation-non-autorisée-de-données-à-caractère-personnel-transmises-conservées-ou-traitées-par-un-organisme-constituent-une-violation-de-données-personnelles.-en-tant-que-développeuse-ou-développeur-vous-êtes-tenues-de-mettre-en-œuvre-toutes-les-mesures-nécessaires-dans-vos-applications-pour-prévenir-les-attaques-ou-les-négligences-pouvant-entrainer-de-telles-violations.">La destruction, la perte, l'altération, ou la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées par un organisme constituent une violation de données personnelles. En tant que développeuse ou développeur, vous êtes tenu•e•s de mettre en œuvre toutes les mesures nécessaires dans vos applications pour prévenir les attaques ou les négligences pouvant entrainer de telles violations.</h4>
@@ -1421,7 +1421,7 @@ fake.iban()
 <ul>
 <li><p>Les attaques par « injection de code indirecte » (de l'anglais <strong>Cross-Site Scripting</strong>, abrégé XSS) consistent à insérer un contenu malveillant dans une page d'un serveur de confiance afin qu’il soit affiché sur le navigateur de la victime.</p></li>
 <li><p>Ces injections peuvent permettrent <strong>l’exécution de scripts malveillants sur le navigateur de l'internaute</strong>. Elle peuvent notamment donner lieu : à l’affichage d’une fausse fenêtre d’authentification afin de dérober les identifiants et le mot de passe de l’utilisateur, à l’exécution de commandes système, à la redirection vers un site malveillant, à la récupération des cookies présents sur la machine (ex : cookie d’authentification), au téléchargement de programmes malveillants ou encore à l’enregistrement des frappes clavier (key logging), etc.</p></li>
-<li><p>Ces injections prendre plusieurs formes :</p>
+<li><p>Ces injections peuvent prendre plusieurs formes :</p>
 <ul>
 <li><p>le contenu malveillant peut être <strong>injecté directement sur le site</strong> par l'attaquant, par exemple dans ses champs de commentaires ;</p></li>
 <li><p>le contenu malveillant peut être inclus dans les paramètres des <strong>requêtes envoyées aux serveurs</strong> afin d'exploiter ses vulnérabilités, par exemple pour obtenir un accès complet à sa base de données ;</p></li>
@@ -1433,7 +1433,7 @@ fake.iban()
 <li><p>diligenter des audits de sécurité (tests de pénétration) de façon périodique et après chaque mise à jour significative ;</p></li>
 <li><p>neutraliser les caractères utilisés pour l’insertion de script (&gt; &lt; /) lorsque c’est possible (cf. nettoyage « HTML escape ») ;</p></li>
 <li><p>vérifier les éléments récupérés en paramètre et rejeter tous ceux qui ne sont pas attendus par l’application ;</p></li>
-<li><p>vérifier que les téléversements (upload) légitimes (photos de profil, par exemple) sur le serveur soient au format attendu et placé dans un répertoire ne permettant pas leur exécution ;</p></li>
+<li><p>vérifier que les téléversements (upload) légitimes (photos de profil, par exemple) sur le serveur soient au format attendu et placés dans un répertoire ne permettant pas leur exécution ;</p></li>
 <li><p>exécuter des outils automatisés de détection de failles et de flux « anormaux » (présence de scripts dans les journaux et requêtes serveurs).</p></li>
 </ul></li>
 </ul>
