@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/main/templates/BANNIERE.JPG" width="100%" align="middle"></p>
+<p align="center"><img src="https://github.com/LINCnil/Guide-RGPD-du-developpeur/raw/main/templates/BANNIERE.JPG" width="100%" align="middle" alt="Logo Guide RGPD CNIL pour l'équipe de développement"></p>
 
 
 # Guide RGPD de l'équipe de développement
