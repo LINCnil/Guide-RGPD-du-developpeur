@@ -52,12 +52,12 @@
 	* une explication des conséquences qui s'attachent à une acceptation ou un refus,
 	* un bouton pour accepter et refuser (refuser les traceurs devant être aussi aisé que de les accepter).
 
-<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-1.jpg" width="50%" align="middle"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-1.jpg" width="50%" align="middle" alt="Exemple de bannière cookie détaillant l'utilisation faite par le site web, la durée de consevation et le partage à des tiers. Trois boutons : Personnaliser mes choix, Tout refuser, Tout accepter"></p>
 
 
 * Le second niveau d'interface doit **permettre à l'utilisateur de faire un choix sur la finalité de traceurs**:
-<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-2.jpg" width="30%" align="middle" style="display:inline-block;">
-<img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-2-details.jpg" width="30%" align="middle" style="display:inline-block;">
+<p align="center"><img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-2.jpg" width="30%" align="middle" style="display:inline-block;" alt="Exemple de bannière cookie permettant de donner son consentement avec des cases à cocher pour chaque finalité. Boutons Tout accepter et Tout refuser ainsi que Valider mes choix">
+<img src="https://raw.githubusercontent.com/LINCnil/Guide-RGPD-du-developpeur/main/annexes/Bandeau-Cookie-Niveau-2-details.jpg" width="30%" align="middle" style="display:inline-block;" alt="Même bannière cookie que l'image précédente mais avec l'affichage de plus d'informations concernant la finalité Publicité personnalisée">
 </p>
 
 * [D'autres exemples d'interface](https://www.cnil.fr/sites/default/files/atoms/files/recommandation-cookies-et-autres-traceurs.pdf), notamment pour les applications, sont disponibles dans la recommandation de la CNIL proposant des modalités pratiques de mise en conformité en cas de recours aux "cookies et autres traceurs".
